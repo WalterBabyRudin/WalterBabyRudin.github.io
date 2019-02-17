@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Every failure is leading towards success.">
+    <meta name="keywords"  content="BY, BY Blog, 柏荧的博客, qiubaiying, 邱柏荧, iOS, Apple, iPhone">
+    <meta name="theme-color" content="#000000">
+    
+    <title>柔术最大的谎言「译」 - 柏荧的博客 | BY Blog</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <!-- Safari Webpage Icon    by-BY -->
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/2018/01/04/%E6%9F%94%E6%9C%AF%E6%9C%80%E5%A4%A7%E7%9A%84%E8%B0%8E%E8%A8%80-%E8%AF%91/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Jie Wang</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Image to hack wechat --> -->
+<img src="/img/icon_wechat.png" width="0" height="0">
+<img src="/img/post-bg-BJJ.jpg" width="0" height="0">
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/post-bg-BJJ.jpg')
+    }
+
+    
+/* </style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#BJJ" title="BJJ">BJJ</a>
+                        
+                    </div>
+                    <h1>柔术最大的谎言「译」</h1>
+                    
+                    
+                    <h2 class="subheading">辩证分析柔术中技术与力量</h2>
+                    
+                    <span class="meta">Life is hard, but we will still life on.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header> */
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <!-- <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<blockquote>
+  <p>译自 <a href="http://www.jiujitsubrotherhood.com/the-biggest-lie-in-jiu-jitsu/">《THE BIGGEST LIE IN JIU JITSU》</a></p>
+</blockquote>
+
+<p><img src="http://mjrnxewya3t1in23ybpwjw59.wpengine.netdna-cdn.com/wp-content/uploads/buchecha-marcus-almeida-roger-gracie.jpg" alt="Marcus'Buchecha'Almeida - 现任IBJJF绝对冠军。这家伙很坚强，相信我！图片由BJJ Pix的William Burkhardt提供  。" /></p>
+
+<p>最近我看到了一个让我捧腹的柔术笑话。</p>
+
+<p>“柔术的技术是无敌的！”</p>
+
+<p>你可能不想听听下面的内容，但是作为一名柔术教练，我的工作是与你分享我认为的真理，而不是虚假的谎言。所以在这里与你们分享我的见解：</p>
+
+<h3 id="目录">目录</h3>
+
+<ul>
+  <li>技术不是无敌的</li>
+  <li>我的见解</li>
+  <li>一个假设</li>
+  <li>真实的例子</li>
+  <li>这个神话是从哪里来的？</li>
+  <li>好消息</li>
+  <li>如何变得更强</li>
+  <li>你该怎么做</li>
+</ul>
+
+<h2 id="技术不是无敌的">技术不是无敌的</h2>
+
+<p>基础运动能力，特别是力量，对柔术的表现起着巨大的作用，而且往往可以克服技巧。尽管你被告知了卓越的技术并不总是能克服体型和力量优势。但在我看来，力量和技术一样重要。</p>
+
+<h2 id="我的见解">我的见解</h2>
+
+<p>我练习巴西柔术将近二十年，已经是一个黑带了。我认为自己是一个技术顶尖的柔术运动员，我致力于使自己的技术动作更加高效和精准。</p>
+
+<p>但是这里有个小秘密：有时候，我会利用力量强行完成一个柔术动作。我并不常这样做，但我明白力量对于柔术的重要性，并且它可以更好的帮助我完成动作，我已经认识到这样做是正确的。</p>
+
+<p>我的脑袋中仍然有一种“无力游戏”的想法，那就是我技术非常优秀，以至于我不需要出力就可以降服对手。但我知道这只是我的一个天真的想法。</p>
+
+<p>是的，世界顶尖的柔术运动员毫无疑问都拥有顶尖的柔术技术。但是，他们无一例外都是非常强壮的人。由于先天的遗传和后天科学的训练，这些家伙拥有不可思议的力量和体格。</p>
+
+<p>我的经验得出的这个等式适用与大多数情况：</p>
+
+<blockquote>
+  <p><strong>运动员A（中等技术 + 上等身体素质） &gt;  运动员B（上等技术 + 下等身体素质）</strong></p>
+</blockquote>
+
+<h3 id="一个假设">一个假设</h3>
+
+<p>我知道你还不相信我，所以我会用一个例子来说明我的观点。让我们来看看使用两个战士 Steve 和 JoJo 的假想情景。</p>
+
+<h4 id="steve">Steve:</h4>
+
+<p>Steve 5岁开始学习柔术，由马塞洛·加西亚，拉法·门德斯和瑞克森·格雷西执教。它学会了他们所有的技巧，并且吸收了他们所有关于压力，时间和人体力学的智慧。他在接下来的13年里每周训练6天。</p>
+
+<p>18岁，体重200磅的 Steve 击败了所有对手取得了 <a href="https://en.wikipedia.org/wiki/International_Brazilian_Jiu-Jitsu_Federation">IBJJF（国际巴西柔术联合会</a>）世界锦标赛的棕色带中量级冠军，并且立即被授予黑带。第二年，在对战拥有绝对黑带实力的 Buchecha（开头照片中的人）的决赛中，用了一个飞身十字固在13秒内降服了他。</p>
+
+<h4 id="jojo">JoJo：</h4>
+
+<p>JoJo 是一个10岁的银背大猩猩。他体重400磅。他从未接受过柔术或其他武术的训练。</p>
+
+<h4 id="一决胜负">一决胜负：</h4>
+
+<p>假设 JoJo 与 Steve 展开一场柔术规则的比赛。</p>
+
+<p>你认为谁会赢得这场比赛？如果你认为 Steve 会用他的“无敌技巧”击败 JoJo，那么你就是妄想。（此外，你可以用 <a href="https://en.wikipedia.org/wiki/Dim_Mak_Records">点穴</a> 试试~）</p>
+
+<p>JoJo 的<strong>体格</strong>与<strong>力量</strong>优势根本无法用技术来克服。</p>
+
+<p><img src="http://mjrnxewya3t1in23ybpwjw59.wpengine.netdna-cdn.com/wp-content/uploads/gorilla.jpg" alt="你可以知道世界上所有的柔术运动，但是你不会打败JoJo。" /></p>
+
+<h3 id="真实的例子">真实的例子</h3>
+
+<p>好吧，上面的例子非常不切实际，根本不会发生。但是，我可以举一些我身边的例子：</p>
+
+<h4 id="例子1">例子1:</h4>
+
+<p>在2013年，我亲眼目睹了世界冠军中，一位黑带女性与体重相同的紫色带男性的比赛，他们在一个开放的垫子上打成一片。这个女人一点机会都没有。她在6分钟内拍垫近十次。</p>
+
+<p>那么现在是因为“女人不擅长柔术”还是因为“男人比女人好”呢？当然不是。这只是一个简单的力量问题。这位男性拥有更高的睾酮水平，因此拥有更强大的结缔组织和更多的肌肉。</p>
+
+<h4 id="例子2">例子2:</h4>
+
+<p>我有一个朋友身高 1.95m，重达 300磅（136kg），是一个前NCAA中后卫球员。同时他也是柔术棕色腰带。他可以（而且经常）很容易地只用一只手臂将我从地面上抬起。当我们滚动时他绝对砸我，这时候基本上我是无能为力的。</p>
+
+<p>这是否因为他的技术比我好？当然不是。我的训练的时间比他更长，训练频率和强度要高得多。这是因为他比我更高，更大，更强壮。</p>
+
+<h4 id="例子3">例子3:</h4>
+
+<p>我的正常体重大约是203磅（92kg）。有时，由于各种原因，包括力量训练计划，肌酸周期或假日过度放纵，可能会高达218甚至220磅。</p>
+
+<p>因为我一直在垫子上呆着，所以我可以敏锐的察觉到体重对于柔术的影响。我可以直接告诉你：你越重，对抗越轻松。我可以更轻松的控制体重较轻的对手，并且能对抗更长的时间。</p>
+
+<h3 id="这个神话是从哪里来的">这个神话是从哪里来的？</h3>
+
+<h4 id="传统武术的胡扯">传统武术的胡扯</h4>
+
+<p>这个误解也是传统武术的骗人的精髓所在。告诉一个弱小的人学习了某种武术，他就轻松可以击败比他高大，更强壮的坏人。</p>
+
+<p>在20世纪，一个巨大的产业就建立在这个基础之上，各种乱七八糟的武术系统被包装并推给了好骗的西方人。尽管MMA中的柔术技术帮助清除了许多武术的骗局，但现在仍然受到影响。</p>
+
+<h4 id="柔术课的结构">柔术课的结构</h4>
+
+<p>还有一部分原因是由于柔术学院商业模式的本质。虽然柔术比赛竞争激烈，但是现在的柔术学院通常还只是围绕着<code class="highlighter-rouge">技术动作</code>和<code class="highlighter-rouge">实战对抗</code>这两个方面进行教学和训练。因此，早期的先驱者重视身体训练，这是有道理的。</p>
+
+<p>乔治·圣皮埃尔的教练Firhas Zahabi曾经对我说过。“随着柔术学院商业化的推广，我们看到了很多必要的体能训练消失了。”他说的对，在绝大多数的柔术学院中，体能训练并不被重视。当然，你也可以做一些跳跃俯卧撑和俯卧撑作为热身的一部分，但这还远远不够。看看拳击手和摔跤手。体能训练往往是他们训练的最重要的组成部分，而对抗往往是花时间最小的一个。</p>
+
+<h4 id="罗伊斯格雷斯-与-ufc">罗伊斯·格雷斯 与 UFC</h4>
+
+<p>罗伊斯·格雷西（Royce Gracie）在 UFC 早期的比赛中的惊人表现导致了一些人相信技术确实是无敌的。在我看来，罗伊斯赢了，因为他打的比赛看起来像这样：</p>
+
+<blockquote>
+  <p><strong>斗士A（中等属性+强大的技术）&gt; 斗士B（伟大的属性+没有技术）</strong></p>
+</blockquote>
+
+<p>由于第二代 MMA 斗士的的属性已经改变，因为家伙们已经开始学习柔术了。比赛开始更像这样：</p>
+
+<blockquote>
+  <p><strong>斗士A（中等属性+强大技术）≥ 斗士B（强大属性+一点点技巧）</strong></p>
+</blockquote>
+
+<p>在如今的 MMA 比赛中，我们经常看到的情况是这样的：</p>
+
+<blockquote>
+  <p><strong>斗士A（卓越的属性+伟大的技术）&gt; 斗士B（伟大的属性+伟大的技术）</strong></p>
+</blockquote>
+
+<h4 id="杠杠原理的迷惑">杠杠原理的迷惑</h4>
+
+<p>杠杠原理能成倍加强力量，但不是力量的来源。当然，杠杠原理能帮你能更有效的利用力量，但没有力量来源，这个杠杠力也不复存在。这就是‘柔术’中‘杠杠原理’这个概念的迷惑性。</p>
+
+<p>尽管可能会有人告诉你，没有人能为柔术添加杠杠作用。但是一些聪明的运动员及教练确实能够准确的找到杠杠的支点，并且使用的力量来完成动作，效果惊人。</p>
+
+<h3 id="好消息">好消息</h3>
+
+<p>好消息是就算你只进行柔术对抗训练也能自然而然的提升你的体能，尽管这个提升有局限性并且基因决定了你的体能极限（抱歉，就是这样），而通过科学而且集中体能训练可以大幅度提升你的体能。</p>
+
+<p>同时，体型小的训练者并不是总是处于劣势。相对力量会随着体型的增加而减小。所以假设其他条件相同的情况下，一个体重比你大20%的对手，力量并不会比你大20%，通常这个值会是12%~15%。这就意味着那些拥有惊人身体的小个子训练者通常会扳平体型的劣势，有时候甚至还会反超。</p>
+
+<p>最后一个就是力量的增长也会随着年龄的增长而称下降的趋势，并在年老的时候就维持不变了。“人的力量就是这么真实”。</p>
+
+<h3 id="如何变得更强">如何变得更强</h3>
+
+<h4 id="检查你的激素水平">检查你的激素水平</h4>
+
+<p>如果你是一个男性柔术运动员，我建议你去内分泌专家那检查你的激素水平。如果你的睾丸酮激素水平过低，不管你如何训练，你的身体素质都不会有较大的提升。一个好医生会建议你使用多种补剂和药品来解决这个问题。</p>
+
+<h4 id="体操">体操</h4>
+
+<p>总体来说，拥有了功能性力量与身体控制能力，你将很难被击败。如果让我在力量训练之外再挑选一个最为柔术的赋值训练，那就是体操了。</p>
+
+<h4 id="攀岩">攀岩</h4>
+
+<p>另一项能直接对柔术的运动表现及其力量提升极大的运动就是攀岩了，尤其是握力。</p>
+
+<h4 id="举重">举重</h4>
+
+<p>举重对运动表现的提升不是通过几组二头弯举或者卧推就可以的，那是健身。你需要在专业教练的指导下练习奥运举和力量举（例如挺举，深蹲）。</p>
+
+<h3 id="你该怎么做">你该怎么做</h3>
+
+<p>提高柔术水平不仅仅是提升柔术技术。我喜欢柔术的技术，它是那样的直接有效，令人着迷。如果你想在道垫上降服对手，高质量的动作是必不可少的。但这还不够。你可以在<a href="http://www.jiujitsubrotherhood.com/brazilian-jiu-jitsu-tips-a-c-t-model/">这篇文章</a>中找到答案。</p>
+
+<p>真正的武术家是一个在各个方面力精益求精的人。这包括变得更加强壮。如果你想成为顶级的柔术家，将你的体能提升到极限是你的必修课。</p>
+
+
+                <hr style="visibility: hidden;">
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/12/26/%E4%BB%8E%E4%B8%80%E9%81%93%E7%BD%91%E6%98%93%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B5%85%E8%B0%88-Tagged-Pointer/" data-toggle="tooltip" data-placement="top" title="从一道网易面试题浅谈 Tagged Pointer">
+                        Previous<br>
+                        <span>从一道网易面试题浅谈 Tagged Pointer</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2018/05/05/Xcode%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E7%AE%A1%E7%90%86/" data-toggle="tooltip" data-placement="top" title="Xcode命令行工具管理">
+                        Next<br>
+                        <span>Xcode命令行工具管理</span>
+                        </a>
+                    </li>
+                    
+                </ul> 
+
+
+                <!-- Gitalk评论start 
+                
+                引入Gitalk评论插件 
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+                <div id="gitalk-container"></div>
+                <!-- 引入一个生产md5的js，用于对id值进行处理，防止其过长 -->
+                <!-- Thank DF:https://github.com/NSDingFan/NSDingFan.github.io/issues/3#issuecomment-407496538 -->
+                <!-- <script src="/js/md5.min.js"></script>
+                <script type="text/javascript">
+                    var gitalk = new Gitalk({
+                    clientID: 'f2c84e7629bb1446c1a4',
+                    clientSecret: 'ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d',
+                    repo: 'qiubaiying.github.io',
+                    owner: 'qiubaiying',
+                    admin: ['qiubaiying'],
+                    distractionFreeMode: true,
+                    id: md5(location.pathname),
+                    });
+                    gitalk.render('gitalk-container');
+                </script>
+                
+                <!-- Gitalk end -->
+            </div>  
+
+  
+ 
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <!-- add jianshu add target = "_blank" to <a> by BY -->
+                    
+                            <li>
+                                <a target="_blank" href="https://www.jianshu.com/u/e71990ada2fd">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa  fa-stack-1x fa-inverse">简</i>
+                                    </span>
+                                </a>
+                            </li>
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/qiubaiying">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+
+
+                    
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/baiying.qiu.7">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/qiubaiying">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Jie Wang 2019
+                    <br>
+                    Theme on <a href="https://github.com/qiubaiying/qiubaiying.github.io.git">GitHub</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=qiubaiying&repo=qiubaiying.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Service Worker -->
+
+<script type="text/javascript">
+    if(navigator.serviceWorker){
+        // For security reasons, a service worker can only control the pages that are in the same directory level or below it. That's why we put sw.js at ROOT level.
+        navigator.serviceWorker
+            .register('/sw.js')
+            .then((registration) => {console.log('Service Worker Registered. ', registration)})
+            .catch((error) => {console.log('ServiceWorker registration failed: ', error)})
+    }
+</script>
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/ 
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers   
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-90855596-1';
+    var _gaDomain = 'qiubaiying.top';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = 'b50bf2b12b5338a1845e33832976fd68';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/apple-touch-icon.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

@@ -1,0 +1,3368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Every failure is leading towards success.">
+    <meta name="keywords"  content="BY, BY Blog, 柏荧的博客, qiubaiying, 邱柏荧, iOS, Apple, iPhone">
+    <meta name="theme-color" content="#000000">
+    
+    <title>Tags - 柏荧的博客 | BY Blog</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <!-- Safari Webpage Icon    by-BY -->
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/tags/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Jie Wang</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/tag-bg.jpg')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="site-heading" id="tag-heading">
+					<h1>Tags</h1>
+					<span class="subheading">keep hungry keep foolish</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			<!-- 标签云 -->
+			<div id='tag_cloud' class="tags">
+				
+				<a href="#iOS" title="iOS" rel="33">iOS</a>
+				
+				<a href="#iOS开发基础" title="iOS开发基础" rel="1">iOS开发基础</a>
+				
+				<a href="#开发技巧" title="开发技巧" rel="7">开发技巧</a>
+				
+				<a href="#Debug" title="Debug" rel="2">Debug</a>
+				
+				<a href="#Demo" title="Demo" rel="1">Demo</a>
+				
+				<a href="#RunLoop" title="RunLoop" rel="1">RunLoop</a>
+				
+				<a href="#Obj-C" title="Obj-C" rel="3">Obj-C</a>
+				
+				<a href="#Xcode" title="Xcode" rel="10">Xcode</a>
+				
+				<a href="#定时器" title="定时器" rel="1">定时器</a>
+				
+				<a href="#Category" title="Category" rel="1">Category</a>
+				
+				<a href="#ObjC" title="ObjC" rel="1">ObjC</a>
+				
+				<a href="#ReactiveCocoa" title="ReactiveCocoa" rel="2">ReactiveCocoa</a>
+				
+				<a href="#函数式编程" title="函数式编程" rel="2">函数式编程</a>
+				
+				<a href="#开源框架" title="开源框架" rel="2">开源框架</a>
+				
+				<a href="#轮子" title="轮子" rel="1">轮子</a>
+				
+				<a href="#Runtime" title="Runtime" rel="2">Runtime</a>
+				
+				<a href="#生活" title="生活" rel="5">生活</a>
+				
+				<a href="#Blog" title="Blog" rel="2">Blog</a>
+				
+				<a href="#Mac" title="Mac" rel="8">Mac</a>
+				
+				<a href="#效率" title="效率" rel="3">效率</a>
+				
+				<a href="#博客" title="博客" rel="1">博客</a>
+				
+				<a href="#漫谈" title="漫谈" rel="1">漫谈</a>
+				
+				<a href="#终端" title="终端" rel="7">终端</a>
+				
+				<a href="#Git" title="Git" rel="5">Git</a>
+				
+				<a href="#Github" title="Github" rel="1">Github</a>
+				
+				<a href="#macOS" title="macOS" rel="1">macOS</a>
+				
+				<a href="#Swift" title="Swift" rel="9">Swift</a>
+				
+				<a href="#设计模式" title="设计模式" rel="1">设计模式</a>
+				
+				<a href="#CocoaPods" title="CocoaPods" rel="2">CocoaPods</a>
+				
+				<a href="#zsh" title="zsh" rel="2">zsh</a>
+				
+				<a href="#Objective-C" title="Objective-C" rel="1">Objective-C</a>
+				
+				<a href="#AsyncDisplayKit" title="AsyncDisplayKit" rel="1">AsyncDisplayKit</a>
+				
+				<a href="#开源库" title="开源库" rel="2">开源库</a>
+				
+				<a href="#Cocopods" title="Cocopods" rel="1">Cocopods</a>
+				
+				<a href="#ruby" title="ruby" rel="3">ruby</a>
+				
+				<a href="#shell" title="shell" rel="2">shell</a>
+				
+				<a href="#RVM" title="RVM" rel="1">RVM</a>
+				
+				<a href="#Swift语法" title="Swift语法" rel="1">Swift语法</a>
+				
+				<a href="#IBInspectable" title="IBInspectable" rel="1">IBInspectable</a>
+				
+				<a href="#Notes" title="Notes" rel="1">Notes</a>
+				
+				<a href="#健身" title="健身" rel="3">健身</a>
+				
+				<a href="#GCD" title="GCD" rel="1">GCD</a>
+				
+				<a href="#BJJ" title="BJJ" rel="1">BJJ</a>
+				
+			</div>
+
+			<!--<blockquote class="tag-comments">
+                标签命名规范：
+                    <li>行业观察、职位、公司优先使用中文</li>
+                    <li>外国产品、术语优先使用英文</li>
+            </blockquote>-->
+
+			<!-- 标签列表 -->
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="iOS">
+					<span class="tag-text">iOS</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2018-06-05">2018-06-05</time>
+				  <a href="/2018/06/05/5%E5%88%86%E9%92%9F%E5%B8%A6%E4%BD%A0%E7%9C%8B%E5%AE%8C-WWDC-2018/" title="5分钟带你看完 WWDC 2018">5分钟带你看完 WWDC 2018</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2018/06/05/5%E5%88%86%E9%92%9F%E5%B8%A6%E4%BD%A0%E7%9C%8B%E5%AE%8C-WWDC-2018/">
+						<h2 class="post-title">
+							5分钟带你看完 WWDC 2018
+						</h2>
+						
+						<h3 class="post-subtitle">
+							WWDC 2018 Keynote 全记录
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2018-06-05</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2018-05-05">2018-05-05</time>
+				  <a href="/2018/05/05/Xcode%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E7%AE%A1%E7%90%86/" title="Xcode命令行工具管理">Xcode命令行工具管理</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2018/05/05/Xcode%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E7%AE%A1%E7%90%86/">
+						<h2 class="post-title">
+							Xcode命令行工具管理
+						</h2>
+						
+						<h3 class="post-subtitle">
+							如何切换Xcode命令行工具
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2018-05-05</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-12-26">2017-12-26</time>
+				  <a href="/2017/12/26/%E4%BB%8E%E4%B8%80%E9%81%93%E7%BD%91%E6%98%93%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B5%85%E8%B0%88-Tagged-Pointer/" title="从一道网易面试题浅谈 Tagged Pointer">从一道网易面试题浅谈 Tagged Pointer</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/12/26/%E4%BB%8E%E4%B8%80%E9%81%93%E7%BD%91%E6%98%93%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B5%85%E8%B0%88-Tagged-Pointer/">
+						<h2 class="post-title">
+							从一道网易面试题浅谈 Tagged Pointer
+						</h2>
+						
+						<h3 class="post-subtitle">
+							浅谈 Tagged Pointer
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-12-26</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-10-04">2017-10-04</time>
+				  <a href="/2017/10/04/GCD-%E5%9C%A8-Swift-%E4%B8%AD%E7%9A%84%E7%94%A8%E6%B3%95/" title="GCD 在 Swift 中的用法">GCD 在 Swift 中的用法</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/10/04/GCD-%E5%9C%A8-Swift-%E4%B8%AD%E7%9A%84%E7%94%A8%E6%B3%95/">
+						<h2 class="post-title">
+							GCD 在 Swift 中的用法
+						</h2>
+						
+					</a>
+					<!-- <p class="post-meta">2017-10-04</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-09-11">2017-09-11</time>
+				  <a href="/2017/09/11/Swift-4-%E6%96%B0%E7%89%B9%E6%80%A7/" title="Swift 4 新特性">Swift 4 新特性</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/09/11/Swift-4-%E6%96%B0%E7%89%B9%E6%80%A7/">
+						<h2 class="post-title">
+							Swift 4 新特性
+						</h2>
+						
+						<h3 class="post-subtitle">
+							很高兴 Swift 4 不再是一门新语言了😅
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-09-11</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-07-24">2017-07-24</time>
+				  <a href="/2017/07/24/iTunes-Connect-%E6%9E%84%E5%BB%BA%E7%89%88%E6%9C%AC%E4%B8%8D%E6%98%BE%E7%A4%BA/" title="iTunes Connect 构建版本不显示">iTunes Connect 构建版本不显示</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/07/24/iTunes-Connect-%E6%9E%84%E5%BB%BA%E7%89%88%E6%9C%AC%E4%B8%8D%E6%98%BE%E7%A4%BA/">
+						<h2 class="post-title">
+							iTunes Connect 构建版本不显示
+						</h2>
+						
+						<h3 class="post-subtitle">
+							App打包上传到 App Store, iTunes Connect 构建版本不显示
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-07-24</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-05-05">2017-05-05</time>
+				  <a href="/2017/05/05/%E5%9C%A8-Swift-%E4%B8%AD%E4%BD%BF%E7%94%A8-IBInspectable/" title="在 Swift 中使用 IBInspectable">在 Swift 中使用 IBInspectable</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/05/05/%E5%9C%A8-Swift-%E4%B8%AD%E4%BD%BF%E7%94%A8-IBInspectable/">
+						<h2 class="post-title">
+							在 Swift 中使用 IBInspectable
+						</h2>
+						
+						<h3 class="post-subtitle">
+							IBInspectable 在 Swift 中的实际应用
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-05-05</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-05-04">2017-05-04</time>
+				  <a href="/2017/05/04/R.swift-%E7%9A%84%E4%BD%BF%E7%94%A8/" title="R.swift 的使用">R.swift 的使用</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/05/04/R.swift-%E7%9A%84%E4%BD%BF%E7%94%A8/">
+						<h2 class="post-title">
+							R.swift 的使用
+						</h2>
+						
+						<h3 class="post-subtitle">
+							在项目中引入 R.swift，更安全的获取资源
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-05-04</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-05-03">2017-05-03</time>
+				  <a href="/2017/05/03/Swift-%E7%9A%84%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E8%AE%A1%E7%AE%97%E5%9E%8B%E5%B1%9E%E6%80%A7/" title="Swift 的懒加载和计算型属性">Swift 的懒加载和计算型属性</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/05/03/Swift-%E7%9A%84%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E8%AE%A1%E7%AE%97%E5%9E%8B%E5%B1%9E%E6%80%A7/">
+						<h2 class="post-title">
+							Swift 的懒加载和计算型属性
+						</h2>
+						
+						<h3 class="post-subtitle">
+							比较水的个人笔记
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-05-03</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-28">2017-04-28</time>
+				  <a href="/2017/04/28/RVM-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" title="RVM 使用指南">RVM 使用指南</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/28/RVM-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
+						<h2 class="post-title">
+							RVM 使用指南
+						</h2>
+						
+						<h3 class="post-subtitle">
+							RVM 常用的命令整理
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-28</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-20">2017-04-20</time>
+				  <a href="/2017/04/20/iOS%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" title="iOS自动打包">iOS自动打包</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/20/iOS%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/">
+						<h2 class="post-title">
+							iOS自动打包
+						</h2>
+						
+						<h3 class="post-subtitle">
+							利用 xcdeobulid 打包项目、上传
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-20</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-13">2017-04-13</time>
+				  <a href="/2017/04/13/CocoaPods-%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/" title="CocoaPods 安装和使用">CocoaPods 安装和使用</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/13/CocoaPods-%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/">
+						<h2 class="post-title">
+							CocoaPods 安装和使用
+						</h2>
+						
+						<h3 class="post-subtitle">
+							安装时间 2017/04/13, 环境macOS 12.10.1， cocoapod版本 1.2.1
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-13</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-07">2017-04-07</time>
+				  <a href="/2017/04/07/%E5%BC%BA%E5%8C%96-Swift-%E4%B8%AD%E7%9A%84-print/" title="强化 swift 中的 print">强化 swift 中的 print</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/07/%E5%BC%BA%E5%8C%96-Swift-%E4%B8%AD%E7%9A%84-print/">
+						<h2 class="post-title">
+							强化 swift 中的 print
+						</h2>
+						
+						<h3 class="post-subtitle">
+							强化 swift 中的 print 输出函数
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-07</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-30">2017-03-30</time>
+				  <a href="/2017/03/30/Swift-3.1-%E7%9A%84%E6%96%B0%E5%8F%98%E5%8C%96-%E8%AF%91/" title="Swift 3.1 的新变化「译」">Swift 3.1 的新变化「译」</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/30/Swift-3.1-%E7%9A%84%E6%96%B0%E5%8F%98%E5%8C%96-%E8%AF%91/">
+						<h2 class="post-title">
+							Swift 3.1 的新变化「译」
+						</h2>
+						
+						<h3 class="post-subtitle">
+							What’s New in Swift 3.1?
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-30</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-23">2017-03-23</time>
+				  <a href="/2017/03/23/AsyncDisplayKit-2.0-%E6%95%99%E7%A8%8B-%E5%85%A5%E9%97%A8-%E8%AF%91/" title="AsyncDisplayKit 2.0 教程:入门「译」">AsyncDisplayKit 2.0 教程:入门「译」</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/23/AsyncDisplayKit-2.0-%E6%95%99%E7%A8%8B-%E5%85%A5%E9%97%A8-%E8%AF%91/">
+						<h2 class="post-title">
+							AsyncDisplayKit 2.0 教程:入门「译」
+						</h2>
+						
+						<h3 class="post-subtitle">
+							AsyncDisplayKit Tutorial:Getting Started
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-23</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-10">2017-03-10</time>
+				  <a href="/2017/03/10/CocoaPods%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA/" title="CocoaPods私有仓库的创建">CocoaPods私有仓库的创建</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/10/CocoaPods%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA/">
+						<h2 class="post-title">
+							CocoaPods私有仓库的创建
+						</h2>
+						
+						<h3 class="post-subtitle">
+							继续带你创建 CocoaPods 私有有仓库
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-10</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-08">2017-03-08</time>
+				  <a href="/2017/03/08/CocoaPods%E5%85%AC%E6%9C%89%E4%BB%93%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA/" title="CocoaPods公有仓库的创建">CocoaPods公有仓库的创建</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/08/CocoaPods%E5%85%AC%E6%9C%89%E4%BB%93%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA/">
+						<h2 class="post-title">
+							CocoaPods公有仓库的创建
+						</h2>
+						
+						<h3 class="post-subtitle">
+							手把手教你创建 CocoaPods 公有仓库
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-08</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-06">2017-03-06</time>
+				  <a href="/2017/03/06/Swift-%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/" title="Swift 代理模式">Swift 代理模式</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/06/Swift-%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/">
+						<h2 class="post-title">
+							Swift 代理模式
+						</h2>
+						
+						<h3 class="post-subtitle">
+							Swift中如何使用代理模式
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-06</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-01">2017-03-01</time>
+				  <a href="/2017/03/01/Xcode-%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%87%BA%E4%B8%AD%E6%96%87/" title="Xcode 控制台输出中文">Xcode 控制台输出中文</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/01/Xcode-%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%87%BA%E4%B8%AD%E6%96%87/">
+						<h2 class="post-title">
+							Xcode 控制台输出中文
+						</h2>
+						
+						<h3 class="post-subtitle">
+							在 Xcode 控制台输出中文的方法
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-01</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-04">2017-02-04</time>
+				  <a href="/2017/02/04/Objective-C-Runtime-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="Objective-C Runtime 基本使用">Objective-C Runtime 基本使用</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/04/Objective-C-Runtime-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">
+						<h2 class="post-title">
+							Objective-C Runtime 基本使用
+						</h2>
+						
+						<h3 class="post-subtitle">
+							Runtime 使用案例
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-04</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-04">2017-02-04</time>
+				  <a href="/2017/02/04/Objective-C-Runtime%E8%AF%A6%E8%A7%A3/" title="Objective-C Runtime 详解">Objective-C Runtime 详解</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/04/Objective-C-Runtime%E8%AF%A6%E8%A7%A3/">
+						<h2 class="post-title">
+							Objective-C Runtime 详解
+						</h2>
+						
+						<h3 class="post-subtitle">
+							Runtime 详解
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-04</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-04">2017-02-04</time>
+				  <a href="/2017/02/04/BYPhoneNumTF/" title="BYPhoneNumTF">BYPhoneNumTF</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/04/BYPhoneNumTF/">
+						<h2 class="post-title">
+							BYPhoneNumTF
+						</h2>
+						
+						<h3 class="post-subtitle">
+							一个电话号码格式的文本框
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-04</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-01-06">2017-01-06</time>
+				  <a href="/2017/01/06/ReactiveCocoa-%E8%BF%9B%E9%98%B6/" title="ReactiveCocoa 进阶">ReactiveCocoa 进阶</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/01/06/ReactiveCocoa-%E8%BF%9B%E9%98%B6/">
+						<h2 class="post-title">
+							ReactiveCocoa 进阶
+						</h2>
+						
+						<h3 class="post-subtitle">
+							函数式编程框架 ReactiveCocoa 进阶
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-01-06</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-12-26">2016-12-26</time>
+				  <a href="/2016/12/26/ReactiveCocoa-%E5%9F%BA%E7%A1%80/" title="ReactiveCocoa 基础">ReactiveCocoa 基础</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/12/26/ReactiveCocoa-%E5%9F%BA%E7%A1%80/">
+						<h2 class="post-title">
+							ReactiveCocoa 基础
+						</h2>
+						
+						<h3 class="post-subtitle">
+							函数式编程框架 ReactiveCocoa 基础入门
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-12-26</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-12-21">2016-12-21</time>
+				  <a href="/2016/12/21/Objective-C-Category/" title="Objective-C：Category">Objective-C：Category</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/12/21/Objective-C-Category/">
+						<h2 class="post-title">
+							Objective-C：Category
+						</h2>
+						
+						<h3 class="post-subtitle">
+							深入解析 Category 的实现原理
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-12-21</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-12-13">2016-12-13</time>
+				  <a href="/2016/12/13/%E5%AE%9A%E6%97%B6%E5%99%A8%E4%BD%A0%E7%9C%9F%E7%9A%84%E4%BC%9A%E4%BD%BF%E7%94%A8%E5%90%97/" title="定时器 你真的会使用吗？">定时器 你真的会使用吗？</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/12/13/%E5%AE%9A%E6%97%B6%E5%99%A8%E4%BD%A0%E7%9C%9F%E7%9A%84%E4%BC%9A%E4%BD%BF%E7%94%A8%E5%90%97/">
+						<h2 class="post-title">
+							定时器 你真的会使用吗？
+						</h2>
+						
+						<h3 class="post-subtitle">
+							iOS定时器详解
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-12-13</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-12-07">2016-12-07</time>
+				  <a href="/2016/12/07/%E5%BF%BD%E7%95%A5-Xcode8-%E4%B8%AD%E7%9A%84%E6%B3%A8%E9%87%8A%E8%AD%A6%E5%91%8A/" title="忽略 Xcode 8 中的注释警告">忽略 Xcode 8 中的注释警告</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/12/07/%E5%BF%BD%E7%95%A5-Xcode8-%E4%B8%AD%E7%9A%84%E6%B3%A8%E9%87%8A%E8%AD%A6%E5%91%8A/">
+						<h2 class="post-title">
+							忽略 Xcode 8 中的注释警告
+						</h2>
+						
+						<h3 class="post-subtitle">
+							Bulid Settings -> Documentation Comments -> NO
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-12-07</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-12-01">2016-12-01</time>
+				  <a href="/2016/12/01/%E5%BF%AB%E9%80%9F%E6%B7%BB%E5%8A%A0%E5%9C%86%E8%A7%92%E5%92%8C%E6%8F%8F%E8%BE%B9/" title="快速添加圆角和描边">快速添加圆角和描边</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/12/01/%E5%BF%AB%E9%80%9F%E6%B7%BB%E5%8A%A0%E5%9C%86%E8%A7%92%E5%92%8C%E6%8F%8F%E8%BE%B9/">
+						<h2 class="post-title">
+							快速添加圆角和描边
+						</h2>
+						
+						<h3 class="post-subtitle">
+							iOS 为图片添加圆角和描边的几种方式
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-12-01</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-11-28">2016-11-28</time>
+				  <a href="/2016/11/28/Objective-C-RunLoop/" title="Objective-C：RunLoop">Objective-C：RunLoop</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/11/28/Objective-C-RunLoop/">
+						<h2 class="post-title">
+							Objective-C：RunLoop
+						</h2>
+						
+						<h3 class="post-subtitle">
+							深入理解RunLoop
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-11-28</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-11-15">2016-11-15</time>
+				  <a href="/2016/11/15/iOS%E5%99%AA%E9%9F%B3%E8%AE%A1%E6%A8%A1%E5%9E%8B/" title="iOS噪音计">iOS噪音计</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/11/15/iOS%E5%99%AA%E9%9F%B3%E8%AE%A1%E6%A8%A1%E5%9E%8B/">
+						<h2 class="post-title">
+							iOS噪音计
+						</h2>
+						
+						<h3 class="post-subtitle">
+							一个iOS噪音计模型、以及测量原理及分贝计算
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-11-15</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-10-26">2016-10-26</time>
+				  <a href="/2016/10/26/JSON-%E8%BD%AC%E6%A8%A1%E5%9E%8B-For-YYModel/" title="JSON转模型 For YYModel">JSON转模型 For YYModel</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/10/26/JSON-%E8%BD%AC%E6%A8%A1%E5%9E%8B-For-YYModel/">
+						<h2 class="post-title">
+							JSON转模型 For YYModel
+						</h2>
+						
+						<h3 class="post-subtitle">
+							使用 YYModel库 快速完成 JSON 转模型
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-10-26</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-10-18">2016-10-18</time>
+				  <a href="/2016/10/18/Xcode-Debug-%E5%A4%A7%E5%85%A8/" title="Xcode Debug 大全">Xcode Debug 大全</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/10/18/Xcode-Debug-%E5%A4%A7%E5%85%A8/">
+						<h2 class="post-title">
+							Xcode Debug 大全
+						</h2>
+						
+						<h3 class="post-subtitle">
+							iOS开发中利用 Xcode 各种调试Bug方法
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-10-18</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-10-10">2016-10-10</time>
+				  <a href="/2016/10/10/iOS-%E6%89%8B%E5%8A%BF%E4%B8%8E%E5%8F%98%E5%BD%A2/" title="iOS手势与变形">iOS手势与变形</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/10/10/iOS-%E6%89%8B%E5%8A%BF%E4%B8%8E%E5%8F%98%E5%BD%A2/">
+						<h2 class="post-title">
+							iOS手势与变形
+						</h2>
+						
+						<h3 class="post-subtitle">
+							手势与变形基础知识笔记
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-10-10</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="iOS开发基础">
+					<span class="tag-text">iOS开发基础</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-10-10">2016-10-10</time>
+				  <a href="/2016/10/10/iOS-%E6%89%8B%E5%8A%BF%E4%B8%8E%E5%8F%98%E5%BD%A2/" title="iOS手势与变形">iOS手势与变形</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/10/10/iOS-%E6%89%8B%E5%8A%BF%E4%B8%8E%E5%8F%98%E5%BD%A2/">
+						<h2 class="post-title">
+							iOS手势与变形
+						</h2>
+						
+						<h3 class="post-subtitle">
+							手势与变形基础知识笔记
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-10-10</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="开发技巧">
+					<span class="tag-text">开发技巧</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-07-26">2017-07-26</time>
+				  <a href="/2017/07/26/%E5%88%A9%E7%94%A8-Debug-Memory-Graph-%E6%A3%80%E6%B5%8B%E5%86%85%E6%B5%8B%E6%B3%84%E6%BC%8F/" title="利用 Debug Memory Graph 检测内测泄漏">利用 Debug Memory Graph 检测内测泄漏</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/07/26/%E5%88%A9%E7%94%A8-Debug-Memory-Graph-%E6%A3%80%E6%B5%8B%E5%86%85%E6%B5%8B%E6%B3%84%E6%BC%8F/">
+						<h2 class="post-title">
+							利用 Debug Memory Graph 检测内测泄漏
+						</h2>
+						
+						<h3 class="post-subtitle">
+							利用 Xcode 内存表（Debug Memory Graph）检测内测泄漏
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-07-26</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-07-04">2017-07-04</time>
+				  <a href="/2017/07/04/Xcode9-%E6%97%A0%E7%BA%BF%E8%B0%83%E8%AF%95%E5%8A%9F%E8%83%BD/" title="Xcode9 无线调试功能">Xcode9 无线调试功能</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/07/04/Xcode9-%E6%97%A0%E7%BA%BF%E8%B0%83%E8%AF%95%E5%8A%9F%E8%83%BD/">
+						<h2 class="post-title">
+							Xcode9 无线调试功能
+						</h2>
+						
+						<h3 class="post-subtitle">
+							zsh的快速配置
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-07-04</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-07">2017-03-07</time>
+				  <a href="/2017/03/07/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E6%A0%91%E7%8A%B6(tree)%E6%98%BE%E7%A4%BA/" title="文件目录树状(tree)显示">文件目录树状(tree)显示</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/07/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E6%A0%91%E7%8A%B6(tree)%E6%98%BE%E7%A4%BA/">
+						<h2 class="post-title">
+							文件目录树状(tree)显示
+						</h2>
+						
+						<h3 class="post-subtitle">
+							Mac终端显示输树状文件结构
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-07</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-06">2017-02-06</time>
+				  <a href="/2017/02/06/Mac%E5%BF%AB%E9%80%9F%E8%B0%83%E5%87%BA%E7%BB%88%E7%AB%AF/" title="Mac 快速调出终端">Mac 快速调出终端</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/06/Mac%E5%BF%AB%E9%80%9F%E8%B0%83%E5%87%BA%E7%BB%88%E7%AB%AF/">
+						<h2 class="post-title">
+							Mac 快速调出终端
+						</h2>
+						
+						<h3 class="post-subtitle">
+							在Mac下为终端设置快捷键
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-06</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-12-01">2016-12-01</time>
+				  <a href="/2016/12/01/%E5%BF%AB%E9%80%9F%E6%B7%BB%E5%8A%A0%E5%9C%86%E8%A7%92%E5%92%8C%E6%8F%8F%E8%BE%B9/" title="快速添加圆角和描边">快速添加圆角和描边</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/12/01/%E5%BF%AB%E9%80%9F%E6%B7%BB%E5%8A%A0%E5%9C%86%E8%A7%92%E5%92%8C%E6%8F%8F%E8%BE%B9/">
+						<h2 class="post-title">
+							快速添加圆角和描边
+						</h2>
+						
+						<h3 class="post-subtitle">
+							iOS 为图片添加圆角和描边的几种方式
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-12-01</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-10-26">2016-10-26</time>
+				  <a href="/2016/10/26/JSON-%E8%BD%AC%E6%A8%A1%E5%9E%8B-For-YYModel/" title="JSON转模型 For YYModel">JSON转模型 For YYModel</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/10/26/JSON-%E8%BD%AC%E6%A8%A1%E5%9E%8B-For-YYModel/">
+						<h2 class="post-title">
+							JSON转模型 For YYModel
+						</h2>
+						
+						<h3 class="post-subtitle">
+							使用 YYModel库 快速完成 JSON 转模型
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-10-26</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-10-18">2016-10-18</time>
+				  <a href="/2016/10/18/Xcode-Debug-%E5%A4%A7%E5%85%A8/" title="Xcode Debug 大全">Xcode Debug 大全</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/10/18/Xcode-Debug-%E5%A4%A7%E5%85%A8/">
+						<h2 class="post-title">
+							Xcode Debug 大全
+						</h2>
+						
+						<h3 class="post-subtitle">
+							iOS开发中利用 Xcode 各种调试Bug方法
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-10-18</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Debug">
+					<span class="tag-text">Debug</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-07">2017-04-07</time>
+				  <a href="/2017/04/07/%E5%BC%BA%E5%8C%96-Swift-%E4%B8%AD%E7%9A%84-print/" title="强化 swift 中的 print">强化 swift 中的 print</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/07/%E5%BC%BA%E5%8C%96-Swift-%E4%B8%AD%E7%9A%84-print/">
+						<h2 class="post-title">
+							强化 swift 中的 print
+						</h2>
+						
+						<h3 class="post-subtitle">
+							强化 swift 中的 print 输出函数
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-07</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-10-18">2016-10-18</time>
+				  <a href="/2016/10/18/Xcode-Debug-%E5%A4%A7%E5%85%A8/" title="Xcode Debug 大全">Xcode Debug 大全</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/10/18/Xcode-Debug-%E5%A4%A7%E5%85%A8/">
+						<h2 class="post-title">
+							Xcode Debug 大全
+						</h2>
+						
+						<h3 class="post-subtitle">
+							iOS开发中利用 Xcode 各种调试Bug方法
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-10-18</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Demo">
+					<span class="tag-text">Demo</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-11-15">2016-11-15</time>
+				  <a href="/2016/11/15/iOS%E5%99%AA%E9%9F%B3%E8%AE%A1%E6%A8%A1%E5%9E%8B/" title="iOS噪音计">iOS噪音计</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/11/15/iOS%E5%99%AA%E9%9F%B3%E8%AE%A1%E6%A8%A1%E5%9E%8B/">
+						<h2 class="post-title">
+							iOS噪音计
+						</h2>
+						
+						<h3 class="post-subtitle">
+							一个iOS噪音计模型、以及测量原理及分贝计算
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-11-15</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="RunLoop">
+					<span class="tag-text">RunLoop</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-11-28">2016-11-28</time>
+				  <a href="/2016/11/28/Objective-C-RunLoop/" title="Objective-C：RunLoop">Objective-C：RunLoop</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/11/28/Objective-C-RunLoop/">
+						<h2 class="post-title">
+							Objective-C：RunLoop
+						</h2>
+						
+						<h3 class="post-subtitle">
+							深入理解RunLoop
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-11-28</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Obj-C">
+					<span class="tag-text">Obj-C</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-04">2017-02-04</time>
+				  <a href="/2017/02/04/Objective-C-Runtime-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="Objective-C Runtime 基本使用">Objective-C Runtime 基本使用</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/04/Objective-C-Runtime-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">
+						<h2 class="post-title">
+							Objective-C Runtime 基本使用
+						</h2>
+						
+						<h3 class="post-subtitle">
+							Runtime 使用案例
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-04</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-04">2017-02-04</time>
+				  <a href="/2017/02/04/Objective-C-Runtime%E8%AF%A6%E8%A7%A3/" title="Objective-C Runtime 详解">Objective-C Runtime 详解</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/04/Objective-C-Runtime%E8%AF%A6%E8%A7%A3/">
+						<h2 class="post-title">
+							Objective-C Runtime 详解
+						</h2>
+						
+						<h3 class="post-subtitle">
+							Runtime 详解
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-04</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-11-28">2016-11-28</time>
+				  <a href="/2016/11/28/Objective-C-RunLoop/" title="Objective-C：RunLoop">Objective-C：RunLoop</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/11/28/Objective-C-RunLoop/">
+						<h2 class="post-title">
+							Objective-C：RunLoop
+						</h2>
+						
+						<h3 class="post-subtitle">
+							深入理解RunLoop
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-11-28</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Xcode">
+					<span class="tag-text">Xcode</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2018-05-05">2018-05-05</time>
+				  <a href="/2018/05/05/Xcode%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E7%AE%A1%E7%90%86/" title="Xcode命令行工具管理">Xcode命令行工具管理</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2018/05/05/Xcode%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E7%AE%A1%E7%90%86/">
+						<h2 class="post-title">
+							Xcode命令行工具管理
+						</h2>
+						
+						<h3 class="post-subtitle">
+							如何切换Xcode命令行工具
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2018-05-05</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-07-26">2017-07-26</time>
+				  <a href="/2017/07/26/%E5%88%A9%E7%94%A8-Debug-Memory-Graph-%E6%A3%80%E6%B5%8B%E5%86%85%E6%B5%8B%E6%B3%84%E6%BC%8F/" title="利用 Debug Memory Graph 检测内测泄漏">利用 Debug Memory Graph 检测内测泄漏</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/07/26/%E5%88%A9%E7%94%A8-Debug-Memory-Graph-%E6%A3%80%E6%B5%8B%E5%86%85%E6%B5%8B%E6%B3%84%E6%BC%8F/">
+						<h2 class="post-title">
+							利用 Debug Memory Graph 检测内测泄漏
+						</h2>
+						
+						<h3 class="post-subtitle">
+							利用 Xcode 内存表（Debug Memory Graph）检测内测泄漏
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-07-26</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-07-24">2017-07-24</time>
+				  <a href="/2017/07/24/iTunes-Connect-%E6%9E%84%E5%BB%BA%E7%89%88%E6%9C%AC%E4%B8%8D%E6%98%BE%E7%A4%BA/" title="iTunes Connect 构建版本不显示">iTunes Connect 构建版本不显示</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/07/24/iTunes-Connect-%E6%9E%84%E5%BB%BA%E7%89%88%E6%9C%AC%E4%B8%8D%E6%98%BE%E7%A4%BA/">
+						<h2 class="post-title">
+							iTunes Connect 构建版本不显示
+						</h2>
+						
+						<h3 class="post-subtitle">
+							App打包上传到 App Store, iTunes Connect 构建版本不显示
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-07-24</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-07-04">2017-07-04</time>
+				  <a href="/2017/07/04/Xcode9-%E6%97%A0%E7%BA%BF%E8%B0%83%E8%AF%95%E5%8A%9F%E8%83%BD/" title="Xcode9 无线调试功能">Xcode9 无线调试功能</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/07/04/Xcode9-%E6%97%A0%E7%BA%BF%E8%B0%83%E8%AF%95%E5%8A%9F%E8%83%BD/">
+						<h2 class="post-title">
+							Xcode9 无线调试功能
+						</h2>
+						
+						<h3 class="post-subtitle">
+							zsh的快速配置
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-07-04</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-20">2017-04-20</time>
+				  <a href="/2017/04/20/iOS%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" title="iOS自动打包">iOS自动打包</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/20/iOS%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/">
+						<h2 class="post-title">
+							iOS自动打包
+						</h2>
+						
+						<h3 class="post-subtitle">
+							利用 xcdeobulid 打包项目、上传
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-20</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-13">2017-04-13</time>
+				  <a href="/2017/04/13/CocoaPods-%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/" title="CocoaPods 安装和使用">CocoaPods 安装和使用</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/13/CocoaPods-%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/">
+						<h2 class="post-title">
+							CocoaPods 安装和使用
+						</h2>
+						
+						<h3 class="post-subtitle">
+							安装时间 2017/04/13, 环境macOS 12.10.1， cocoapod版本 1.2.1
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-13</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-07">2017-04-07</time>
+				  <a href="/2017/04/07/%E5%BC%BA%E5%8C%96-Swift-%E4%B8%AD%E7%9A%84-print/" title="强化 swift 中的 print">强化 swift 中的 print</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/07/%E5%BC%BA%E5%8C%96-Swift-%E4%B8%AD%E7%9A%84-print/">
+						<h2 class="post-title">
+							强化 swift 中的 print
+						</h2>
+						
+						<h3 class="post-subtitle">
+							强化 swift 中的 print 输出函数
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-07</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-30">2017-03-30</time>
+				  <a href="/2017/03/30/Swift-3.1-%E7%9A%84%E6%96%B0%E5%8F%98%E5%8C%96-%E8%AF%91/" title="Swift 3.1 的新变化「译」">Swift 3.1 的新变化「译」</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/30/Swift-3.1-%E7%9A%84%E6%96%B0%E5%8F%98%E5%8C%96-%E8%AF%91/">
+						<h2 class="post-title">
+							Swift 3.1 的新变化「译」
+						</h2>
+						
+						<h3 class="post-subtitle">
+							What’s New in Swift 3.1?
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-30</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-01">2017-03-01</time>
+				  <a href="/2017/03/01/Xcode-%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%87%BA%E4%B8%AD%E6%96%87/" title="Xcode 控制台输出中文">Xcode 控制台输出中文</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/01/Xcode-%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%87%BA%E4%B8%AD%E6%96%87/">
+						<h2 class="post-title">
+							Xcode 控制台输出中文
+						</h2>
+						
+						<h3 class="post-subtitle">
+							在 Xcode 控制台输出中文的方法
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-01</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-12-07">2016-12-07</time>
+				  <a href="/2016/12/07/%E5%BF%BD%E7%95%A5-Xcode8-%E4%B8%AD%E7%9A%84%E6%B3%A8%E9%87%8A%E8%AD%A6%E5%91%8A/" title="忽略 Xcode 8 中的注释警告">忽略 Xcode 8 中的注释警告</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/12/07/%E5%BF%BD%E7%95%A5-Xcode8-%E4%B8%AD%E7%9A%84%E6%B3%A8%E9%87%8A%E8%AD%A6%E5%91%8A/">
+						<h2 class="post-title">
+							忽略 Xcode 8 中的注释警告
+						</h2>
+						
+						<h3 class="post-subtitle">
+							Bulid Settings -> Documentation Comments -> NO
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-12-07</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="定时器">
+					<span class="tag-text">定时器</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-12-13">2016-12-13</time>
+				  <a href="/2016/12/13/%E5%AE%9A%E6%97%B6%E5%99%A8%E4%BD%A0%E7%9C%9F%E7%9A%84%E4%BC%9A%E4%BD%BF%E7%94%A8%E5%90%97/" title="定时器 你真的会使用吗？">定时器 你真的会使用吗？</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/12/13/%E5%AE%9A%E6%97%B6%E5%99%A8%E4%BD%A0%E7%9C%9F%E7%9A%84%E4%BC%9A%E4%BD%BF%E7%94%A8%E5%90%97/">
+						<h2 class="post-title">
+							定时器 你真的会使用吗？
+						</h2>
+						
+						<h3 class="post-subtitle">
+							iOS定时器详解
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-12-13</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Category">
+					<span class="tag-text">Category</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-12-21">2016-12-21</time>
+				  <a href="/2016/12/21/Objective-C-Category/" title="Objective-C：Category">Objective-C：Category</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/12/21/Objective-C-Category/">
+						<h2 class="post-title">
+							Objective-C：Category
+						</h2>
+						
+						<h3 class="post-subtitle">
+							深入解析 Category 的实现原理
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-12-21</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="ObjC">
+					<span class="tag-text">ObjC</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-12-21">2016-12-21</time>
+				  <a href="/2016/12/21/Objective-C-Category/" title="Objective-C：Category">Objective-C：Category</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/12/21/Objective-C-Category/">
+						<h2 class="post-title">
+							Objective-C：Category
+						</h2>
+						
+						<h3 class="post-subtitle">
+							深入解析 Category 的实现原理
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-12-21</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="ReactiveCocoa">
+					<span class="tag-text">ReactiveCocoa</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-01-06">2017-01-06</time>
+				  <a href="/2017/01/06/ReactiveCocoa-%E8%BF%9B%E9%98%B6/" title="ReactiveCocoa 进阶">ReactiveCocoa 进阶</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/01/06/ReactiveCocoa-%E8%BF%9B%E9%98%B6/">
+						<h2 class="post-title">
+							ReactiveCocoa 进阶
+						</h2>
+						
+						<h3 class="post-subtitle">
+							函数式编程框架 ReactiveCocoa 进阶
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-01-06</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-12-26">2016-12-26</time>
+				  <a href="/2016/12/26/ReactiveCocoa-%E5%9F%BA%E7%A1%80/" title="ReactiveCocoa 基础">ReactiveCocoa 基础</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/12/26/ReactiveCocoa-%E5%9F%BA%E7%A1%80/">
+						<h2 class="post-title">
+							ReactiveCocoa 基础
+						</h2>
+						
+						<h3 class="post-subtitle">
+							函数式编程框架 ReactiveCocoa 基础入门
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-12-26</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="函数式编程">
+					<span class="tag-text">函数式编程</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-01-06">2017-01-06</time>
+				  <a href="/2017/01/06/ReactiveCocoa-%E8%BF%9B%E9%98%B6/" title="ReactiveCocoa 进阶">ReactiveCocoa 进阶</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/01/06/ReactiveCocoa-%E8%BF%9B%E9%98%B6/">
+						<h2 class="post-title">
+							ReactiveCocoa 进阶
+						</h2>
+						
+						<h3 class="post-subtitle">
+							函数式编程框架 ReactiveCocoa 进阶
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-01-06</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-12-26">2016-12-26</time>
+				  <a href="/2016/12/26/ReactiveCocoa-%E5%9F%BA%E7%A1%80/" title="ReactiveCocoa 基础">ReactiveCocoa 基础</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/12/26/ReactiveCocoa-%E5%9F%BA%E7%A1%80/">
+						<h2 class="post-title">
+							ReactiveCocoa 基础
+						</h2>
+						
+						<h3 class="post-subtitle">
+							函数式编程框架 ReactiveCocoa 基础入门
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-12-26</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="开源框架">
+					<span class="tag-text">开源框架</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-01-06">2017-01-06</time>
+				  <a href="/2017/01/06/ReactiveCocoa-%E8%BF%9B%E9%98%B6/" title="ReactiveCocoa 进阶">ReactiveCocoa 进阶</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/01/06/ReactiveCocoa-%E8%BF%9B%E9%98%B6/">
+						<h2 class="post-title">
+							ReactiveCocoa 进阶
+						</h2>
+						
+						<h3 class="post-subtitle">
+							函数式编程框架 ReactiveCocoa 进阶
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-01-06</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2016-12-26">2016-12-26</time>
+				  <a href="/2016/12/26/ReactiveCocoa-%E5%9F%BA%E7%A1%80/" title="ReactiveCocoa 基础">ReactiveCocoa 基础</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2016/12/26/ReactiveCocoa-%E5%9F%BA%E7%A1%80/">
+						<h2 class="post-title">
+							ReactiveCocoa 基础
+						</h2>
+						
+						<h3 class="post-subtitle">
+							函数式编程框架 ReactiveCocoa 基础入门
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2016-12-26</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="轮子">
+					<span class="tag-text">轮子</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-04">2017-02-04</time>
+				  <a href="/2017/02/04/BYPhoneNumTF/" title="BYPhoneNumTF">BYPhoneNumTF</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/04/BYPhoneNumTF/">
+						<h2 class="post-title">
+							BYPhoneNumTF
+						</h2>
+						
+						<h3 class="post-subtitle">
+							一个电话号码格式的文本框
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-04</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Runtime">
+					<span class="tag-text">Runtime</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-04">2017-02-04</time>
+				  <a href="/2017/02/04/Objective-C-Runtime-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="Objective-C Runtime 基本使用">Objective-C Runtime 基本使用</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/04/Objective-C-Runtime-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">
+						<h2 class="post-title">
+							Objective-C Runtime 基本使用
+						</h2>
+						
+						<h3 class="post-subtitle">
+							Runtime 使用案例
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-04</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-04">2017-02-04</time>
+				  <a href="/2017/02/04/Objective-C-Runtime%E8%AF%A6%E8%A7%A3/" title="Objective-C Runtime 详解">Objective-C Runtime 详解</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/04/Objective-C-Runtime%E8%AF%A6%E8%A7%A3/">
+						<h2 class="post-title">
+							Objective-C Runtime 详解
+						</h2>
+						
+						<h3 class="post-subtitle">
+							Runtime 详解
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-04</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="生活">
+					<span class="tag-text">生活</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-07-10">2017-07-10</time>
+				  <a href="/2017/07/10/%E4%BD%93%E8%83%BD%E8%AE%AD%E7%BB%83%E7%90%86%E8%AE%BA-%E4%B9%8B%E9%87%91%E5%AD%97%E5%A1%94/" title="「体能训练理论」之金字塔">「体能训练理论」之金字塔</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/07/10/%E4%BD%93%E8%83%BD%E8%AE%AD%E7%BB%83%E7%90%86%E8%AE%BA-%E4%B9%8B%E9%87%91%E5%AD%97%E5%A1%94/">
+						<h2 class="post-title">
+							「体能训练理论」之金字塔
+						</h2>
+						
+						<h3 class="post-subtitle">
+							「健身先健脑」科学的运动需要科学的运动理论
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-07-10</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-07-10">2017-07-10</time>
+				  <a href="/2017/07/10/%E4%BD%93%E8%83%BD%E8%AE%AD%E7%BB%83%E7%90%86%E8%AE%BA-%E4%B9%8B%E5%8A%A8%E5%8A%9B%E9%93%BE/" title="「体能训练理论」之动力链">「体能训练理论」之动力链</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/07/10/%E4%BD%93%E8%83%BD%E8%AE%AD%E7%BB%83%E7%90%86%E8%AE%BA-%E4%B9%8B%E5%8A%A8%E5%8A%9B%E9%93%BE/">
+						<h2 class="post-title">
+							「体能训练理论」之动力链
+						</h2>
+						
+						<h3 class="post-subtitle">
+							「健身先健脑」科学的运动需要科学的运动理论
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-07-10</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-07-10">2017-07-10</time>
+				  <a href="/2017/07/10/%E4%BD%93%E8%83%BD%E8%AE%AD%E7%BB%83%E7%90%86%E8%AE%BA-%E4%B9%8B%E5%8A%9F%E8%83%BD%E6%80%A7/" title="「体能训练理论」之功能性">「体能训练理论」之功能性</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/07/10/%E4%BD%93%E8%83%BD%E8%AE%AD%E7%BB%83%E7%90%86%E8%AE%BA-%E4%B9%8B%E5%8A%9F%E8%83%BD%E6%80%A7/">
+						<h2 class="post-title">
+							「体能训练理论」之功能性
+						</h2>
+						
+						<h3 class="post-subtitle">
+							「健身先健脑」科学的运动需要科学的运动理论
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-07-10</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-14">2017-02-14</time>
+				  <a href="/2017/02/14/%E9%9A%8F%E4%BE%BF%E8%81%8A%E8%81%8A/" title="随便聊聊">随便聊聊</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/14/%E9%9A%8F%E4%BE%BF%E8%81%8A%E8%81%8A/">
+						<h2 class="post-title">
+							随便聊聊
+						</h2>
+						
+						<h3 class="post-subtitle">
+							2017 情人节快乐~
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-14</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-04">2017-02-04</time>
+				  <a href="/2017/02/04/Hello-2017/" title="Hello 2017">Hello 2017</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/04/Hello-2017/">
+						<h2 class="post-title">
+							Hello 2017
+						</h2>
+						
+						<h3 class="post-subtitle">
+							"Hello World, Hello Blog"
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-04</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Blog">
+					<span class="tag-text">Blog</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-12-19">2017-12-19</time>
+				  <a href="/2017/12/19/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0-Gitalk-%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/" title="为博客添加 Gitalk 评论插件">为博客添加 Gitalk 评论插件</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/12/19/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0-Gitalk-%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/">
+						<h2 class="post-title">
+							为博客添加 Gitalk 评论插件
+						</h2>
+						
+						<h3 class="post-subtitle">
+							BY Blog 添加 Gitalk 的评论插件了
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-12-19</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-06">2017-02-06</time>
+				  <a href="/2017/02/06/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="快速搭建个人博客">快速搭建个人博客</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/06/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+						<h2 class="post-title">
+							快速搭建个人博客
+						</h2>
+						
+						<h3 class="post-subtitle">
+							手把手教你在半小时内搭建自己的个人博客(如果不踩坑的话🙈🙊🙉)
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-06</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Mac">
+					<span class="tag-text">Mac</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-17">2017-03-17</time>
+				  <a href="/2017/03/17/Mac%E7%BB%88%E7%AB%AF(zsh)%E4%B8%8B%E7%94%A8%E4%BB%A3%E7%A0%81%E7%BC%96%E8%BE%91%E5%99%A8%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/" title="Mac终端(zsh)下用代码编辑器打开文件或目录">Mac终端(zsh)下用代码编辑器打开文件或目录</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/17/Mac%E7%BB%88%E7%AB%AF(zsh)%E4%B8%8B%E7%94%A8%E4%BB%A3%E7%A0%81%E7%BC%96%E8%BE%91%E5%99%A8%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/">
+						<h2 class="post-title">
+							Mac终端(zsh)下用代码编辑器打开文件或目录
+						</h2>
+						
+						<h3 class="post-subtitle">
+							更改 zsh 配置文件，在终端使用sublime、vscode、atom快速打开文件或目录
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-17</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-07">2017-03-07</time>
+				  <a href="/2017/03/07/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E6%A0%91%E7%8A%B6(tree)%E6%98%BE%E7%A4%BA/" title="文件目录树状(tree)显示">文件目录树状(tree)显示</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/07/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E6%A0%91%E7%8A%B6(tree)%E6%98%BE%E7%A4%BA/">
+						<h2 class="post-title">
+							文件目录树状(tree)显示
+						</h2>
+						
+						<h3 class="post-subtitle">
+							Mac终端显示输树状文件结构
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-07</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-22">2017-02-22</time>
+				  <a href="/2017/02/22/%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/" title="使用 .gitignore 忽略 Git 仓库中的文件">使用 .gitignore 忽略 Git 仓库中的文件</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/22/%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/">
+						<h2 class="post-title">
+							使用 .gitignore 忽略 Git 仓库中的文件
+						</h2>
+						
+						<h3 class="post-subtitle">
+							.gitignore 文件在Git中的使用
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-22</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-22">2017-02-22</time>
+				  <a href="/2017/02/22/Mac-%E6%96%87%E4%BB%B6%E7%9A%84%E9%9A%90%E8%97%8F%E4%B8%8E%E6%98%BE%E7%A4%BA/" title="Mac 文件的隐藏与显示">Mac 文件的隐藏与显示</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/22/Mac-%E6%96%87%E4%BB%B6%E7%9A%84%E9%9A%90%E8%97%8F%E4%B8%8E%E6%98%BE%E7%A4%BA/">
+						<h2 class="post-title">
+							Mac 文件的隐藏与显示
+						</h2>
+						
+						<h3 class="post-subtitle">
+							使用终端 显示/隐藏 文件
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-22</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-16">2017-02-16</time>
+				  <a href="/2017/02/16/Git-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A/" title="Git 代码回滚">Git 代码回滚</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/16/Git-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A/">
+						<h2 class="post-title">
+							Git 代码回滚
+						</h2>
+						
+						<h3 class="post-subtitle">
+							回滚代码的正确姿势
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-16</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-15">2017-02-15</time>
+				  <a href="/2017/02/15/Mac-%E6%96%87%E6%9C%AC%E8%BD%AC%E9%9F%B3%E9%A2%91/" title="Mac 文本转音频">Mac 文本转音频</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/15/Mac-%E6%96%87%E6%9C%AC%E8%BD%AC%E9%9F%B3%E9%A2%91/">
+						<h2 class="post-title">
+							Mac 文本转音频
+						</h2>
+						
+						<h3 class="post-subtitle">
+							在Mac终端上将文本文件转换为音频文件
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-15</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-15">2017-02-15</time>
+				  <a href="/2017/02/15/Git%E6%8C%87%E4%BB%A4%E6%95%B4%E7%90%86/" title="Git指令整理">Git指令整理</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/15/Git%E6%8C%87%E4%BB%A4%E6%95%B4%E7%90%86/">
+						<h2 class="post-title">
+							Git指令整理
+						</h2>
+						
+						<h3 class="post-subtitle">
+							不适合阅读的整理的一些个人常用的 Git 指令
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-15</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-06">2017-02-06</time>
+				  <a href="/2017/02/06/Mac%E5%BF%AB%E9%80%9F%E8%B0%83%E5%87%BA%E7%BB%88%E7%AB%AF/" title="Mac 快速调出终端">Mac 快速调出终端</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/06/Mac%E5%BF%AB%E9%80%9F%E8%B0%83%E5%87%BA%E7%BB%88%E7%AB%AF/">
+						<h2 class="post-title">
+							Mac 快速调出终端
+						</h2>
+						
+						<h3 class="post-subtitle">
+							在Mac下为终端设置快捷键
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-06</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="效率">
+					<span class="tag-text">效率</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-17">2017-03-17</time>
+				  <a href="/2017/03/17/Mac%E7%BB%88%E7%AB%AF(zsh)%E4%B8%8B%E7%94%A8%E4%BB%A3%E7%A0%81%E7%BC%96%E8%BE%91%E5%99%A8%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/" title="Mac终端(zsh)下用代码编辑器打开文件或目录">Mac终端(zsh)下用代码编辑器打开文件或目录</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/17/Mac%E7%BB%88%E7%AB%AF(zsh)%E4%B8%8B%E7%94%A8%E4%BB%A3%E7%A0%81%E7%BC%96%E8%BE%91%E5%99%A8%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/">
+						<h2 class="post-title">
+							Mac终端(zsh)下用代码编辑器打开文件或目录
+						</h2>
+						
+						<h3 class="post-subtitle">
+							更改 zsh 配置文件，在终端使用sublime、vscode、atom快速打开文件或目录
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-17</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-07">2017-03-07</time>
+				  <a href="/2017/03/07/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E6%A0%91%E7%8A%B6(tree)%E6%98%BE%E7%A4%BA/" title="文件目录树状(tree)显示">文件目录树状(tree)显示</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/07/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E6%A0%91%E7%8A%B6(tree)%E6%98%BE%E7%A4%BA/">
+						<h2 class="post-title">
+							文件目录树状(tree)显示
+						</h2>
+						
+						<h3 class="post-subtitle">
+							Mac终端显示输树状文件结构
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-07</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-06">2017-02-06</time>
+				  <a href="/2017/02/06/Mac%E5%BF%AB%E9%80%9F%E8%B0%83%E5%87%BA%E7%BB%88%E7%AB%AF/" title="Mac 快速调出终端">Mac 快速调出终端</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/06/Mac%E5%BF%AB%E9%80%9F%E8%B0%83%E5%87%BA%E7%BB%88%E7%AB%AF/">
+						<h2 class="post-title">
+							Mac 快速调出终端
+						</h2>
+						
+						<h3 class="post-subtitle">
+							在Mac下为终端设置快捷键
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-06</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="博客">
+					<span class="tag-text">博客</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-14">2017-02-14</time>
+				  <a href="/2017/02/14/%E9%9A%8F%E4%BE%BF%E8%81%8A%E8%81%8A/" title="随便聊聊">随便聊聊</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/14/%E9%9A%8F%E4%BE%BF%E8%81%8A%E8%81%8A/">
+						<h2 class="post-title">
+							随便聊聊
+						</h2>
+						
+						<h3 class="post-subtitle">
+							2017 情人节快乐~
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-14</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="漫谈">
+					<span class="tag-text">漫谈</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-14">2017-02-14</time>
+				  <a href="/2017/02/14/%E9%9A%8F%E4%BE%BF%E8%81%8A%E8%81%8A/" title="随便聊聊">随便聊聊</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/14/%E9%9A%8F%E4%BE%BF%E8%81%8A%E8%81%8A/">
+						<h2 class="post-title">
+							随便聊聊
+						</h2>
+						
+						<h3 class="post-subtitle">
+							2017 情人节快乐~
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-14</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="终端">
+					<span class="tag-text">终端</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-06-19">2017-06-19</time>
+				  <a href="/2017/06/19/%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AEzsh/" title="快速配置zsh">快速配置zsh</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/06/19/%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AEzsh/">
+						<h2 class="post-title">
+							快速配置zsh
+						</h2>
+						
+						<h3 class="post-subtitle">
+							zsh的快速配置
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-06-19</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-17">2017-03-17</time>
+				  <a href="/2017/03/17/Mac%E7%BB%88%E7%AB%AF(zsh)%E4%B8%8B%E7%94%A8%E4%BB%A3%E7%A0%81%E7%BC%96%E8%BE%91%E5%99%A8%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/" title="Mac终端(zsh)下用代码编辑器打开文件或目录">Mac终端(zsh)下用代码编辑器打开文件或目录</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/17/Mac%E7%BB%88%E7%AB%AF(zsh)%E4%B8%8B%E7%94%A8%E4%BB%A3%E7%A0%81%E7%BC%96%E8%BE%91%E5%99%A8%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/">
+						<h2 class="post-title">
+							Mac终端(zsh)下用代码编辑器打开文件或目录
+						</h2>
+						
+						<h3 class="post-subtitle">
+							更改 zsh 配置文件，在终端使用sublime、vscode、atom快速打开文件或目录
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-17</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-22">2017-02-22</time>
+				  <a href="/2017/02/22/%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/" title="使用 .gitignore 忽略 Git 仓库中的文件">使用 .gitignore 忽略 Git 仓库中的文件</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/22/%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/">
+						<h2 class="post-title">
+							使用 .gitignore 忽略 Git 仓库中的文件
+						</h2>
+						
+						<h3 class="post-subtitle">
+							.gitignore 文件在Git中的使用
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-22</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-22">2017-02-22</time>
+				  <a href="/2017/02/22/Mac-%E6%96%87%E4%BB%B6%E7%9A%84%E9%9A%90%E8%97%8F%E4%B8%8E%E6%98%BE%E7%A4%BA/" title="Mac 文件的隐藏与显示">Mac 文件的隐藏与显示</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/22/Mac-%E6%96%87%E4%BB%B6%E7%9A%84%E9%9A%90%E8%97%8F%E4%B8%8E%E6%98%BE%E7%A4%BA/">
+						<h2 class="post-title">
+							Mac 文件的隐藏与显示
+						</h2>
+						
+						<h3 class="post-subtitle">
+							使用终端 显示/隐藏 文件
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-22</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-16">2017-02-16</time>
+				  <a href="/2017/02/16/Git-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A/" title="Git 代码回滚">Git 代码回滚</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/16/Git-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A/">
+						<h2 class="post-title">
+							Git 代码回滚
+						</h2>
+						
+						<h3 class="post-subtitle">
+							回滚代码的正确姿势
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-16</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-15">2017-02-15</time>
+				  <a href="/2017/02/15/Mac-%E6%96%87%E6%9C%AC%E8%BD%AC%E9%9F%B3%E9%A2%91/" title="Mac 文本转音频">Mac 文本转音频</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/15/Mac-%E6%96%87%E6%9C%AC%E8%BD%AC%E9%9F%B3%E9%A2%91/">
+						<h2 class="post-title">
+							Mac 文本转音频
+						</h2>
+						
+						<h3 class="post-subtitle">
+							在Mac终端上将文本文件转换为音频文件
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-15</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-15">2017-02-15</time>
+				  <a href="/2017/02/15/Git%E6%8C%87%E4%BB%A4%E6%95%B4%E7%90%86/" title="Git指令整理">Git指令整理</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/15/Git%E6%8C%87%E4%BB%A4%E6%95%B4%E7%90%86/">
+						<h2 class="post-title">
+							Git指令整理
+						</h2>
+						
+						<h3 class="post-subtitle">
+							不适合阅读的整理的一些个人常用的 Git 指令
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-15</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Git">
+					<span class="tag-text">Git</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-10">2017-03-10</time>
+				  <a href="/2017/03/10/CocoaPods%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA/" title="CocoaPods私有仓库的创建">CocoaPods私有仓库的创建</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/10/CocoaPods%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA/">
+						<h2 class="post-title">
+							CocoaPods私有仓库的创建
+						</h2>
+						
+						<h3 class="post-subtitle">
+							继续带你创建 CocoaPods 私有有仓库
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-10</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-08">2017-03-08</time>
+				  <a href="/2017/03/08/CocoaPods%E5%85%AC%E6%9C%89%E4%BB%93%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA/" title="CocoaPods公有仓库的创建">CocoaPods公有仓库的创建</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/08/CocoaPods%E5%85%AC%E6%9C%89%E4%BB%93%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA/">
+						<h2 class="post-title">
+							CocoaPods公有仓库的创建
+						</h2>
+						
+						<h3 class="post-subtitle">
+							手把手教你创建 CocoaPods 公有仓库
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-08</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-22">2017-02-22</time>
+				  <a href="/2017/02/22/%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/" title="使用 .gitignore 忽略 Git 仓库中的文件">使用 .gitignore 忽略 Git 仓库中的文件</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/22/%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/">
+						<h2 class="post-title">
+							使用 .gitignore 忽略 Git 仓库中的文件
+						</h2>
+						
+						<h3 class="post-subtitle">
+							.gitignore 文件在Git中的使用
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-22</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-16">2017-02-16</time>
+				  <a href="/2017/02/16/Git-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A/" title="Git 代码回滚">Git 代码回滚</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/16/Git-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A/">
+						<h2 class="post-title">
+							Git 代码回滚
+						</h2>
+						
+						<h3 class="post-subtitle">
+							回滚代码的正确姿势
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-16</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-15">2017-02-15</time>
+				  <a href="/2017/02/15/Git%E6%8C%87%E4%BB%A4%E6%95%B4%E7%90%86/" title="Git指令整理">Git指令整理</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/15/Git%E6%8C%87%E4%BB%A4%E6%95%B4%E7%90%86/">
+						<h2 class="post-title">
+							Git指令整理
+						</h2>
+						
+						<h3 class="post-subtitle">
+							不适合阅读的整理的一些个人常用的 Git 指令
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-15</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Github">
+					<span class="tag-text">Github</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-02-22">2017-02-22</time>
+				  <a href="/2017/02/22/%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/" title="使用 .gitignore 忽略 Git 仓库中的文件">使用 .gitignore 忽略 Git 仓库中的文件</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/02/22/%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/">
+						<h2 class="post-title">
+							使用 .gitignore 忽略 Git 仓库中的文件
+						</h2>
+						
+						<h3 class="post-subtitle">
+							.gitignore 文件在Git中的使用
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-02-22</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="macOS">
+					<span class="tag-text">macOS</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-01">2017-03-01</time>
+				  <a href="/2017/03/01/Xcode-%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%87%BA%E4%B8%AD%E6%96%87/" title="Xcode 控制台输出中文">Xcode 控制台输出中文</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/01/Xcode-%E6%8E%A7%E5%88%B6%E5%8F%B0%E8%BE%93%E5%87%BA%E4%B8%AD%E6%96%87/">
+						<h2 class="post-title">
+							Xcode 控制台输出中文
+						</h2>
+						
+						<h3 class="post-subtitle">
+							在 Xcode 控制台输出中文的方法
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-01</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Swift">
+					<span class="tag-text">Swift</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-10-04">2017-10-04</time>
+				  <a href="/2017/10/04/GCD-%E5%9C%A8-Swift-%E4%B8%AD%E7%9A%84%E7%94%A8%E6%B3%95/" title="GCD 在 Swift 中的用法">GCD 在 Swift 中的用法</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/10/04/GCD-%E5%9C%A8-Swift-%E4%B8%AD%E7%9A%84%E7%94%A8%E6%B3%95/">
+						<h2 class="post-title">
+							GCD 在 Swift 中的用法
+						</h2>
+						
+					</a>
+					<!-- <p class="post-meta">2017-10-04</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-09-11">2017-09-11</time>
+				  <a href="/2017/09/11/Swift-4-%E6%96%B0%E7%89%B9%E6%80%A7/" title="Swift 4 新特性">Swift 4 新特性</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/09/11/Swift-4-%E6%96%B0%E7%89%B9%E6%80%A7/">
+						<h2 class="post-title">
+							Swift 4 新特性
+						</h2>
+						
+						<h3 class="post-subtitle">
+							很高兴 Swift 4 不再是一门新语言了😅
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-09-11</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-07-19">2017-07-19</time>
+				  <a href="/2017/07/19/Swift%E7%9A%84HMAC%E5%92%8CSHA1%E5%8A%A0%E5%AF%86/" title="Swift的HMAC和SHA1加密">Swift的HMAC和SHA1加密</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/07/19/Swift%E7%9A%84HMAC%E5%92%8CSHA1%E5%8A%A0%E5%AF%86/">
+						<h2 class="post-title">
+							Swift的HMAC和SHA1加密
+						</h2>
+						
+						<h3 class="post-subtitle">
+							swift中利用HMAC的SHA1对文本进行加密
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-07-19</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-05-05">2017-05-05</time>
+				  <a href="/2017/05/05/%E5%9C%A8-Swift-%E4%B8%AD%E4%BD%BF%E7%94%A8-IBInspectable/" title="在 Swift 中使用 IBInspectable">在 Swift 中使用 IBInspectable</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/05/05/%E5%9C%A8-Swift-%E4%B8%AD%E4%BD%BF%E7%94%A8-IBInspectable/">
+						<h2 class="post-title">
+							在 Swift 中使用 IBInspectable
+						</h2>
+						
+						<h3 class="post-subtitle">
+							IBInspectable 在 Swift 中的实际应用
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-05-05</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-05-04">2017-05-04</time>
+				  <a href="/2017/05/04/R.swift-%E7%9A%84%E4%BD%BF%E7%94%A8/" title="R.swift 的使用">R.swift 的使用</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/05/04/R.swift-%E7%9A%84%E4%BD%BF%E7%94%A8/">
+						<h2 class="post-title">
+							R.swift 的使用
+						</h2>
+						
+						<h3 class="post-subtitle">
+							在项目中引入 R.swift，更安全的获取资源
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-05-04</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-05-03">2017-05-03</time>
+				  <a href="/2017/05/03/Swift-%E7%9A%84%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E8%AE%A1%E7%AE%97%E5%9E%8B%E5%B1%9E%E6%80%A7/" title="Swift 的懒加载和计算型属性">Swift 的懒加载和计算型属性</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/05/03/Swift-%E7%9A%84%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E8%AE%A1%E7%AE%97%E5%9E%8B%E5%B1%9E%E6%80%A7/">
+						<h2 class="post-title">
+							Swift 的懒加载和计算型属性
+						</h2>
+						
+						<h3 class="post-subtitle">
+							比较水的个人笔记
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-05-03</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-07">2017-04-07</time>
+				  <a href="/2017/04/07/%E5%BC%BA%E5%8C%96-Swift-%E4%B8%AD%E7%9A%84-print/" title="强化 swift 中的 print">强化 swift 中的 print</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/07/%E5%BC%BA%E5%8C%96-Swift-%E4%B8%AD%E7%9A%84-print/">
+						<h2 class="post-title">
+							强化 swift 中的 print
+						</h2>
+						
+						<h3 class="post-subtitle">
+							强化 swift 中的 print 输出函数
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-07</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-30">2017-03-30</time>
+				  <a href="/2017/03/30/Swift-3.1-%E7%9A%84%E6%96%B0%E5%8F%98%E5%8C%96-%E8%AF%91/" title="Swift 3.1 的新变化「译」">Swift 3.1 的新变化「译」</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/30/Swift-3.1-%E7%9A%84%E6%96%B0%E5%8F%98%E5%8C%96-%E8%AF%91/">
+						<h2 class="post-title">
+							Swift 3.1 的新变化「译」
+						</h2>
+						
+						<h3 class="post-subtitle">
+							What’s New in Swift 3.1?
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-30</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-06">2017-03-06</time>
+				  <a href="/2017/03/06/Swift-%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/" title="Swift 代理模式">Swift 代理模式</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/06/Swift-%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/">
+						<h2 class="post-title">
+							Swift 代理模式
+						</h2>
+						
+						<h3 class="post-subtitle">
+							Swift中如何使用代理模式
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-06</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="设计模式">
+					<span class="tag-text">设计模式</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-06">2017-03-06</time>
+				  <a href="/2017/03/06/Swift-%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/" title="Swift 代理模式">Swift 代理模式</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/06/Swift-%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/">
+						<h2 class="post-title">
+							Swift 代理模式
+						</h2>
+						
+						<h3 class="post-subtitle">
+							Swift中如何使用代理模式
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-06</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="CocoaPods">
+					<span class="tag-text">CocoaPods</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-10">2017-03-10</time>
+				  <a href="/2017/03/10/CocoaPods%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA/" title="CocoaPods私有仓库的创建">CocoaPods私有仓库的创建</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/10/CocoaPods%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA/">
+						<h2 class="post-title">
+							CocoaPods私有仓库的创建
+						</h2>
+						
+						<h3 class="post-subtitle">
+							继续带你创建 CocoaPods 私有有仓库
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-10</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-08">2017-03-08</time>
+				  <a href="/2017/03/08/CocoaPods%E5%85%AC%E6%9C%89%E4%BB%93%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA/" title="CocoaPods公有仓库的创建">CocoaPods公有仓库的创建</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/08/CocoaPods%E5%85%AC%E6%9C%89%E4%BB%93%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA/">
+						<h2 class="post-title">
+							CocoaPods公有仓库的创建
+						</h2>
+						
+						<h3 class="post-subtitle">
+							手把手教你创建 CocoaPods 公有仓库
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-08</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="zsh">
+					<span class="tag-text">zsh</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-06-19">2017-06-19</time>
+				  <a href="/2017/06/19/%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AEzsh/" title="快速配置zsh">快速配置zsh</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/06/19/%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AEzsh/">
+						<h2 class="post-title">
+							快速配置zsh
+						</h2>
+						
+						<h3 class="post-subtitle">
+							zsh的快速配置
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-06-19</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-17">2017-03-17</time>
+				  <a href="/2017/03/17/Mac%E7%BB%88%E7%AB%AF(zsh)%E4%B8%8B%E7%94%A8%E4%BB%A3%E7%A0%81%E7%BC%96%E8%BE%91%E5%99%A8%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/" title="Mac终端(zsh)下用代码编辑器打开文件或目录">Mac终端(zsh)下用代码编辑器打开文件或目录</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/17/Mac%E7%BB%88%E7%AB%AF(zsh)%E4%B8%8B%E7%94%A8%E4%BB%A3%E7%A0%81%E7%BC%96%E8%BE%91%E5%99%A8%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/">
+						<h2 class="post-title">
+							Mac终端(zsh)下用代码编辑器打开文件或目录
+						</h2>
+						
+						<h3 class="post-subtitle">
+							更改 zsh 配置文件，在终端使用sublime、vscode、atom快速打开文件或目录
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-17</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Objective-C">
+					<span class="tag-text">Objective-C</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-23">2017-03-23</time>
+				  <a href="/2017/03/23/AsyncDisplayKit-2.0-%E6%95%99%E7%A8%8B-%E5%85%A5%E9%97%A8-%E8%AF%91/" title="AsyncDisplayKit 2.0 教程:入门「译」">AsyncDisplayKit 2.0 教程:入门「译」</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/23/AsyncDisplayKit-2.0-%E6%95%99%E7%A8%8B-%E5%85%A5%E9%97%A8-%E8%AF%91/">
+						<h2 class="post-title">
+							AsyncDisplayKit 2.0 教程:入门「译」
+						</h2>
+						
+						<h3 class="post-subtitle">
+							AsyncDisplayKit Tutorial:Getting Started
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-23</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="AsyncDisplayKit">
+					<span class="tag-text">AsyncDisplayKit</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-23">2017-03-23</time>
+				  <a href="/2017/03/23/AsyncDisplayKit-2.0-%E6%95%99%E7%A8%8B-%E5%85%A5%E9%97%A8-%E8%AF%91/" title="AsyncDisplayKit 2.0 教程:入门「译」">AsyncDisplayKit 2.0 教程:入门「译」</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/23/AsyncDisplayKit-2.0-%E6%95%99%E7%A8%8B-%E5%85%A5%E9%97%A8-%E8%AF%91/">
+						<h2 class="post-title">
+							AsyncDisplayKit 2.0 教程:入门「译」
+						</h2>
+						
+						<h3 class="post-subtitle">
+							AsyncDisplayKit Tutorial:Getting Started
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-23</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="开源库">
+					<span class="tag-text">开源库</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-05-04">2017-05-04</time>
+				  <a href="/2017/05/04/R.swift-%E7%9A%84%E4%BD%BF%E7%94%A8/" title="R.swift 的使用">R.swift 的使用</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/05/04/R.swift-%E7%9A%84%E4%BD%BF%E7%94%A8/">
+						<h2 class="post-title">
+							R.swift 的使用
+						</h2>
+						
+						<h3 class="post-subtitle">
+							在项目中引入 R.swift，更安全的获取资源
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-05-04</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-03-23">2017-03-23</time>
+				  <a href="/2017/03/23/AsyncDisplayKit-2.0-%E6%95%99%E7%A8%8B-%E5%85%A5%E9%97%A8-%E8%AF%91/" title="AsyncDisplayKit 2.0 教程:入门「译」">AsyncDisplayKit 2.0 教程:入门「译」</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/03/23/AsyncDisplayKit-2.0-%E6%95%99%E7%A8%8B-%E5%85%A5%E9%97%A8-%E8%AF%91/">
+						<h2 class="post-title">
+							AsyncDisplayKit 2.0 教程:入门「译」
+						</h2>
+						
+						<h3 class="post-subtitle">
+							AsyncDisplayKit Tutorial:Getting Started
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-03-23</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Cocopods">
+					<span class="tag-text">Cocopods</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-13">2017-04-13</time>
+				  <a href="/2017/04/13/CocoaPods-%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/" title="CocoaPods 安装和使用">CocoaPods 安装和使用</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/13/CocoaPods-%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/">
+						<h2 class="post-title">
+							CocoaPods 安装和使用
+						</h2>
+						
+						<h3 class="post-subtitle">
+							安装时间 2017/04/13, 环境macOS 12.10.1， cocoapod版本 1.2.1
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-13</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="ruby">
+					<span class="tag-text">ruby</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-28">2017-04-28</time>
+				  <a href="/2017/04/28/RVM-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" title="RVM 使用指南">RVM 使用指南</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/28/RVM-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
+						<h2 class="post-title">
+							RVM 使用指南
+						</h2>
+						
+						<h3 class="post-subtitle">
+							RVM 常用的命令整理
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-28</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-20">2017-04-20</time>
+				  <a href="/2017/04/20/iOS%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" title="iOS自动打包">iOS自动打包</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/20/iOS%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/">
+						<h2 class="post-title">
+							iOS自动打包
+						</h2>
+						
+						<h3 class="post-subtitle">
+							利用 xcdeobulid 打包项目、上传
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-20</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-13">2017-04-13</time>
+				  <a href="/2017/04/13/CocoaPods-%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/" title="CocoaPods 安装和使用">CocoaPods 安装和使用</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/13/CocoaPods-%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/">
+						<h2 class="post-title">
+							CocoaPods 安装和使用
+						</h2>
+						
+						<h3 class="post-subtitle">
+							安装时间 2017/04/13, 环境macOS 12.10.1， cocoapod版本 1.2.1
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-13</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="shell">
+					<span class="tag-text">shell</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-28">2017-04-28</time>
+				  <a href="/2017/04/28/RVM-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" title="RVM 使用指南">RVM 使用指南</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/28/RVM-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
+						<h2 class="post-title">
+							RVM 使用指南
+						</h2>
+						
+						<h3 class="post-subtitle">
+							RVM 常用的命令整理
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-28</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-20">2017-04-20</time>
+				  <a href="/2017/04/20/iOS%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" title="iOS自动打包">iOS自动打包</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/20/iOS%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/">
+						<h2 class="post-title">
+							iOS自动打包
+						</h2>
+						
+						<h3 class="post-subtitle">
+							利用 xcdeobulid 打包项目、上传
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-20</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="RVM">
+					<span class="tag-text">RVM</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-04-28">2017-04-28</time>
+				  <a href="/2017/04/28/RVM-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" title="RVM 使用指南">RVM 使用指南</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/04/28/RVM-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
+						<h2 class="post-title">
+							RVM 使用指南
+						</h2>
+						
+						<h3 class="post-subtitle">
+							RVM 常用的命令整理
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-04-28</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Swift语法">
+					<span class="tag-text">Swift语法</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-05-03">2017-05-03</time>
+				  <a href="/2017/05/03/Swift-%E7%9A%84%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E8%AE%A1%E7%AE%97%E5%9E%8B%E5%B1%9E%E6%80%A7/" title="Swift 的懒加载和计算型属性">Swift 的懒加载和计算型属性</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/05/03/Swift-%E7%9A%84%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E8%AE%A1%E7%AE%97%E5%9E%8B%E5%B1%9E%E6%80%A7/">
+						<h2 class="post-title">
+							Swift 的懒加载和计算型属性
+						</h2>
+						
+						<h3 class="post-subtitle">
+							比较水的个人笔记
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-05-03</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="IBInspectable">
+					<span class="tag-text">IBInspectable</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-05-05">2017-05-05</time>
+				  <a href="/2017/05/05/%E5%9C%A8-Swift-%E4%B8%AD%E4%BD%BF%E7%94%A8-IBInspectable/" title="在 Swift 中使用 IBInspectable">在 Swift 中使用 IBInspectable</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/05/05/%E5%9C%A8-Swift-%E4%B8%AD%E4%BD%BF%E7%94%A8-IBInspectable/">
+						<h2 class="post-title">
+							在 Swift 中使用 IBInspectable
+						</h2>
+						
+						<h3 class="post-subtitle">
+							IBInspectable 在 Swift 中的实际应用
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-05-05</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="Notes">
+					<span class="tag-text">Notes</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-06-19">2017-06-19</time>
+				  <a href="/2017/06/19/%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AEzsh/" title="快速配置zsh">快速配置zsh</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/06/19/%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AEzsh/">
+						<h2 class="post-title">
+							快速配置zsh
+						</h2>
+						
+						<h3 class="post-subtitle">
+							zsh的快速配置
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-06-19</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="健身">
+					<span class="tag-text">健身</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-07-10">2017-07-10</time>
+				  <a href="/2017/07/10/%E4%BD%93%E8%83%BD%E8%AE%AD%E7%BB%83%E7%90%86%E8%AE%BA-%E4%B9%8B%E9%87%91%E5%AD%97%E5%A1%94/" title="「体能训练理论」之金字塔">「体能训练理论」之金字塔</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/07/10/%E4%BD%93%E8%83%BD%E8%AE%AD%E7%BB%83%E7%90%86%E8%AE%BA-%E4%B9%8B%E9%87%91%E5%AD%97%E5%A1%94/">
+						<h2 class="post-title">
+							「体能训练理论」之金字塔
+						</h2>
+						
+						<h3 class="post-subtitle">
+							「健身先健脑」科学的运动需要科学的运动理论
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-07-10</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-07-10">2017-07-10</time>
+				  <a href="/2017/07/10/%E4%BD%93%E8%83%BD%E8%AE%AD%E7%BB%83%E7%90%86%E8%AE%BA-%E4%B9%8B%E5%8A%A8%E5%8A%9B%E9%93%BE/" title="「体能训练理论」之动力链">「体能训练理论」之动力链</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/07/10/%E4%BD%93%E8%83%BD%E8%AE%AD%E7%BB%83%E7%90%86%E8%AE%BA-%E4%B9%8B%E5%8A%A8%E5%8A%9B%E9%93%BE/">
+						<h2 class="post-title">
+							「体能训练理论」之动力链
+						</h2>
+						
+						<h3 class="post-subtitle">
+							「健身先健脑」科学的运动需要科学的运动理论
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-07-10</p> -->
+				</div>
+				<hr>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-07-10">2017-07-10</time>
+				  <a href="/2017/07/10/%E4%BD%93%E8%83%BD%E8%AE%AD%E7%BB%83%E7%90%86%E8%AE%BA-%E4%B9%8B%E5%8A%9F%E8%83%BD%E6%80%A7/" title="「体能训练理论」之功能性">「体能训练理论」之功能性</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/07/10/%E4%BD%93%E8%83%BD%E8%AE%AD%E7%BB%83%E7%90%86%E8%AE%BA-%E4%B9%8B%E5%8A%9F%E8%83%BD%E6%80%A7/">
+						<h2 class="post-title">
+							「体能训练理论」之功能性
+						</h2>
+						
+						<h3 class="post-subtitle">
+							「健身先健脑」科学的运动需要科学的运动理论
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2017-07-10</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="GCD">
+					<span class="tag-text">GCD</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2017-10-04">2017-10-04</time>
+				  <a href="/2017/10/04/GCD-%E5%9C%A8-Swift-%E4%B8%AD%E7%9A%84%E7%94%A8%E6%B3%95/" title="GCD 在 Swift 中的用法">GCD 在 Swift 中的用法</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2017/10/04/GCD-%E5%9C%A8-Swift-%E4%B8%AD%E7%9A%84%E7%94%A8%E6%B3%95/">
+						<h2 class="post-title">
+							GCD 在 Swift 中的用法
+						</h2>
+						
+					</a>
+					<!-- <p class="post-meta">2017-10-04</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+				<span class="fa fa-tag listing-seperator" id="BJJ">
+					<span class="tag-text">BJJ</span>
+				</span>
+				
+				<!-- <li class="listing-item">
+				  <time datetime="2018-01-04">2018-01-04</time>
+				  <a href="/2018/01/04/%E6%9F%94%E6%9C%AF%E6%9C%80%E5%A4%A7%E7%9A%84%E8%B0%8E%E8%A8%80-%E8%AF%91/" title="柔术最大的谎言「译」">柔术最大的谎言「译」</a>
+				  </li> -->
+				<div class="post-preview">
+					<a href="/2018/01/04/%E6%9F%94%E6%9C%AF%E6%9C%80%E5%A4%A7%E7%9A%84%E8%B0%8E%E8%A8%80-%E8%AF%91/">
+						<h2 class="post-title">
+							柔术最大的谎言「译」
+						</h2>
+						
+						<h3 class="post-subtitle">
+							辩证分析柔术中技术与力量
+						</h3>
+						
+					</a>
+					<!-- <p class="post-meta">2018-01-04</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+
+		</div>
+	</div>
+</div>
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <!-- add jianshu add target = "_blank" to <a> by BY -->
+                    
+                            <li>
+                                <a target="_blank" href="https://www.jianshu.com/u/e71990ada2fd">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa  fa-stack-1x fa-inverse">简</i>
+                                    </span>
+                                </a>
+                            </li>
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/qiubaiying">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+
+
+                    
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/baiying.qiu.7">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/qiubaiying">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Jie Wang 2019
+                    <br>
+                    Theme on <a href="https://github.com/qiubaiying/qiubaiying.github.io.git">GitHub</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=qiubaiying&repo=qiubaiying.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Service Worker -->
+
+<script type="text/javascript">
+    if(navigator.serviceWorker){
+        // For security reasons, a service worker can only control the pages that are in the same directory level or below it. That's why we put sw.js at ROOT level.
+        navigator.serviceWorker
+            .register('/sw.js')
+            .then((registration) => {console.log('Service Worker Registered. ', registration)})
+            .catch((error) => {console.log('ServiceWorker registration failed: ', error)})
+    }
+</script>
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/ 
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers   
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-90855596-1';
+    var _gaDomain = 'qiubaiying.top';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = 'b50bf2b12b5338a1845e33832976fd68';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+<!-- Side Catalog -->
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/apple-touch-icon.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
