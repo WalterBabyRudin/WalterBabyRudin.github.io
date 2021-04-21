@@ -1,14 +1,10 @@
 # jemdoc: menu{MENU}{Schedule.html}
 = Schedule
 
-== Course Time Table
-
 ~~~
 {}{table}{TABLENAME}
-         Course               |  Days |       Time     || 
-Theoretical Statistics        | M & W | 08:00pm-09:15pm||
-Modern Convex Optimization    | M & W | 11:00pm-00:15am||
-Design & Analysis Experiments | T & T | 00:30am-01:45am||
-International TA Development  | T & T | 05:00am-05:50am||
-First Year Ph.D. Seminar      |  Fri  | 08:00pm-09:00pm
+         Topic               |  Day |       Time     || 
+Two-sample Test with OT      |  Tue  | 09:30am-10:15am||
+Weekly Meeting               |  Thu  | 10:00pm-11:00pm
 ~~~
+

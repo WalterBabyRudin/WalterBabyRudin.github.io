@@ -3,7 +3,8 @@
 
 I wrote some lecture notes on my own for my undergraduate mathematics course study. Some notes are posted in this website.
 
-== At CUHKSZ
+~~~
+{At CUHKSZ}
 
 - [Notes/MAT2002.pdf MAT2002]: Ordinary Differential Equation (Fall 2017, Instructor: Prof. Sang Hu)
 
@@ -19,3 +20,4 @@ I wrote some lecture notes on my own for my undergraduate mathematics course stu
 
 - [Notes/CIE6128.pdf CIE6128]: Understanding Deep Learning: A Theoretical Perspective from Optimization (Summer 2019, Instructor: Prof. Ruoyu Sun and Prof. Mingyi Hong)
 
+~~~
