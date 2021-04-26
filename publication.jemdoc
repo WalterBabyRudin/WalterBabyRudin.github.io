@@ -10,8 +10,10 @@
 *Jie Wang*, Rui Gao, Yao Xie.
 - [https://arxiv.org/abs/2011.04102 Reliable Off-policy Evaluation for Reinforcement Learning]\n
 *Jie Wang*, Rui Gao, Hongyuan Zha. In minor revision, [https://pubsonline.informs.org/journal/opre Operations Research]
-- [Small-Sample Inferred Adaptive Recoding for Batched Network Coding]\n
-*Jie Wang*, Zhiyuan Jia, Hoover H. F. Yin, and Shenghao Yang
+- [ Small-Sample Inferred Adaptive Recoding for Batched Network Coding]\n
+*Jie Wang*, Zhiyuan Jia, Hoover H. F. Yin, Shenghao Yang.
+- [https://openreview.net/forum?id=tEFhwX8s1GN Training By Vanilla SGD with Larger Learning Rates]\n
+Yueyao Yu, *Jie Wang*, Wenye Li, Yin Zhang.
 ~~~
 
 ~~~
