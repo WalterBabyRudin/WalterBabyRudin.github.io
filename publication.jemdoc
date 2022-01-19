@@ -4,8 +4,6 @@
 
 ~~~
 {Preprints}
-- [https://arxiv.org/abs/2102.06449 Two-sample Test with Kernel Projected Wasserstein Distance]\n
-*Jie Wang*, Rui Gao, Yao Xie.
 - [https://arxiv.org/abs/2011.04102 Reliable Off-policy Evaluation for Reinforcement Learning]\n
 *Jie Wang*, Rui Gao, Hongyuan Zha. In minor revision, [https://pubsonline.informs.org/journal/opre Operations Research]
 - [https://openreview.net/forum?id=tEFhwX8s1GN Training By Vanilla SGD with Larger Learning Rates]\n
@@ -16,16 +14,18 @@ Shenghao Yang, *Jie Wang*, Yanyan Dong, Yiheng Zhang. Submitted into TIT.
 *Jie Wang*, Rui Gao, Yao Xie. Submitted into [https://pubsonline.informs.org/journal/opre Operations Research]
 - [ A Data-Driven Approach to Robust Hypothesis Testing Using Sinkhorn Uncertainty Sets]\n
 *Jie Wang*, Yao Xie. To be submitted into ISIT-22
-- [ Scalability of Batched Codes on Line Networks with Outage Probability]\n
+- [ Capacity Scalability of Batched Codes on Line Networks with Outage Links]\n
 Yanyan Dong, *Jie Wang*, Shenghao Yang. To be submitted into ISIT-22
 - [ Integral Probability Metric with Neural Networks: A Manifold Two-Sample Test Study]\n
 *Jie Wang*, Minshuo Chen, Tuo Zhao, Wenjing Liao, Yao Xie. To be submitted into IMA
 - [ A Mean-Field View Point of Classification Logit Two-Sample Test]\n
-*Jie Wang*, Xiuyuan Cheng, Yao Xie. Working paper
+*Jie Wang*, Xiuyuan Cheng, Yao Xie. To be submitted into COLT-22
 ~~~
 
 ~~~
 {Conference Papers}
+- [https://arxiv.org/abs/2102.06449 Two-sample Test with Kernel Projected Wasserstein Distance]\n
+*Jie Wang*, Rui Gao, Yao Xie. 2022 Artificial Intelligence and Statistics (AISTATS) ({{<font color=red <b>}}Oral Presentation! Rate: 44/1685=0.026{{</b></font>}})
 - [https://arxiv.org/abs/2010.11970 Two-sample Test using Projected Wasserstein Distance]\n
 *Jie Wang*, Rui Gao, Yao Xie. 2021 IEEE International Symposium on Information Theory (ISIT)
 - [https://arxiv.org/abs/2105.01370 Small-Sample Inferred Adaptive Recoding for Batched Network Coding]\n
