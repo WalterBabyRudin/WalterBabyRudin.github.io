@@ -9,21 +9,25 @@
 - [https://openreview.net/forum?id=tEFhwX8s1GN Training By Vanilla SGD with Larger Learning Rates]\n
 Yueyao Yu, *Jie Wang*, Wenye Li, Yin Zhang.
 - [https://arxiv.org/abs/2105.07669 Capacity Scalability of Line Networks with Batched Codes]\n
-Shenghao Yang, *Jie Wang*, Yanyan Dong, Yiheng Zhang. Submitted to TIT.
+Shenghao Yang, *Jie Wang*, Yanyan Dong, Yiheng Zhang. Submitted to [https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=18 TIT].
 - [https://arxiv.org/abs/2109.11926 Sinkhorn Distributionally Robust Optimization]\n
 *Jie Wang*, Rui Gao, Yao Xie. Submitted to [https://pubsonline.informs.org/journal/opre Operations Research]
 - [https://shhyang.github.io/research/22outagefull.pdf Capacity Scalability of Batched Codes on Line Networks with Outage Links]\n
 Yanyan Dong, *Jie Wang*, Shenghao Yang, Raymond W. Yeung. Submitted to ISIT-22
 - [https://arxiv.org/abs/2205.02043 A Manifold Two-Sample Test Study: Integral Probability Metric with Neural Networks]\n
-*Jie Wang*, Minshuo Chen, Tuo Zhao, Wenjing Liao, Yao Xie. Submitted to IMA
-- [ A Mean-Field View Point of Classification Logit Two-Sample Test]\n
+*Jie Wang*, Minshuo Chen, Tuo Zhao, Wenjing Liao, Yao Xie. Submitted to [https://academic.oup.com/imaiai IMA]
+- A Mean-Field View Point of Classification Logit Two-Sample Test\n
 *Jie Wang*, Xiuyuan Cheng, Yao Xie.
-- [ Sinkhorn Distributionally Robust Optimization using MLMC Gradient Methods]\n
+- MLMC Gradient Methods for Sinkhorn Distributionally Robust Optimization\n
 *Jie Wang*, Rui Gao, Yao Xie.
 ~~~
 
 ~~~
-{Conference Papers}
+{Journal Articles}
+~~~
+
+~~~
+{Conference Proceedings}
 - [https://arxiv.org/abs/2202.04258 A Data-Driven Approach to Robust Hypothesis Testing Using Sinkhorn Uncertainty Sets]\n
 *Jie Wang*, Yao Xie. 2022 IEEE International Symposium on Information Theory (ISIT)
 - [https://arxiv.org/abs/2102.06449 Two-sample Test with Kernel Projected Wasserstein Distance]\n
