@@ -30,6 +30,8 @@ Anonymous. Submitted to [https://infocom2023.ieee-infocom.org/ INFOCOM2023]
 
 ~~~
 {Conference Proceedings}
+- [ Improving Sepsis Prediction Model Generalization With Optimal Transport]\n
+*Jie Wang*, Ronald Moore, Rishikesan Kamaleswaran, Yao Xie. 2022 Machine Learning for Health (ML4H)
 - [https://ieeexplore.ieee.org/document/9834367 A Data-Driven Approach to Robust Hypothesis Testing Using Sinkhorn Uncertainty Sets]\n
 *Jie Wang*, Yao Xie. 2022 IEEE International Symposium on Information Theory (ISIT)
 - [https://proceedings.mlr.press/v151/wang22f.html Two-sample Test with Kernel Projected Wasserstein Distance]\n
