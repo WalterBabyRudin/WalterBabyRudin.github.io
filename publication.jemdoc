@@ -11,8 +11,6 @@ Shenghao Yang, *Jie Wang*, Yanyan Dong, Yiheng Zhang. Submitted to [https://ieee
 - [https://arxiv.org/abs/2109.11926 Sinkhorn Distributionally Robust Optimization] [https://github.com/WalterBabyRudin/SDRO_poster/tree/main \[Poster with LaTeX Source File\]]\n
 *Jie Wang*, Rui Gao, Yao Xie. Submitted to [https://pubsonline.informs.org/journal/opre Operations Research]\n
 ({{<font color=red <b>}}Winner of 2022 INFORMS Best Poster Award!{{</b></font>}})
-- [https://arxiv.org/abs/2205.02043 A Manifold Two-Sample Test Study: Integral Probability Metric with Neural Networks]\n
-*Jie Wang*, Minshuo Chen, Tuo Zhao, Wenjing Liao, Yao Xie. Minor Revision at [https://academic.oup.com/imaiai IMA]
 - A Mean-Field View Point of Classification Logit Two-Sample Test\n
 *Jie Wang*, Xiuyuan Cheng, Yao Xie.
 - MLMC Gradient Methods for Sinkhorn Distributionally Robust Optimization\n
@@ -28,6 +26,8 @@ Yanyan Dong, *Jie Wang*, Shenghao Yang, Raymond W. Yeung. Submitted to [https://
 {Journal Articles}
 - [https://pubsonline.informs.org/doi/10.1287/opre.2022.2382 Reliable Off-policy Evaluation for Reinforcement Learning]\n
 *Jie Wang*, Rui Gao, Hongyuan Zha. Accepted by [https://pubsonline.informs.org/journal/opre Operations Research]
+- [https://arxiv.org/abs/2205.02043 A Manifold Two-Sample Test Study: Integral Probability Metric with Neural Networks]\n
+*Jie Wang*, Minshuo Chen, Tuo Zhao, Wenjing Liao, Yao Xie. Accepted by [https://academic.oup.com/imaiai IMA]
 ~~~
 
 ~~~
