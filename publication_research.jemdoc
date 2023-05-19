@@ -12,7 +12,7 @@ On the other hand, we provide strong performance guarantees of the proposed mode
 
 === Reliable Multi-Hop Network Communication
 ~~~
-{}{img_left}{fig_a.png}{alt text}{720px}{}{}
+{}{img_left}{fig_a.png}{alt text}{}{360px}{}
 Over the past decade, wireless network communication products like WiFi and cellular networks have become widely accessible worldwide. 
 However, a prevalent challenge in the industry known as the "curse of multihop" refers to the significant decrease in network throughput as the number of transmission hops increases. 
 To combat this issue, a recently developed technique called batched network coding provides a computationally efficient solution. 
@@ -34,7 +34,7 @@ Shenghao Yang, *Jie Wang*, Yanyan Dong, Yiheng Zhang. Submitted to [ IEEE Journa
 
 === Reliable Statistical Hypothesis Testing
 ~~~
-{}{img_left}{fig_b1.png}{alt text}{720px}{}{}
+{}{img_left}{fig_b1.png}{alt text}{}{360px}{}
 Hypothesis testing has long been a challenge in statistics, involving the decision to accept or reject a null hypothesis based on collected observations. 
 However, classical methods often struggle to address the challenges posed by the era of Big Data. 
 In my research, I have developed various modern hypothesis testing approaches to tackle these difficulties.
@@ -69,7 +69,7 @@ Below I highlight manuscripts related to this topic:
 
 === Distributionally Robust Optimization
 ~~~
-{}{img_left}{fig_c1.png}{alt text}{720px}{}{}
+{}{img_left}{fig_c1.png}{alt text}{}{360px}{}
 Distributionally robust optimization (DRO) presents a promising approach to data-driven optimization by aiming to find a minimax robust optimal decision that minimizes the expected loss under the most adverse distribution within a given set of relevant distributions. 
 My research has focused on advancing theory, algorithms, and applications in this area.
 
