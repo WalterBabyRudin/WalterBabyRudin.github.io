@@ -11,15 +11,15 @@ On the other hand, we provide strong performance guarantees of the proposed mode
 - Distributionally Robust Optimization 
 
 === Reliable Multi-Hop Network Communication
-~~~
-{}{img_left}{fig_a.png}{alt text}{}{360px}{}
 Over the past decade, wireless network communication products like WiFi and cellular networks have become widely accessible worldwide. 
 However, a prevalent challenge in the industry known as the "curse of multihop" refers to the significant decrease in network throughput as the number of transmission hops increases. 
 To combat this issue, a recently developed technique called batched network coding provides a computationally efficient solution. 
 In my research, I have focused on two aspects. 
 First, I provided theoretical analyses to determine the scaling rate of this technique with respect to the hop length, demonstrating its advantages over traditional approaches such as decode-and-forward.
 Second, I designed an enhanced batched network coding methodology that incorporates considerations for the uncertainty associated with channel status. 
-
+~~~
+{}{img_left}{fig_a.png}{alt text}{}{260px}{}
+~~~
 
 Below I highlight manuscripts related to this topic:
 
@@ -30,11 +30,9 @@ Shenghao Yang, *Jie Wang*, Yanyan Dong, Yiheng Zhang. Submitted to [ IEEE Journa
 - [ Reliable Adaptive Recoding for Batched Network Coding with Burst-Noise Channels
 ]\n
 *Jie Wang*, Talha Bozkus, Yao Xie, Urbashi Mitra. Submitted to [https://asilomarssc.org/ Asilomar 2023]
-~~~
+
 
 === Reliable Statistical Hypothesis Testing
-~~~
-{}{img_left}{fig_b1.png}{alt text}{}{360px}{}
 Hypothesis testing has long been a challenge in statistics, involving the decision to accept or reject a null hypothesis based on collected observations. 
 However, classical methods often struggle to address the challenges posed by the era of Big Data. 
 In my research, I have developed various modern hypothesis testing approaches to tackle these difficulties.
@@ -54,6 +52,8 @@ Additionally, I consider variable selection for hypothesis testing, aiming to id
 Due to its sparse nature, this problem is often formulated as a challenging NP-hard mixed-integer programming task. 
 To address the computational difficulties, both exact and approximation algorithms have been proposed.
 ~~~
+{}{img_left}{fig_b1.png}{alt text}{}{260px}{}
+~~~
 
 Below I highlight manuscripts related to this topic:
 
@@ -68,8 +68,6 @@ Below I highlight manuscripts related to this topic:
 
 
 === Distributionally Robust Optimization
-~~~
-{}{img_left}{fig_c1.png}{alt text}{}{360px}{}
 Distributionally robust optimization (DRO) presents a promising approach to data-driven optimization by aiming to find a minimax robust optimal decision that minimizes the expected loss under the most adverse distribution within a given set of relevant distributions. 
 My research has focused on advancing theory, algorithms, and applications in this area.
 
@@ -79,6 +77,8 @@ In terms of algorithms, my work has contributed a first-order method that effici
 Surprisingly, the resulting problems in Sinkhorn distributionally robust optimization can generally be solved with a complexity level same to that of non-robust empirical risk minimization.
 Furthermore, I have explored and discovered the advantages of DRO in various application domains, including reinforcement learning, hypothesis testing, sepsis prediction, network coding, and more. 
 These applications demonstrate the versatility and effectiveness of the DRO formulation in different contexts.
+~~~
+{}{img_left}{fig_c1.png}{alt text}{}{260px}{}
 ~~~
 Below I highlight manuscripts related to this topic:
 
