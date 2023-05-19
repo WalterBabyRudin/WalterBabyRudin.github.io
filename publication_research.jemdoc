@@ -24,7 +24,7 @@ Second, I designed an enhanced batched network coding methodology that incorpora
 Below I highlight manuscripts related to this topic:
 
 - [https://arxiv.org/abs/2105.07669 Capacity Scalability of Line Networks with Batched Codes]\n
-Shenghao Yang, *Jie Wang*, Yanyan Dong, Yiheng Zhang. Submitted to [ IEEE Journal on Selected Areas in Communications].
+Shenghao Yang, *Jie Wang*, Yanyan Dong, Yiheng Zhang. To be submitted to [ IEEE Journal on Selected Areas in Communications].
 - [https://ieeexplore.ieee.org/document/9518091/ Small-Sample Inferred Adaptive Recoding for Batched Network Coding]\n
 *Jie Wang*, Zhiyuan Jia, Hoover H. F. Yin, Shenghao Yang. 2021 IEEE International Symposium on Information Theory (ISIT)
 - [ Reliable Adaptive Recoding for Batched Network Coding with Burst-Noise Channels
