@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<title>Research Statement </title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Home</div>
+<div class="menu-item"><a href="index.html">About&nbsp;me</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="publication.html">Publications</a></div>
+<div class="menu-item"><a href="publication_research.html" class="current">Research&nbsp;Statement</a></div>
+<div class="menu-item"><a href="course.html">Courseworks</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Research Statement </h1>
+</div>
+<p>My long-term goal is to develop a dependable decision-making strategy to tackle data uncertainty, which is a common challenge in various real-life applications.
+My research proposed methodologies to study different decision-making problems with offline, noisy, small-sample, or high-dimensional data. 
+On the one hand, we focus on developing computationally efficient methodologies through the lens of modern optimization techniques. 
+On the other hand, we provide strong performance guarantees of the proposed modeling leveraging tools from statistics. More specifically, my research focuses on:</p>
+<ul>
+<li><p>Reliable Multi-Hop Network Communication</p>
+</li>
+<li><p>Reliable Statistical Hypothesis Testing</p>
+</li>
+<li><p>Distributionally Robust Optimization </p>
+</li>
+</ul>
+<h3>Reliable Multi-Hop Network Communication</h3>
+<table class="imgtable"><tr><td>
+<img src="fig_a.png" alt="alt text" width="720px" />&nbsp;</td>
+<td align="left"><p>Over the past decade, wireless network communication products like WiFi and cellular networks have become widely accessible worldwide. 
+However, a prevalent challenge in the industry known as the &ldquo;curse of multihop&rdquo; refers to the significant decrease in network throughput as the number of transmission hops increases. 
+To combat this issue, a recently developed technique called batched network coding provides a computationally efficient solution. 
+In my research, I have focused on two aspects. 
+First, I provided theoretical analyses to determine the scaling rate of this technique with respect to the hop length, demonstrating its advantages over traditional approaches such as decode-and-forward.
+Second, I designed an enhanced batched network coding methodology that incorporates considerations for the uncertainty associated with channel status. </p>
+<p>Below I highlight manuscripts related to this topic:</p>
+<ul>
+<li><p><a href="https://arxiv.org/abs/2105.07669">Capacity Scalability of Line Networks with Batched Codes</a><br />
+Shenghao Yang, <b>Jie Wang</b>, Yanyan Dong, Yiheng Zhang. Submitted to <a href="">IEEE Journal on Selected Areas in Communications</a>.</p>
+</li>
+<li><p><a href="https://ieeexplore.ieee.org/document/9518091/">Small-Sample Inferred Adaptive Recoding for Batched Network Coding</a><br />
+<b>Jie Wang</b>, Zhiyuan Jia, Hoover H. F. Yin, Shenghao Yang. 2021 IEEE International Symposium on Information Theory (ISIT)</p>
+</li>
+<li><p><a href="">Reliable Adaptive Recoding for Batched Network Coding with Burst-Noise Channels</a><br />
+<b>Jie Wang</b>, Talha Bozkus, Yao Xie, Urbashi Mitra. Submitted to <a href="https://asilomarssc.org/">Asilomar 2023</a></p>
+</li>
+</ul>
+</td></tr></table>
+<h3>Reliable Statistical Hypothesis Testing</h3>
+<table class="imgtable"><tr><td>
+<img src="fig_b1.png" alt="alt text" width="720px" />&nbsp;</td>
+<td align="left"><p>Hypothesis testing has long been a challenge in statistics, involving the decision to accept or reject a null hypothesis based on collected observations. 
+However, classical methods often struggle to address the challenges posed by the era of Big Data. 
+In my research, I have developed various modern hypothesis testing approaches to tackle these difficulties.</p>
+<p>One recent focus of my work has been the development of an efficient hypothesis testing framework for high-dimensional data. 
+Traditional methods tend to exhibit significant performance degradation as the data dimension increases. 
+To overcome this issue, we employ a nonlinear dimensionality reduction operator that projects data distributions onto low-dimensional spaces with maximum separability. 
+Subsequently, we conduct hypothesis testing on the projected data.</p>
+<p>Another aspect of my work involves bridging hypothesis tests with deep learning, thereby providing a statistical foundation for reliable machine learning. 
+Our objective is to establish systematic tools that offer statistical performance guarantees for hypothesis testing with neural networks. 
+This advancement enables modern classification algorithms to be more dependable and trustworthy in scientific discovery.</p>
+<p>Furthermore, I have established close connections between hypothesis testing and recent advances in optimization to develop efficient testing methodologies for different scenarios. 
+For example, I employ distributionally robust optimization to establish a non-parametric test that assumes data distributions under each hypothesis belong to &ldquo;uncertainty sets&rdquo; constructed using the Sinkhorn distance. 
+Additionally, I consider variable selection for hypothesis testing, aiming to identify a small subset of variables in the data that best distinguish samples from different groups. 
+Due to its sparse nature, this problem is often formulated as a challenging NP-hard mixed-integer programming task. 
+To address the computational difficulties, both exact and approximation algorithms have been proposed.</p>
+</td></tr></table>
+<p>Below I highlight manuscripts related to this topic:</p>
+<ul>
+<li><p><a href="https://proceedings.mlr.press/v151/wang22f.html">Two-sample Test with Kernel Projected Wasserstein Distance</a><br />
+<b>Jie Wang</b>, Rui Gao, Yao Xie. 2022 Artificial Intelligence and Statistics (AISTATS) (<font color=red <b>Oral Presentation! Rate: 44/1685=0.026</b></font>)</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2205.02043">A Manifold Two-Sample Test Study: Integral Probability Metric with Neural Networks</a><br />
+<b>Jie Wang</b>, Minshuo Chen, Tuo Zhao, Wenjing Liao, Yao Xie. Accepted by <a href="https://academic.oup.com/imaiai">IMA</a></p>
+</li>
+<li><p><a href="https://ieeexplore.ieee.org/document/9834367">A Data-Driven Approach to Robust Hypothesis Testing Using Sinkhorn Uncertainty Sets</a><br />
+<b>Jie Wang</b>, Yao Xie. 2022 IEEE International Symposium on Information Theory (ISIT)</p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2302.07415">Variable Selection for Kernel Two-Sample Tests</a><br />
+<b>Jie Wang</b>, Santanu Dey, Yao Xie.</p>
+</li>
+</ul>
+<h3>Distributionally Robust Optimization</h3>
+<table class="imgtable"><tr><td>
+<img src="fig_c1.png" alt="alt text" width="720px" />&nbsp;</td>
+<td align="left"><p>Distributionally robust optimization (DRO) presents a promising approach to data-driven optimization by aiming to find a minimax robust optimal decision that minimizes the expected loss under the most adverse distribution within a given set of relevant distributions. 
+My research has focused on advancing theory, algorithms, and applications in this area.</p>
+<p>From a theoretical perspective, I have developed a convex programming dual reformulation for DRO utilizing the entropic-regularized Wasserstein distance, also known as the Sinkhorn distance. 
+This formulation enhances the understanding and analysis of DRO.
+In terms of algorithms, my work has contributed a first-order method that efficiently identifies near-optimal solutions with low computation and storage costs. 
+Surprisingly, the resulting problems in Sinkhorn distributionally robust optimization can generally be solved with a complexity level same to that of non-robust empirical risk minimization.
+Furthermore, I have explored and discovered the advantages of DRO in various application domains, including reinforcement learning, hypothesis testing, sepsis prediction, network coding, and more. 
+These applications demonstrate the versatility and effectiveness of the DRO formulation in different contexts.</p>
+</td></tr></table>
+<ul>
+<li><p><a href="https://arxiv.org/abs/2109.11926">Sinkhorn Distributionally Robust Optimization</a> <a href="https://github.com/WalterBabyRudin/SDRO_poster/tree/main">[Poster with LaTeX Source File]</a>
+<a href="https://github.com/WalterBabyRudin/SDRO_code">[Experiment Code]</a><br />
+<b>Jie Wang</b>, Rui Gao, Yao Xie. Submitted to <a href="https://pubsonline.informs.org/journal/opre">Operations Research</a><br />
+(<font color=red <b>Winner of 2022 INFORMS Best Poster Award!</b></font>)<br /></p>
+</li>
+<li><p><a href="https://pubsonline.informs.org/doi/10.1287/opre.2022.2382">Reliable Off-policy Evaluation for Reinforcement Learning</a><br />
+<b>Jie Wang</b>, Rui Gao, Hongyuan Zha. Accepted by <a href="https://pubsonline.informs.org/journal/opre">Operations Research</a></p>
+</li>
+<li><p><a href="https://ieeexplore.ieee.org/document/9834367">A Data-Driven Approach to Robust Hypothesis Testing Using Sinkhorn Uncertainty Sets</a><br />
+<b>Jie Wang</b>, Yao Xie. 2022 IEEE International Symposium on Information Theory (ISIT)</p>
+</li>
+<li><p><a href="">Improving Sepsis Prediction Model Generalization With Optimal Transport</a><br />
+<b>Jie Wang</b>, Ronald Moore, Rishikesan Kamaleswaran, Yao Xie. 2022 Machine Learning for Health (ML4H)</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2023-05-19 14:01:44 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
