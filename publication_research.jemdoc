@@ -23,13 +23,14 @@ Second, I designed an enhanced batched network coding methodology that incorpora
 
 Below I highlight manuscripts related to this topic:
 
-- [https://arxiv.org/abs/2105.07669 Capacity Scalability of Line Networks with Batched Codes]\n
-Shenghao Yang, *Jie Wang*, Yanyan Dong, Yiheng Zhang. To be submitted to [ IEEE Journal on Selected Areas in Communications].
+- [https://arxiv.org/abs/2105.07669 On Capacity of Line Networks with Generalized Batched Network Coding]\n
+*Jie Wang*, Shenghao Yang, Yanyan Dong, Yiheng Zhang. Submitted to [https://www.comsoc.org/publications/journals/ieee-jsac/cfp/space-communications-new-frontiers-near-earth-deep-space IEEE Journal on Selected Areas in Communications]
+- [https://drive.google.com/file/d/1zk9vrl67JffBgvq5FV_RnX_eoIJ38RPi/view?usp=drive_link Achievable Rate and Latency of Line Networks with Outage Links]\n
+Yanyan Dong, *Jie Wang*, Shenghao Yang, Raymond W. Yeung. Submitted to [https://www.comsoc.org/publications/journals/ieee-jsac/cfp/space-communications-new-frontiers-near-earth-deep-space IEEE Journal on Selected Areas in Communications]
 - [https://ieeexplore.ieee.org/document/9518091/ Small-Sample Inferred Adaptive Recoding for Batched Network Coding]\n
 *Jie Wang*, Zhiyuan Jia, Hoover H. F. Yin, Shenghao Yang. 2021 IEEE International Symposium on Information Theory (ISIT)
-- [ Reliable Adaptive Recoding for Batched Network Coding with Burst-Noise Channels
-]\n
-*Jie Wang*, Talha Bozkus, Yao Xie, Urbashi Mitra. Submitted to [https://asilomarssc.org/ Asilomar 2023]
+- [https://drive.google.com/file/d/1DUsMm_yhOmTmtIcUjf2wROnE2-dvmFdy/view?usp=sharing Reliable Adaptive Recoding for Batched Network Coding with Burst-Noise Channels]\n
+*Jie Wang*, Talha Bozkus, Yao Xie, Urbashi Mitra. Asilomar 2023
 
 
 === Reliable Statistical Hypothesis Testing
@@ -90,10 +91,7 @@ Below I highlight manuscripts related to this topic:
 *Jie Wang*, Rui Gao, Hongyuan Zha. Accepted by [https://pubsonline.informs.org/journal/opre Operations Research]
 - [https://ieeexplore.ieee.org/document/9834367 A Data-Driven Approach to Robust Hypothesis Testing Using Sinkhorn Uncertainty Sets]\n
 *Jie Wang*, Yao Xie. 2022 IEEE International Symposium on Information Theory (ISIT)
-- [ Improving Sepsis Prediction Model Generalization With Optimal Transport]\n
+- [https://proceedings.mlr.press/v193/wang22a.html Improving Sepsis Prediction Model Generalization With Optimal Transport]\n
 *Jie Wang*, Ronald Moore, Rishikesan Kamaleswaran, Yao Xie. 2022 Machine Learning for Health (ML4H)
-
-
-
 
 
