@@ -6,8 +6,8 @@
 {Preprints}
 . [https://openreview.net/forum?id=tEFhwX8s1GN Training By Vanilla SGD with Larger Learning Rates]\n
 Yueyao Yu, *Jie Wang*, Wenye Li, Yin Zhang.
-. [https://arxiv.org/abs/2105.07669 On Capacity of Line Networks with Generalized Batched Network Coding]\n
-*Jie Wang*, Shenghao Yang, Yanyan Dong, Yiheng Zhang. Submitted to [https://www.comsoc.org/publications/journals/ieee-jsac/cfp/space-communications-new-frontiers-near-earth-deep-space IEEE Journal on Selected Areas in Communications]
+. [https://arxiv.org/abs/2105.07669 On Achievable Rates of Line Networks with Generalized Batched Network Coding]\n
+*Jie Wang*, Shenghao Yang, Yanyan Dong, Yiheng Zhang. Major Revision at [https://www.comsoc.org/publications/journals/ieee-jsac/cfp/space-communications-new-frontiers-near-earth-deep-space IEEE Journal on Selected Areas in Communications]
 . [https://arxiv.org/abs/2109.11926 Sinkhorn Distributionally Robust Optimization] [https://github.com/WalterBabyRudin/SDRO_poster/tree/main \[Poster with LaTeX Source File\]]
 [https://github.com/WalterBabyRudin/SDRO_code \[Experiment Code\]]\n
 *Jie Wang*, Rui Gao, Yao Xie. Submitted to [https://pubsonline.informs.org/journal/opre Operations Research]\n
