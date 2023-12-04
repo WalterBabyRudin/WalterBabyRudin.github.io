@@ -6,7 +6,7 @@
 {Preprints}
 . [https://openreview.net/forum?id=tEFhwX8s1GN Training By Vanilla SGD with Larger Learning Rates]\n
 Yueyao Yu, *Jie Wang*, Wenye Li, Yin Zhang.
-. [https://drive.google.com/file/d/1I30dO_1zfju4UM4c5iu6TzTJumCEeMdp/view?usp=sharing On Achievable Rates of Line Networks with Generalized Batched Network Coding]\n
+. [netcoding_final_1203.pdf On Achievable Rates of Line Networks with Generalized Batched Network Coding]\n
 *Jie Wang*, Shenghao Yang, Yanyan Dong, Yiheng Zhang. Major Revision at [https://www.comsoc.org/publications/journals/ieee-jsac/cfp/space-communications-new-frontiers-near-earth-deep-space IEEE Journal on Selected Areas in Communications]
 . [https://arxiv.org/abs/2109.11926 Sinkhorn Distributionally Robust Optimization] [https://github.com/WalterBabyRudin/SDRO_poster/tree/main \[Poster with LaTeX Source File\]]
 [https://github.com/WalterBabyRudin/SDRO_code \[Experiment Code\]]\n
@@ -31,7 +31,7 @@ Yanyan Dong, *Jie Wang*, Shenghao Yang, Raymond W. Yeung. Submitted to [https://
 
 ~~~
 {Conference Proceedings}
-. [https://drive.google.com/file/d/17i6quGEfAj1ZYxwAiWjLb2Xr7wCR18TE/view Conditional Stochastic Bilevel Optimization]\n
+. [https://arxiv.org/abs/2310.18535 Conditional Stochastic Bilevel Optimization]\n
 Yifan Hu, *Jie Wang*, Yao Xie, Andreas Krause, Daniel Kuhn. NeurIPS 2023 (Journal version to be submitted to [https://pubsonline.informs.org/journal/opre Operations Research])
 . [network_final_1203.pdf Reliable Adaptive Recoding for Batched Network Coding with Burst-Noise Channels]\n
 *Jie Wang*, Talha Bozkus, Yao Xie, Urbashi Mitra. Asilomar 2023
