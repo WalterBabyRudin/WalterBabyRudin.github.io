@@ -6,10 +6,6 @@
 {Preprints}
 . [https://openreview.net/forum?id=tEFhwX8s1GN Training By Vanilla SGD with Larger Learning Rates]\n
 Yueyao Yu, *Jie Wang*, Wenye Li, Yin Zhang.
-. [https://arxiv.org/abs/2109.11926 Sinkhorn Distributionally Robust Optimization] [https://github.com/WalterBabyRudin/SDRO_poster/tree/main \[Poster with LaTeX Source File\]]
-[https://github.com/WalterBabyRudin/SDRO_code \[Experiment Code\]]\n
-*Jie Wang*, Rui Gao, Yao Xie. Submitted to [https://pubsonline.informs.org/journal/opre Operations Research]\n
-({{<font color=red <b>}}Winner of 2022 INFORMS Best Poster Award!{{</b></font>}})
 . [ Achievable Rate and Latency of Line Networks with Outage Links]\n
 Yanyan Dong, Shenghao Yang, *Jie Wang*, Fan Cheng. Submitted to [https://www.itsoc.org/jsait IEEE Journal on Selected Areas in Information Theory]
 . [https://arxiv.org/abs/2302.07415 Variable Selection for Kernel Two-Sample Tests]\n
@@ -29,6 +25,10 @@ Hoover H. F. Yin, *Jie Wang*, Sherman S. M. Chow. Submitted to [https://2024.iee
 {Journal Articles}
 . [https://pubsonline.informs.org/doi/10.1287/opre.2022.2382 Reliable Off-policy Evaluation for Reinforcement Learning]\n
 *Jie Wang*, Rui Gao, Hongyuan Zha. [https://pubsonline.informs.org/doi/full/10.1287/opre.2022.2382 Operations Research]
+. [https://arxiv.org/abs/2109.11926 Sinkhorn Distributionally Robust Optimization] [https://github.com/WalterBabyRudin/SDRO_poster/tree/main \[Poster with LaTeX Source File\]]
+[https://github.com/WalterBabyRudin/SDRO_code \[Experiment Code\]]\n
+*Jie Wang*, Rui Gao, Yao Xie. Major Revision at [https://pubsonline.informs.org/journal/opre Operations Research]\n
+({{<font color=red <b>}}Winner of 2022 INFORMS Best Poster Award!{{</b></font>}})
 . [https://doi.org/10.1093/imaiai/iaad018 A Manifold Two-Sample Test Study: Integral Probability Metric with Neural Networks]\n
 *Jie Wang*, Minshuo Chen, Tuo Zhao, Wenjing Liao, Yao Xie. [https://academic.oup.com/imaiai/article/12/3/1867/7195202 Information and Inference: A Journal of the IMA]
 . [https://ieeexplore.ieee.org/document/10445298 On Achievable Rates of Line Networks with Generalized Batched Network Coding]\n
