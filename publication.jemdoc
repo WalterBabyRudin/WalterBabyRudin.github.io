@@ -13,11 +13,7 @@ Yanyan Dong, Shenghao Yang, *Jie Wang*, Fan Cheng. Submitted to [https://www.its
 . [ Regularization for Adversarial Robust Learning] [presentation_0322.key  \[Slides\]]\n
 *Jie Wang*, Rui Gao, Yao Xie. ({{<font color=red <b>}}Winner of the 18th INFORMS DMDA Workshop Best Paper Competition Award, 2 out of 57{{</b></font>}}, to be submitted to [https://pubsonline.informs.org/journal/opre Operations Research])
 . [ Sparse Degree Optimization for BATS Codes]\n
-Hoover H. F. Yin, *Jie Wang*. Submitted to [https://2024.ieee-isit.org/home 2024 IEEE International Symposium on Information Theory]
-. [ Distributionally Robust Degree Optimization for BATS Codes]\n
-Hoover H. F. Yin, *Jie Wang*, Sherman S. M. Chow. Submitted to [https://2024.ieee-isit.org/home 2024 IEEE International Symposium on Information Theory]
-. [https://arxiv.org/abs/2403.14822 Non-Convex Robust Hypothesis Testing using Sinkhorn Uncertainty Sets]\n
-*Jie Wang*, Rui Gao, Yao Xie. Submitted to [https://2024.ieee-isit.org/home 2024 IEEE International Symposium on Information Theory]
+Hoover H. F. Yin, *Jie Wang*.
 . [ Bias, Variance, and Costs Tradeoff in Multi-level Monte-Carlo for Stochastic Optimization with Biased Oracles]\n
 Yifan Hu, *Jie Wang*, Xin Chen, Niao He. Journal version to be submitted to [https://pubsonline.informs.org/journal/opre Operations Research]
 ~~~
@@ -39,6 +35,12 @@ Yifan Hu, *Jie Wang*, Xin Chen, Niao He. Journal version to be submitted to [htt
 
 ~~~
 {Conference Proceedings}
+. [ Achievable Rate and Latency of Line Networks with Outage Links]\n
+Yanyan Dong, Shenghao Yang, *Jie Wang*, Fan Cheng. [https://2024.ieee-isit.org/home 2024 IEEE International Symposium on Information Theory]
+. [ Distributionally Robust Degree Optimization for BATS Codes]\n
+Hoover H. F. Yin, *Jie Wang*, Sherman S. M. Chow. [https://2024.ieee-isit.org/home 2024 IEEE International Symposium on Information Theory]
+. [https://arxiv.org/abs/2403.14822 Non-Convex Robust Hypothesis Testing using Sinkhorn Uncertainty Sets]\n
+*Jie Wang*, Rui Gao, Yao Xie. [https://2024.ieee-isit.org/home 2024 IEEE International Symposium on Information Theory]
 . [https://arxiv.org/abs/2310.18535 Conditional Stochastic Bilevel Optimization]\n
 Yifan Hu, *Jie Wang*, Yao Xie, Andreas Krause, Daniel Kuhn. NeurIPS 2023 (Journal version to be submitted to [https://pubsonline.informs.org/journal/opre Operations Research])
 . [network_final_1203.pdf Reliable Adaptive Recoding for Batched Network Coding with Burst-Noise Channels]\n
