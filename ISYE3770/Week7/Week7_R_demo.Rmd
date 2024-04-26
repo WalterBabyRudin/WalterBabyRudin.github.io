@@ -1,0 +1,149 @@
+---
+title: "Week7_R_demo"
+author: 'Instructor: Jie Wang'
+date: "3/05/2024"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### Sample Mean, Sample Median
+
+This is a demo corresponding to page 8, 9, 10
+```{r Mean_Median}
+data <- c(12.6, 12.9, 13.4, 12.3, 13.6, 13.5, 12.6, 13.1)
+
+print(mean(data))
+
+print(median(data))
+
+data_table <- table(data)
+max_freq <- max(data_table)
+mode <- names(data_table)[data_table == max_freq]
+print(mode)
+```
+
+
+#### Sample Range, Sample Variance, and Sample IQR
+This is a demo corresponding to page 18
+```{r range_variance_IQR}
+data <- c(3,1,1,0,5,4,13,3)
+#data <- c(74.001, 74.003, 74.015, 74.000, 74.005, 74.002, 74.005, 74.004)
+print(max(data) - min(data))
+
+print(var(data))
+
+data_quantiles <- quantile(data, probs = c(0.25, 0.75))
+print(data_quantiles)
+print(data_quantiles[2] - data_quantiles[1])
+```
+
+
+#### Covariance and Correlation
+This is a demo corresponding to page 23
+```{r cov_cor}
+x <- c(1.0840, 1.9112, 3.0100, 3.9455, 5.0304, 5.9400, 7.0490, 8.0739, 9.1712, 9.9806)
+y <- c(1.7862, 2.1160, 2.5355, 2.4928, 2.8961, 3.0124, 3.3437, 3.2039, 3.5802, 3.6792)
+plot(x, y, main = "Scatter Plot", xlab = "gas price", ylab = "expenditure", col = "blue", pch = 19)
+print(cov(x,y))
+print(cor(x,y))
+```
+
+#### Pie Chart
+This is a demo corresponding to page 28
+```{r pie_chart}
+labels <-c("Ginger", "Saffron", "Cumin")
+values <- c(0.32, 0.43, 0.25)
+pie(values, labels = labels, main = "Pie Chart", col = rainbow(length(labels)))
+legend("topright", labels, cex = 0.8, fill = rainbow(length(labels)))
+```
+
+
+
+#### Stem and Leaf Diagram
+
+This is a demo corresponding to page 30
+```{r Stem_leaf}
+x <- c(33, 28, 16, 35, 11, 44, 33, 38)
+stem(x, scale=1, width=100)
+```
+
+
+#### Histogram
+
+This is a demo corresponding to page 37
+```{r Histogram}
+data <- c(9,5,1,4,4,7,2,5,3,8,7,6,5,8,2)
+hist(data, breaks = 9)
+```
+
+#### Pareto chart
+
+This is a demo corresponding to page 41
+```{r pareto_chart}
+#install.packages("qcc")
+library(qcc)
+
+counts <- c(60, 50, 40, 30, 20, 10)
+names(counts) <-  c("Traffic", "Child Care", "Public Transportation", "Weather", "Overslept", "Emergency")
+# Create Pareto chart
+pareto.chart(counts, main = "Pareto Chart", ylab = "Frequency", col = "skyblue", bar.col = "lightblue")
+
+```
+
+
+#### Bar chart
+This is a demo corresponding to page 42
+```{r bar_chart}
+categories <- c("A", "B", "C", "D")
+values <- c(20, 30, 25, 35)
+
+# Create bar chart
+barplot(values, names.arg = categories, main = "Bar Chart", xlab = "Categories", ylab = "Values", col = "skyblue", horiz=TRUE)
+barplot(values, names.arg = categories, main = "Bar Chart", xlab = "Categories", ylab = "Values", col = "skyblue", horiz=FALSE)
+
+```
+
+
+#### Bar chart
+This is a demo corresponding to page 44
+
+
+```{r box_plot}
+data1 <- c(5, 10, 15, 20, 25)
+data2 <- c(30, 35, 40, 45, 50)
+data3 <- c(55, 60, 65, 70, 75)
+
+# Combine the datasets into a list
+all_data <- list(data1, data2, data3)
+
+print(all_data)
+# Create box plot
+boxplot(all_data, main = "Box Plot of Three Datasets", ylab = "Values", col = c("skyblue", "lightgreen", "lightpink"))
+
+```
+
+#### Time Series Plot
+This is a demo corresponding to page 46
+
+```{r time_plot}
+seq <- seq(from = 1, to = 100, by = 1) + 10 
+y <- seq + rnorm(100, sd = 5) 
+timeseries <- ts(y, start=c(2000, 1), frequency = 4) 
+print(timeseries)
+plot(timeseries)
+```
+
+
+
+
+
+
+
+
+
+

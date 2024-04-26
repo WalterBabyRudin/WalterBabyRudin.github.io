@@ -1,0 +1,101 @@
+---
+title: '0416'
+author: "Jie Wang"
+date: "4/18/2024"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### Demo Code for Slide Page 7
+```{r demo_1}
+data1 <- read.table("Example_1.txt")
+x <- data1$V1
+y <- data1$V2
+model <- lm(y~x)
+summary(model)
+```
+Based on the result above, we build the regression model $\hat{y}=74.283 + 14.947x$.
+
+#### Demo Code for Slide Page 10 
+We build $\hat{\beta}_0$ and $\hat{\beta}_1$ using the provied statistics. Recall
+$$\hat{\beta}_1=\frac{S_{xy}}{S_{xx}}$$ and $\hat{\beta}_0=\bar{y} - \hat{\beta}_1\bar{x}$. Moreover,
+$$
+S_{xx}=\sum_{i}x_i^2 - \frac{1}{n}(\sum_{i}x_i)^2,\qquad
+S_{xy}=\sum_ix_iy_i - \frac{1}{n}(\sum_ix_i)(\sum_iy_i).
+$$
+```{r demo_2}
+sum_x_i  = 6322.28
+sum_x2_i = 162674.18
+sum_y_i  = 4757.90
+sum_y2_i = 107679.27
+sum_xy_i = 125471.10
+n        = 250
+
+Sxy <- sum_xy_i - 1/n * sum_x_i * sum_y_i
+Sxx <- sum_x2_i - 1/n * (sum_x_i^2)
+beta1 <- Sxy / Sxx
+beta0 <- sum_y_i/n - beta1 * sum_x_i/n
+print(c(beta0, beta1))
+```
+Based on the result above, we find $\hat{\beta}_0=-27.642$ and $\hat{\beta}_1=1.846$
+
+#### Demo Code for Slide Page 14
+```{r demo_3}
+data1 <- read.table("house.txt",header=FALSE)
+y <- data1$V1
+x <- data1$V2
+model <- lm(y~x)
+summary(model)
+
+plot(x,y,xlab="Tax",ylab="Price")
+abline(13.3202,3.3244)
+```
+
+
+
+#### Demo Code for Slide Page 20
+
+```{r demo_4}
+data1 <- read.table("house.txt",header=FALSE)
+y <- data1$V1
+x <- data1$V2
+model <- lm(y~x)
+residual = resid(model)
+
+plot(x,residual,xlab="Tax",ylab="Residual")
+abline(0,0)
+```
+
+
+
+#### Demo Code for Slide Page 31, 33
+
+```{r demo_5}
+data <- read.table("Example_1.txt")
+x <- data[,1]
+y <- data[,2]
+model <- lm(y~x)
+predict(model, data.frame(x = 1), interval=c("prediction"))
+
+```
+
+
+
+#### Demo Code for Slide Page 45
+
+```{r demo_6}
+x <- c(215, 201, 196, 226, 226, 348, 226, 348, 148)
+y <- c(30.8, 32.5, 35.4, 28.1, 24.4, 24.4, 28.5, 24.2, 32.8)
+model <- lm(y~x)
+summary(model)
+```
+
+
+
+
+
+
+
