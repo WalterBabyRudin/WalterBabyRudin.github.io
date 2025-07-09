@@ -1,0 +1,24 @@
+# jemdoc: menu{MENU}{people.html}
+= People
+
+*Current Members*
+~~~
+{}{img_left}{img_zhaoliang.JPG}{alt text}{100px}{}{}
+Zhaoliang Yuan \n
+Ph.D. student (Fall 2025-) \n 
+Research Topic: Mixed Integer Program for Machine Learning
+~~~
+
+~~~
+{}{img_left}{img_jindong.jpg}{alt text}{100px}{}{}
+Jindong Jiang \n
+Research Assistant (Summer 2025-) \n 
+Research Topic: Distributionally Robust Contextual Stochastic Optimiation
+~~~
+
+~~~
+{}{img_left}{img_fenglin.jpg}{alt text}{100px}{}{}
+Fenglin Zhang \n
+Research Assistant (Summer 2025-) \n
+Research Topic: Distributionally Robust Optimization and Artificial Intelligence
+~~~
