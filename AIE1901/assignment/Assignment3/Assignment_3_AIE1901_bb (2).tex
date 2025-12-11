@@ -1,0 +1,337 @@
+\documentclass[draftclsnofoot,onecolumn]{IEEEtran}
+
+\usepackage[square,sort,comma,numbers]{natbib}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{url}
+%\usepackage{mathrsfs,breqn,dsfont}
+%\usepackage{amsthm}
+\usepackage{natbib}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{pgfplots}
+\usepackage{filecontents}
+\usepackage{bm}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning,arrows,shapes,chains,fit,scopes}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{multido}
+\usepackage{pstricks}
+\usepackage{mwe} % new package from Martin scharrer
+\usepackage{caption}
+\usepackage{subfigure}
+\usepackage{mathtools}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsthm}
+
+\usepackage{listings}
+\RequirePackage{listings}
+\RequirePackage{xcolor}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{
+  frame=tb,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  framerule=1pt,
+  rulecolor=\color{gray!35},
+  backgroundcolor=\color{gray!5},
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3,
+}
+
+\DeclareMathOperator{\diag}{diag}
+\newtheorem*{theorem}{Theorem}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Question}
+\newtheorem*{problem}{Assignment}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\hP}{\widehat{P}}
+\newcommand{\trans}{^{\mathrm T}}
+\newcommand{\frakM}{\mathfrak{M}}
+\newcommand{\diff}{\,\mathrm{d}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\newcommand\inner[2]{\langle #1, #2 \rangle}
+\DeclarePairedDelimiterX{\inp}[2]{\langle}{\rangle}{#1, #2}
+
+\begin{document}
+
+\title{
+AIE1901 Assignment 3
+}
+\author{\textit{Due date: 11:59 PM, Wednesday, November 19, 2025.}\\
+}
+
+\maketitle
+
+%\vspace{-6em}
+\textbf{Remark: }{
+\begin{enumerate}
+    \item
+    The Maximum point is 100.
+    \item
+    It is okay to use LLM (such as ORLM, DeepSeek) to help you generate the answer, but it is optional.
+    \item 
+    Attach the computer code, prompt you to use in your submission.
+    \item 
+    Please download \texttt{communities\_crime\_feature\_names.csv} and \texttt{communities\_crime\_features.csv} and  \texttt{communities\_crime\_target.csv} and put them into the same folder as you are running the code.
+    \item
+    You need to run the code for second part using your own laptop instead of Google Colab. Please download \texttt{cvxpy} and \texttt{Mosek} packages into your own computer environment.
+\end{enumerate}
+}
+
+
+\begin{exercise}[Linear Regression]
+We have access to the "Communities and Crime" dataset, which contains $n=100$ features and $m=1994$ samples~(variable descriptions provided in Appendix in Page~6). 
+This dataset combines socio-economic data from the 1990 US Census, law enforcement data from the 1990 US LEMAS survey, and crime data from the 1995 FBI UCR. Our objective is to predict how community characteristics impact violent crime rates using linear regression.
+
+Specifically, you first upload the feature matrix $X\in\mathbb{R}^{m\times n}$, target vector $y\in \mathbb{R}^{m\times 1}$, and the feature name corresponding to each index using the python code below:
+\begin{verbatim}
+import numpy as np
+# Load feature matrix
+features = np.loadtxt('communities_crime_features.csv', delimiter=',', skiprows=1)
+print(features)
+# Load target vector y
+target = np.loadtxt('communities_crime_target.csv', delimiter=',', skiprows=1)
+print(target)
+# Load feature name
+feature_names_data = np.loadtxt('communities_crime_feature_names.csv',
+                                delimiter=',', dtype=str, skiprows=1)
+print(feature_names_data)
+\end{verbatim}
+We now want to find an coeffient vector $\beta\in\mathbb{R}^{n\times 1}$ to minimize the fitting error, which leads to the following optimization problem:
+\[
+\min_{\beta\in\mathbb{R}^{n\times 1}}~\|y - X\beta\|_2^2.
+\]
+Denote by the optimal solution as $\beta^*$. Then, our predictive model is 
+\[
+\hat{y} = \beta^*_1x_1 + \beta^*_2x_2 + \cdots + \beta^*_nx_n.
+\]
+In the equation above, $x_i$ denotes the $i$-th feature, $\hat{y}$ denotes our estimation of the crime rate.\\
+\textbf{Tasks:}
+\begin{itemize}
+    \item 
+Use \texttt{cvxpy} package to find the optimal solution $\beta^*$. Provide the screenshot of its value.
+    \item
+Provide the optimal value of the optimization problem, i.e., $\|y - X\beta^*\|_2^2$.
+\end{itemize}
+\hfill{(50 points)}
+\end{exercise}
+
+\begin{proof}[Solution to Question~1]
+
+\end{proof}
+
+\clearpage
+
+
+
+\begin{exercise}[Variable Selection]
+From Question 1, we observed that interpreting a model with 100 coefficients is challenging. To enhance interpretability, we now seek a sparse model with at most $4$ non-zero coefficients. This leads to the optimization problem:
+\[
+\min_{\beta\in\mathbb{R}^{n\times 1}, \|\beta\|_0\le 4}~\|y - X\beta\|_2^2,
+\]
+where $\|\beta\|_{0}$ counts the number of non-zero entries in $\beta$.
+We can reformulate this using binary variables $q_i\in\{0,1\}$:
+\[
+\begin{aligned}
+\min_{\beta\in\mathbb{R}^{n\times 1}, q\in\{0,1\}^n}&\quad \|y - X\beta\|_2^2\\
+\mbox{Subject to}&\quad \sum_{i=1}^nq_i\le 4,\\
+&\quad -M\cdot q_i\le \beta_i\le M\cdot q_i, \quad i=1,\ldots,n,
+\end{aligned}
+\]
+where we specify constant $M=0.4$.
+You may observe solving the formulation above is time-consuming and instable, so we add a small regularization:
+\[
+\begin{aligned}
+\min_{\beta\in\mathbb{R}^{n\times 1}, q\in\{0,1\}^n}&\quad \|y - X\beta\|_2^2 + \lambda\cdot \|\beta\|_2^2\\
+\mbox{Subject to}&\quad \sum_{i=1}^nq_i\le 4,\\
+&\quad -M\cdot q_i\le \beta_i\le M\cdot q_i, \quad i=1,\ldots,n,
+\end{aligned}
+\]
+where we use $\lambda=5$ for the regularization parameter.
+Let's consider the reformulation of this regularized problem:
+\begin{equation}
+\begin{aligned}
+\min_{\beta\in\mathbb{R}^{n\times 1}, q\in\{0,1\}^n, t\in \mathbb{R}^{n\times 1}}&\quad \|y - X\beta\|_2^2 + \lambda\cdot \sum_{i=1}^nt_i\\
+\mbox{Subject to}&\quad 
+\beta_i^2\le t_i,\quad i=1,\ldots,n,
+\\&\quad
+\sum_{i=1}^nq_i\le 4,\\
+&\quad -M\cdot q_i\le \beta_i\le M\cdot q_i, \quad i=1,\ldots,n.
+\end{aligned}\label{Eq:regularized:reformulation}
+\end{equation}
+\textbf{Tasks: }
+\begin{itemize}
+    \item 
+Use \texttt{cvxpy} package to find the optimal solution $\beta^*$ of Problem~\eqref{Eq:regularized:reformulation}. 
+Recall we take parameters $M=0.4, \lambda=5$.
+    \item
+You will find only 4 entries of $\beta^*$ are non-zero. Identify which 4 features were selected and report their coefficients. 
+    \item
+Interpret the meaning of these features in the context of crime prediction.
+    \item
+Provide the optimal value of the optimization problem, i.e., $\|y - X\beta^*\|_2^2$. Compare the optimal value with that of Question~1. What do you observe?
+\end{itemize}
+\textbf{Important Hints: }
+\begin{itemize}
+    \item 
+For this question, please use \texttt{Mosek} solver with detailed verbose output by using the code\\
+\texttt{problem.solve(solver=cp.MOSEK, verbose=True)}.
+You can download Mosek license by visiting \url{https://www.mosek.com/products/academic-licenses/}. \\
+You can download Mosek package by visiting \url{https://www.mosek.com/downloads/}
+\end{itemize}
+\hfill{(50 points)}
+\end{exercise}
+
+\clearpage
+\begin{proof}[Solution to Question~2]
+
+\end{proof}
+
+
+\clearpage
+\section*{Appendix: Variable Information}
+
+\textbf{Attribute Information:} (100 predictive variables, 1 target variable)
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.7\textwidth}}
+\toprule
+\textbf{Variable Name} & \textbf{Description} \\
+\midrule
+\endhead
+
+\bottomrule
+\endfoot
+
+state & US state (by number) - not counted as predictive above, but if considered, should be considered nominal \\
+population & Population for community (numeric - decimal) \\
+householdsize & Mean people per household (numeric - decimal) \\
+racepctblack & Percentage of population that is African American (numeric - decimal) \\
+racePctWhite & Percentage of population that is Caucasian (numeric - decimal) \\
+racePctAsian & Percentage of population that is of Asian heritage (numeric - decimal) \\
+racePctHisp & Percentage of population that is of Hispanic heritage (numeric - decimal) \\
+agePct12t21 & Percentage of population that is 12-21 in age (numeric - decimal) \\
+agePct12t29 & Percentage of population that is 12-29 in age (numeric - decimal) \\
+agePct16t24 & Percentage of population that is 16-24 in age (numeric - decimal) \\
+agePct65up & Percentage of population that is 65 and over in age (numeric - decimal) \\
+numbUrban & Number of people living in areas classified as urban (numeric - decimal) \\
+pctUrban & Percentage of people living in areas classified as urban (numeric - decimal) \\
+medIncome & Median household income (numeric - decimal) \\
+pctWWage & Percentage of households with wage or salary income in 1989 (numeric - decimal) \\
+pctWFarmSelf & Percentage of households with farm or self employment income in 1989 (numeric - decimal) \\
+pctWInvInc & Percentage of households with investment / rent income in 1989 (numeric - decimal) \\
+pctWSocSec & Percentage of households with social security income in 1989 (numeric - decimal) \\
+pctWPubAsst & Percentage of households with public assistance income in 1989 (numeric - decimal) \\
+pctWRetire & Percentage of households with retirement income in 1989 (numeric - decimal) \\
+medFamInc & Median family income (differs from household income for non-family households) (numeric - decimal) \\
+perCapInc & Per capita income (numeric - decimal) \\
+whitePerCap & Per capita income for Caucasians (numeric - decimal) \\
+blackPerCap & Per capita income for African Americans (numeric - decimal) \\
+indianPerCap & Per capita income for Native Americans (numeric - decimal) \\
+AsianPerCap & Per capita income for people with Asian heritage (numeric - decimal) \\
+HispPerCap & Per capita income for people with Hispanic heritage (numeric - decimal) \\
+NumUnderPov & Number of people under the poverty level (numeric - decimal) \\
+PctPopUnderPov & Percentage of people under the poverty level (numeric - decimal) \\
+PctLess9thGrade & Percentage of people 25 and over with less than a 9th grade education (numeric - decimal) \\
+PctNotHSGrad & Percentage of people 25 and over that are not high school graduates (numeric - decimal) \\
+PctBSorMore & Percentage of people 25 and over with a bachelor's degree or higher education (numeric - decimal) \\
+PctUnemployed & Percentage of people 16 and over, in the labor force, and unemployed (numeric - decimal) \\
+PctEmploy & Percentage of people 16 and over who are employed (numeric - decimal) \\
+PctEmplManu & Percentage of people 16 and over who are employed in manufacturing (numeric - decimal) \\
+PctEmplProfServ & Percentage of people 16 and over who are employed in professional services (numeric - decimal) \\
+PctOccupManu & Percentage of people 16 and over who are employed in manufacturing (numeric - decimal) \\
+PctOccupMgmtProf & Percentage of people 16 and over who are employed in management or professional occupations (numeric - decimal) \\
+MalePctDivorce & Percentage of males who are divorced (numeric - decimal) \\
+MalePctNevMarr & Percentage of males who have never married (numeric - decimal) \\
+FemalePctDiv & Percentage of females who are divorced (numeric - decimal) \\
+TotalPctDiv & Percentage of population who are divorced (numeric - decimal) \\
+PersPerFam & Mean number of people per family (numeric - decimal) \\
+PctFam2Par & Percentage of families (with kids) that are headed by two parents (numeric - decimal) \\
+PctKids2Par & Percentage of kids in family housing with two parents (numeric - decimal) \\
+PctYoungKids2Par & Percent of kids 4 and under in two parent households (numeric - decimal) \\
+PctTeen2Par & Percent of kids age 12-17 in two parent households (numeric - decimal) \\
+PctWorkMomYoungKids & Percentage of moms of kids 6 and under in labor force (numeric - decimal) \\
+PctWorkMom & Percentage of moms of kids under 18 in labor force (numeric - decimal) \\
+NumIlleg & Number of kids born to never married (numeric - decimal) \\
+PctIlleg & Percentage of kids born to never married (numeric - decimal) \\
+NumImmig & Total number of people known to be foreign born (numeric - decimal) \\
+PctImmigRecent & Percentage of immigrants who immigrated within last 3 years (numeric - decimal) \\
+PctImmigRec5 & Percentage of immigrants who immigrated within last 5 years (numeric - decimal) \\
+PctImmigRec8 & Percentage of immigrants who immigrated within last 8 years (numeric - decimal) \\
+PctImmigRec10 & Percentage of immigrants who immigrated within last 10 years (numeric - decimal) \\
+PctRecentImmig & Percent of population who have immigrated within the last 3 years (numeric - decimal) \\
+PctRecImmig5 & Percent of population who have immigrated within the last 5 years (numeric - decimal) \\
+PctRecImmig8 & Percent of population who have immigrated within the last 8 years (numeric - decimal) \\
+PctRecImmig10 & Percent of population who have immigrated within the last 10 years (numeric - decimal) \\
+PctSpeakEnglOnly & Percent of people who speak only English (numeric - decimal) \\
+PctNotSpeakEnglWell & Percent of people who do not speak English well (numeric - decimal) \\
+PctLargHouseFam & Percent of family households that are large (6 or more) (numeric - decimal) \\
+PctLargHouseOccup & Percent of all occupied households that are large (6 or more people) (numeric - decimal) \\
+PersPerOccupHous & Mean persons per household (numeric - decimal) \\
+PersPerOwnOccHous & Mean persons per owner occupied household (numeric - decimal) \\
+PersPerRentOccHous & Mean persons per rental household (numeric - decimal) \\
+PctPersOwnOccup & Percent of people in owner occupied households (numeric - decimal) \\
+PctPersDenseHous & Percent of persons in dense housing (more than 1 person per room) (numeric - decimal) \\
+PctHousLess3BR & Percent of housing units with less than 3 bedrooms (numeric - decimal) \\
+MedNumBR & Median number of bedrooms (numeric - decimal) \\
+HousVacant & Number of vacant households (numeric - decimal) \\
+PctHousOccup & Percent of housing occupied (numeric - decimal) \\
+PctHousOwnOcc & Percent of households owner occupied (numeric - decimal) \\
+PctVacantBoarded & Percent of vacant housing that is boarded up (numeric - decimal) \\
+PctVacMore6Mos & Percent of vacant housing that has been vacant more than 6 months (numeric - decimal) \\
+MedYrHousBuilt & Median year housing units built (numeric - decimal) \\
+PctHousNoPhone & Percent of occupied housing units without phone (in 1990, this was rare!) (numeric - decimal) \\
+PctWOFullPlumb & Percent of housing without complete plumbing facilities (numeric - decimal) \\
+OwnOccLowQuart & Owner occupied housing - lower quartile value (numeric - decimal) \\
+OwnOccMedVal & Owner occupied housing - median value (numeric - decimal) \\
+OwnOccHiQuart & Owner occupied housing - upper quartile value (numeric - decimal) \\
+RentLowQ & Rental housing - lower quartile rent (numeric - decimal) \\
+RentMedian & Rental housing - median rent (Census variable H32B from file STF1A) (numeric - decimal) \\
+RentHighQ & Rental housing - upper quartile rent (numeric - decimal) \\
+MedRent & Median gross rent (Census variable H43A from file STF3A - includes utilities) (numeric - decimal) \\
+MedRentPctHousInc & Median gross rent as a percentage of household income (numeric - decimal) \\
+MedOwnCostPctInc & Median owners cost as a percentage of household income - for owners with a mortgage (numeric - decimal) \\
+MedOwnCostPctIncNoMtg & Median owners cost as a percentage of household income - for owners without a mortgage (numeric - decimal) \\
+NumInShelters & Number of people in homeless shelters (numeric - decimal) \\
+NumStreet & Number of homeless people counted in the street (numeric - decimal) \\
+PctForeignBorn & Percent of people foreign born (numeric - decimal) \\
+PctBornSameState & Percent of people born in the same state as currently living (numeric - decimal) \\
+PctSameHouse85 & Percent of people living in the same house as in 1985 (5 years before) (numeric - decimal) \\
+PctSameCity85 & Percent of people living in the same city as in 1985 (5 years before) (numeric - decimal) \\
+PctSameState85 & Percent of people living in the same state as in 1985 (5 years before) (numeric - decimal) \\
+LandArea & Land area in square miles (numeric - decimal) \\
+PopDens & Population density in persons per square mile (numeric - decimal) \\
+PctUsePubTrans & Percent of people using public transit for commuting (numeric - decimal) \\
+LemasPctOfficDrugUn & Percent of officers assigned to drug units (numeric - decimal) \\
+\end{longtable}
+The variable "ViolentCrimesPerPop" is our target variable, which represents \emph{Total number of violent crimes per 100K population (numeric - decimal).} 
+
+\end{document}

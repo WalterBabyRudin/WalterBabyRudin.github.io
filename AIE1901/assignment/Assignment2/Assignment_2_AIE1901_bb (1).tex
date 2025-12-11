@@ -1,0 +1,295 @@
+\documentclass[draftclsnofoot,onecolumn]{IEEEtran}
+
+\usepackage[square,sort,comma,numbers]{natbib}
+
+
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+%\usepackage{mathrsfs,breqn,dsfont}
+%\usepackage{amsthm}
+\usepackage{natbib}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{pgfplots}
+\usepackage{filecontents}
+\usepackage{bm}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning,arrows,shapes,chains,fit,scopes}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{multido}
+\usepackage{pstricks}
+\usepackage{mwe} % new package from Martin scharrer
+\usepackage{caption}
+\usepackage{subfigure}
+\usepackage{mathtools}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsthm}
+
+\usepackage{listings}
+\RequirePackage{listings}
+\RequirePackage{xcolor}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{
+  frame=tb,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  framerule=1pt,
+  rulecolor=\color{gray!35},
+  backgroundcolor=\color{gray!5},
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3,
+}
+
+\DeclareMathOperator{\diag}{diag}
+\newtheorem*{theorem}{Theorem}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Question}
+\newtheorem*{problem}{Assignment}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\hP}{\widehat{P}}
+\newcommand{\trans}{^{\mathrm T}}
+\newcommand{\frakM}{\mathfrak{M}}
+\newcommand{\diff}{\,\mathrm{d}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\newcommand\inner[2]{\langle #1, #2 \rangle}
+\DeclarePairedDelimiterX{\inp}[2]{\langle}{\rangle}{#1, #2}
+
+\begin{document}
+
+\title{
+AIE1901 Assignment 2
+}
+\author{\textit{Due date: 11:59 PM, Wednesday, November 12, 2025.}\\
+}
+
+\maketitle
+
+
+\textbf{Remark: }{
+\begin{enumerate}
+    \item
+    The Maximum point is 100.
+    \item
+    It is okay to use LLM (such as ORLM, DeepSeek) to help you generate the answer, but it is optional.
+\end{enumerate}
+}
+
+
+
+
+% \begin{exercise}[Newsvendor Problem]
+% Suppose we are running a business retailing newspaper to CUHKSZ campus. 
+% We have to order a specific number of copies from the publisher every evening and sell those copies the next day. 
+% One day, if there is a big news, the number of people who want to buy and read a paper from you may be very high. 
+% Another day, people may just not be interested in reading a paper at all. Hence, you as a retailer, will encounter the demand variability and it is the primary uncertainty you need to handle to keep your business sustainable. To do that, you want to know what is the optimal number of copies you need to order every day. By
+% intuition, you know that there will be a few other factors than demand $D$ you need
+% to consider.
+% \begin{itemize}
+%     \item 
+% Selling price ($p$): the amount of money you will charge per paper;
+%     \item
+% Buying price ($c_v$): the amount of money the publisher charge per paper;
+%     \item
+% Holding cost ($h$): if there are any leftover items, you need to pay to get rid of them or storing them. 
+% The amount of money you need to pay for each unit of leftover item is called unit holding cost; 
+%     \item
+% Backorder cost ($b$): Whenever the actual demand is higher than how
+% many you prepared, you lose sales. Loss-of-sales could cost you something.
+% You may be bookkeeping those as backorders or your brand may be demanaged. 
+% The amount of money you need to pay for each shortage item is called unit backorder cost; 
+%    \item
+% Your order quantity ($y$): You will decide how many papers to be ordered before you start a day. That quantity is represented by $y$. This is your decision variable.
+% \end{itemize}
+% Assume that 
+% \[
+% p=10, c_v=5, h=2, b=3.
+% \]
+% As a business, you are assumed to want to maximize your profit. Expressing
+% your profit as a function of these variables is the first step to obtain the optimal ordering policy. Profit is the revenue minus cost:
+% \begin{align}
+% \text{Profit}&=\text{Revenue} - \text{Cost}\\
+% &=\text{Revenue} - \text{Ordering Cost} - \text{Holding Cost} - \text{Backorder Cost}
+% \\
+% &=p\cdot \min(D,y) - yc_v - h\cdot \max(y-D, 0) - b\cdot \max(D-y, 0).
+% \end{align}
+% The profit equation above contains a random element, the demand $D$. 
+% But we know that
+% \[
+% \mathbf{Pr}(D=10)=\frac{1}{4},\quad 
+% \mathbf{Pr}(D=15)=\frac{1}{8},\quad 
+% \mathbf{Pr}(D=20)=\frac{1}{8},\quad 
+% \mathbf{Pr}(D=25)=\frac{1}{4},\quad 
+% \mathbf{Pr}(D=30)=\frac{1}{4}.
+% \]
+% We can change our objective function from just profit to expected profit. 
+% What is your optimal order quantity to maximize the expected profit? 
+% \\
+% \textbf{Remark: }
+% \begin{enumerate}
+%     \item Formulate this question into a mathematical optimization model and use coptpy solver to generate answer. 
+%     \item It is okay to use LLM (such as ORLM, deepseek) to help you generate the answer, but it is optional.
+%     \item Attach the computer code, prompt you to use in your submission.
+%     \item It is strongly recommended that you use LaTex to do your homework.
+% \end{enumerate}
+% \end{exercise}
+
+\begin{exercise}[Newsvendor Problem]
+Suppose we are running a business retailing newspapers on the CUHKSZ campus. We have to order a specific number of copies from the publisher every evening and sell them the next day. The demand is uncertain: one day it might be very high, another day it might be low. As a retailer, you need to determine the optimal number of copies to order daily to handle this demand variability.
+
+The key factors in your decision are:
+\begin{itemize}
+    \item 
+Selling price ($p$): The revenue per newspaper sold;
+    \item
+Buying price ($c_v$): The cost per newspaper purchased;
+    \item
+Holding cost ($h$): The cost per unit for leftover newspapers (e.g., disposal or storage); 
+    \item
+Backorder cost ($b$): The cost per unit for unmet demand (e.g., loss of goodwill, lost profit); 
+   \item
+Your order quantity ($y$): Your decision variable, the number of newspapers to order.
+\end{itemize}
+Assume the following values:
+\[
+p=10, c_v=5, h=2, b=3.
+\]
+Your goal is to maximize profit. The profit function is defined as revenue minus total cost:
+\begin{align*}
+\text{Profit}&=\text{Revenue} - \text{Cost}\\
+&=\text{Revenue} - \text{Ordering Cost} - \text{Holding Cost} - \text{Backorder Cost}
+\\
+&=p\cdot \min(D,y) - yc_v - h\cdot \max(y-D, 0) - b\cdot \max(D-y, 0).
+\end{align*}
+The profit equation above contains a random element, the demand $D$. 
+But we know that
+\[
+\mathbf{Pr}(D=10)=\frac{1}{4},\quad 
+\mathbf{Pr}(D=15)=\frac{1}{8},\quad 
+\mathbf{Pr}(D=20)=\frac{1}{8},\quad 
+\mathbf{Pr}(D=25)=\frac{1}{4},\quad 
+\mathbf{Pr}(D=30)=\frac{1}{4}.
+\]
+Since the profit depends on the random demand $D$, we optimize for the expected profit.
+What is your optimal order quantity $y$ to maximize the expected profit? \hfill{(50 points)}
+\\
+\textbf{Remark: }
+\begin{enumerate}
+    \item Formulate this question into a mathematical optimization model and use \texttt{coptpy} or \texttt{cvxpy} package to generate answer. 
+    \item Attach the computer code, prompt you to use in your submission.
+   % \item It is strongly recommended that you use LaTex to do your homework.
+\end{enumerate}
+\end{exercise}
+
+\begin{proof}[Solution to Question~1]
+Please submit your solution to Question~1 here.
+\end{proof}
+
+\clearpage
+
+
+
+
+\begin{exercise}[Supply Chain with Inventory Substitution]
+An airline company has $3$ types of products to satisfy customer demands, with product $1,2,3$ corresponding to \texttt{Business}, \texttt{Comfort}, and \texttt{Economy} zones, respectively. There is a demand class corresponding to each product, indexed by $j=1,2,3$. If any demand class $j$ cannot be satisfied, products with \textbf{higher} quality can be used for substitution (However, you cannot substitute lower-quality products for higher-quality demands). Let $y=(y_1,y_2,y_3)^\top$ denote the inventory level of all products, and $d=(d_1,d_2,d_3)^\top$ denote the demands of all products. 
+The goal is to find the optimal substitution decision. 
+There are several factors to be considered:
+\begin{itemize}
+    \item
+Substitution cost: the unit substitution cost to use product $i$ to satisfy demand $j$ is $s_{ij}$;
+    \item
+Backorder cost: Unit backorder cost for demand $j$ is $b_j$;
+   \item
+Holding cost: Unit holding cost for product $i$ is $h_i$;
+    \item
+Substitution decision ($\omega_{i,j}, \forall i,j$): the amount of substitution of product $i$ to demand $j$, decision variable.
+    \item
+Leftover inventory of product $i$ ($u_i$): decision variable, i.e., number of seats left for $i$-th product.
+    \item
+Shortage of demand $j$ ($u_j'$): decision variable, i.e., number of customers who have demand $j$ but fail to onboard.
+\end{itemize}
+Assume the following values of our data: 
+\begin{align*}
+h &= \begin{pmatrix}
+h_1\\
+h_2\\
+h_3
+\end{pmatrix}
+=\begin{pmatrix}
+20\\15\\10
+\end{pmatrix},\qquad 
+b=\begin{pmatrix}
+b_1\\
+b_2\\
+b_3
+\end{pmatrix}=\begin{pmatrix}
+500\\300\\280
+\end{pmatrix}\\
+s &=\begin{pmatrix}
+s_{11}&s_{12}&s_{13}\\
+s_{21}&s_{22}&s_{23}\\
+s_{31}&s_{32}&s_{33}
+\end{pmatrix}=\begin{pmatrix}
+0&50.6&47.6\\
+\infty&0&140.7\\
+\infty&\infty&0
+\end{pmatrix}
+\end{align*}
+Suppose now the inventory level $y$ and $d$ are given:
+\[
+y = \begin{pmatrix}
+100\\
+200\\
+300
+\end{pmatrix},\quad 
+d = \begin{pmatrix}
+72\\
+157\\
+326
+\end{pmatrix}.
+\]
+%The goal is to find the optimal substitution decision to minimize the total costs. Generate mathematical expression for this problem and use COPTPY solver to solve this question. 
+What is your optimal decision for this question?
+\hfill{(50 points)}\\
+\textbf{Remark: }
+\begin{enumerate}
+    \item Formulate this question into a mathematical optimization model and use \texttt{coptpy} or \texttt{cvxpy} package to generate answer. 
+    \item Attach the computer code, prompt you to use in your submission.
+   % \item It is strongly recommended that you use LaTex to do your homework.
+    \item For your reading interest, this problem is a simplified version of the practical question published in Operations Research~(see \texttt{Xin Chen, Xiangyu Gao (2019) Stochastic Optimization with Decisions Truncated by Positively Dependent Random Variables. Operations Research 67(5): 1321-1327. https://doi.org/10.1287/opre.2018.1815}).
+\end{enumerate}
+\end{exercise}
+
+
+\clearpage
+\begin{proof}[Solution to Question~2]
+Please submit your solution to Question~2 here.
+\end{proof}
+
+
+
+
+
+\end{document}

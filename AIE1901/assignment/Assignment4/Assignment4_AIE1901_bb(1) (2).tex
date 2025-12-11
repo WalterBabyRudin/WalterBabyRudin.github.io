@@ -1,0 +1,223 @@
+\documentclass[draftclsnofoot,onecolumn]{IEEEtran}
+
+\usepackage[square,sort,comma,numbers]{natbib}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{url}
+%\usepackage{mathrsfs,breqn,dsfont}
+%\usepackage{amsthm}
+\usepackage{natbib}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{pgfplots}
+\usepackage{filecontents}
+\usepackage{bm}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning,arrows,shapes,chains,fit,scopes}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{multido}
+\usepackage{pstricks}
+\usepackage{mwe} % new package from Martin scharrer
+\usepackage{caption}
+\usepackage{subfigure}
+\usepackage{mathtools}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsthm}
+
+\usepackage{listings}
+\RequirePackage{listings}
+\RequirePackage{xcolor}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{
+  frame=tb,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  framerule=1pt,
+  rulecolor=\color{gray!35},
+  backgroundcolor=\color{gray!5},
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3,
+}
+
+\DeclareMathOperator{\diag}{diag}
+\newtheorem*{theorem}{Theorem}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Question}
+\newtheorem*{problem}{Assignment}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\hP}{\widehat{P}}
+\newcommand{\trans}{^{\mathrm T}}
+\newcommand{\frakM}{\mathfrak{M}}
+\newcommand{\diff}{\,\mathrm{d}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\newcommand\inner[2]{\langle #1, #2 \rangle}
+\DeclarePairedDelimiterX{\inp}[2]{\langle}{\rangle}{#1, #2}
+
+\begin{document}
+
+\title{
+AIE1901 Assignment 4
+}
+\author{\textit{Due date: 11:59 PM, Sunday, December 7, 2025.}\\
+}
+
+\maketitle
+
+
+\vspace{-6em}
+\textbf{Remark: }{
+\begin{enumerate}
+    \item
+    The Maximum point is 100.
+    \item
+    It is okay to use LLM (such as ORLM, DeepSeek) to help you generate the answer, but it is optional.
+    \item 
+    Attach the computer code, prompt you to use in your submission.
+    \item 
+    Please download \texttt{D\_train.csv} and \texttt{D\_test.csv} and put them into the same folder as you are running the code.
+\end{enumerate}
+}
+
+
+
+\begin{exercise}[Newsvendor Problem]
+Suppose we are running a newspaper retail business on the CUHKSZ campus. Each evening, we must order copies from the publisher for the next day's sales. Using historical demand data, you will determine the optimal order quantity $y$.
+
+You have collected customer demands over the past 5 days (recorded in \texttt{D\_train.csv}) and will evaluate your decision's performance on future 30 days of demand data (recorded in \texttt{D\_test.csv}).
+
+The key parameters in your decision include:
+\begin{itemize}
+    \item 
+Selling price ($p=20$): The revenue per newspaper sold;
+    \item
+Buying price ($c_v=4$): The cost per newspaper purchased;
+    \item
+Holding cost ($h=1$): The cost per unit for leftover newspapers (e.g., disposal or storage); 
+    \item
+Backorder cost ($b=25$): The cost per unit for unmet demand (e.g., loss of goodwill, lost profit).
+\end{itemize}
+
+The profit function, denoted as $g(d,y)$, is defined as revenue minus total cost:
+\begin{align*}
+g(d,y)&=\text{Revenue} - \text{Ordering Cost} - \text{Holding Cost} - \text{Backorder Cost}
+\\
+&=p\cdot \min(D,y) - c_v\cdot y - h\cdot \max(y-D, 0) - b\cdot \max(D-y, 0).
+\end{align*}
+
+Using training samples $\{\hat{d}_1,\ldots,\hat{d}_5\}$, we approximate the demand distribution as:
+\begin{equation}
+\mathbf{Pr}(D=\hat{d}_i)=\frac{1}{5},\quad i=1,\ldots,5.\label{Eq:demand:distribution}
+\end{equation}
+
+Now you are going to solve the following optimization to obtain the optimal decision:
+\begin{align*}
+\max_{y}&\quad \sum_{i=1}^5\mathbf{Pr}(D=\hat{d}_i)\cdot g(\hat{d}_i, y)\\
+\mbox{s.t. }&\quad y\in\{0,1,\ldots,100\}.
+\end{align*}
+This is called the \textbf{sample average approximation~(SAA)} method, i.e., the unknown distribution is approximated using equally happening training samples. 
+\begin{enumerate}
+    \item 
+What is the optimal inventory decision for SAA?
+    \item
+What is the average profit of this decision evaluated on the training data samples?
+    \item
+What is the average profit of this decision evaluated on the testing data samples?
+\end{enumerate}
+\hfill{(50 points)}
+\end{exercise}
+
+\clearpage
+
+
+
+
+
+\begin{exercise}[Distributionally Robust Newsvendor Problem]
+Following Question~1, we are not convinced that the unknown customer demand distribution shown in Equation~\eqref{Eq:demand:distribution}.
+But we know two facts:
+\begin{enumerate}
+    \item 
+The customer demand $D$ is likely to support on $\{0,1,\ldots,100\}$.
+    \item
+The mean $\mu$ and variance $\sigma^2$ of the customer demand is close to that on training samples.
+You can use the following python code to load and compute the mean and variance of training samples:
+\begin{verbatim}
+D_train = np.loadtxt(’D_train.csv’, delimiter=’,’, skiprows=1)
+mu = np.mean(D_train)
+sigma2 = np.variance(D_train)
+\end{verbatim}
+\end{enumerate}
+Based on the facts above, we estimate the customer demand as
+\[
+\mathbf{Pr}(D=0)=p_0, \mathbf{Pr}(D=1)=p_1, \mathbf{Pr}(D=2)=p_2,\ldots,\mathbf{Pr}(D=100)=p_{100}, 
+\]
+where the probabilities $p_0, p_1,\ldots, p_{100}$ are unknown parameters such that 
+\[
+p_d\ge0, \forall d,\qquad \sum_{d=0}^{100}p_i=1.
+\]
+Now we are going to solve the distributionally robust newsvendor problem:
+\[
+\max_{y\in\{0,1,\ldots,100\}}~\left\{ 
+\begin{aligned}
+\min_{p_0, p_1,\ldots, p_d}&\quad 
+\sum_{d=0}^{100}p_{d}\cdot g(d, y)\\
+\mbox{s.t. }&\quad \sum_{d=1}^{100}p_d\cdot d=\mu\\
+&\quad \sum_{d=1}^{100}p_d(d - \mu)^2=\sigma^2\\
+&\quad p_d\ge0, \forall d\\
+&\quad \sum_{d=0}^{100}p_d=1
+\end{aligned}
+\right\}.
+\]
+\textbf{Hint: } You can use exhaustive search to find the optimal decision $y$: For each fixed decision $y$, you can call CVXPY solver to solve the inner optimization problem to get the optimal value. You find the best $y$ that obtains the highest optimal value among all possible enumerations of $y$.
+\begin{enumerate}
+    \item 
+What is the optimal inventory decision for this distributionally robust formulation?
+    \item
+What is the worst-case distribution (i.e., the optimal $p_0,\ldots,p_{100}$) for this distributionally robust formulation? Which entries are non-zero?
+    \item
+What is the average profit of this decision evaluated on the training data samples?
+    \item
+What is the average profit of this decision evaluated on the testing data samples?
+    \item
+Compare those three answers with that in Question 1. What observations and interpretations do you have?
+\end{enumerate}
+\hfill{(50 points)}
+\end{exercise}
+
+
+
+
+
+
+
+
+
+\end{document}
