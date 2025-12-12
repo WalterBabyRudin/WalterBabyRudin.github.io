@@ -5,20 +5,34 @@
 {At CUHKSZ (2025-Present)}
 - *Instructor* for Mathematics in AI (AIE 6001)\n 
 Fall 2025
-    -- *Lecture1: * [AIE6001/Week1/Lecture1.pdf Slides], [AIE6001/Week1/Lecture0.pdf Introduction], [AIE6001/Week1/Lecture1_Demo.ipynb Code Demo]
-    -- *Lecture2: * [AIE6001/Week2/Lecture2.pdf Slides], [AIE6001/Week2/Lecture2_Demo.ipynb Code Demo], [AIE6001/Week2/Assignment_1.pdf Assignment 1]
-    -- *Lecture3: * [AIE6001/Week3/Lecture3.pdf Slides], [AIE6001/Week3/code.zip Code Demo], [AIE6001/Week3/PCA.pdf Slides on PCA]
-    -- *Lecture4: * [AIE6001/Week4/Lecture4.pdf Slides], [AIE6001/Week4/basics.pdf Basics on Stochastic Processes]
-    -- *Lecture5: * [AIE6001/Week5/Lecture5.pdf Slides], [AIE6001/Week5/Assignment_2.pdf Assignment 2]
-    -- *Lecture6: * [AIE6001/Week6/Lecture6.pdf Slides]
-    -- *Lecture7: * [AIE6001/Week7/Lecture7.pdf Slides]
-    -- *Lecture8: * [AIE6001/Week8/Lecture8.pdf Slides], [AIE6001/Week8/Assignment_3.pdf Assignment 3]
-    -- *Lecture9: * [AIE6001/Week9/Lecture9.pdf Slides]
-    -- *Lecture10: * [AIE6001/Week10/Lecture10.pdf Slides], [AIE6001/Week10/Assignment_4.pdf Assignment 4]
-    -- *Lecture11: * [AIE6001/Week11/Lecture11.pdf Slides]\
+    -- *Lecture 1: * [AIE6001/Week1/Lecture1.pdf Slides], [AIE6001/Week1/Lecture0.pdf Introduction], [AIE6001/Week1/Lecture1_Demo.ipynb Code Demo]
+    -- *Lecture 2: * [AIE6001/Week2/Lecture2.pdf Slides], [AIE6001/Week2/Lecture2_Demo.ipynb Code Demo], [AIE6001/Week2/Assignment_1.pdf Assignment 1]
+    -- *Lecture 3: * [AIE6001/Week3/Lecture3.pdf Slides], [AIE6001/Week3/code.zip Code Demo], [AIE6001/Week3/PCA.pdf Slides on PCA]
+    -- *Lecture 4: * [AIE6001/Week4/Lecture4.pdf Slides], [AIE6001/Week4/basics.pdf Basics on Stochastic Processes]
+    -- *Lecture 5: * [AIE6001/Week5/Lecture5.pdf Slides], [AIE6001/Week5/Assignment_2.pdf Assignment 2]
+    -- *Lecture 6: * [AIE6001/Week6/Lecture6.pdf Slides]
+    -- *Lecture 7: * [AIE6001/Week7/Lecture7.pdf Slides]
+    -- *Lecture 8: * [AIE6001/Week8/Lecture8.pdf Slides], [AIE6001/Week8/Assignment_3.pdf Assignment 3]
+    -- *Lecture 9: * [AIE6001/Week9/Lecture9.pdf Slides]
+    -- *Lecture 10: * [AIE6001/Week10/Lecture10.pdf Slides], [AIE6001/Week10/Assignment_4.pdf Assignment 4]
+    -- *Lecture 11: * [AIE6001/Week11/Lecture11.pdf Slides]\
 
 - *Instructor* for AI Exploration: Large Language Model for Optimization (AIE 1901)\n 
 Fall 2025
+    -- *Lecture 1: * [AIE1901/Week1/Lecture1.pdf Slides], [AIE1901/Week1/Lecture0.pdf Introduction]
+    -- *Tutorial 1: * [AIE1901/Week2/demo.html Desert survival problem demo], [AIE1901/Week2/Code.py Code], [AIE1901/Week2/Code.ipynb Code], [AIE1901/Week2/game_English.pdf English Description], [AIE1901/Week2/Tutorial_1_Desert_Survival_Optimization_Problem.pdf Slides]
+    -- *Lecture 2: * [AIE1901/Week3/Lecture2.pdf Slides], [AIE1901/Week3/Assignment_1.pdf Assignment 1]
+    -- *Tutorial 2: * [AIE1901/Week4/Tutorial_Data_Model.pdf Slides], [AIE1901/Week4/aie1901_tutorial_2.py Code], [AIE1901/Week4/AIE1901_Tutorial_2.ipynb Code]
+    -- *Lecture 3: * [AIE1901/Week5/Lecture3.pdf Slides], [AIE1901/Week5/dataset.pdf OR Problem Collections], [AIE1901/Week5/dataset.xls OR Problem Collections], [AIE1901/Week5/Midterm_Presentation_Grading_Rubric_Instructor.pdf Grading Rubics (Instructor)], [AIE1901/Week5/Midterm_Presentation_Grading_Rubric_Student.pdf Grading Rubics (Student)]
+    -- *Tutorial 3: * [AIE1901/Week7/Tutorial.pdf Slides], [AIE1901/Week7/demo.ipynb demo], [AIE1901/Week7/LaTex_notes.zip Notes]
+    -- *Lecture 4: * [AIE1901/Week8/Lecture4.pdf Slides], [AIE1901/Week8/Assignment_2.pdf Assignment 2]
+    -- *Tutorial 4: * [AIE1901/Week9/slides.pdf Slides], [AIE1901/Week9/demo1.ipynb demo], [AIE1901/Week9/demo2.ipynb demo2], [AIE1901/Week9/Assignment_3.zip Assignment 3]
+    -- *Lecture 5: * [AIE1901/Week10/Lecture5-0.pdf Slides], [AIE1901/Week10/Lecture5.pdf Slides], [AIE1901/Week10/final_guideline.pdf Final Guideline], [AIE1901/Week10/Grading_Rubric.docx Grading Rubics (Instructor)], [AIE1901/Week10/Grading_Rubric_Student.docx Grading Rubics (Student)], [AIE1901/Week10/Assignment_4.pdf Assignment 4]
+    -- *Lecture 6: * [AIE1901/Week12/Lecture6.pdf Slides], [AIE1901/Week12/CUHKSZ.pdf AI Guideline by CUHKSZ]
+
+
+
+
 ~~~
 
 
@@ -32,20 +46,20 @@ Fall 2021
 
 - *Instructor* for Statistics& Applications (ISyE 3770, Spring 2024, around 60 students)\n
 Course materials are prepared by Jie Wang.
-    -- *Week1: * [ISYE3770/Week1/Week1.pdf Slides], [ISYE3770/Week1/Syllabus.pdf Syllabus], [ISYE3770/Week1/Simulation.pdf Simulation]
-    -- *Week2: * [ISYE3770/Week2/Week2.pdf Slides], [ISYE3770/Week2/Assignment1.pdf Assignment1], [ISYE3770/Week2/Assignment1_Solution.pdf Assignment1_Solution]
-    -- *Week3: * [ISYE3770/Week3/Week3.pdf Slides], [ISYE3770/Week3/Assignment2.pdf Assignment2], [ISYE3770/Week3/Assignment2_Solution.pdf Assignment2_Solution]
-    -- *Week4: * [ISYE3770/Week4/Week4.pdf Slides], [ISYE3770/Week4/Assignment3.pdf Assignment3], [ISYE3770/Week4/Assignment3_Solution.pdf Assignment3_Solution]
-    -- *Week5: * [ISYE3770/Week5/Week5.pdf Slides], [ISYE3770/Week5/Table_Normal_ChiSquared.pdf Table_Normal_ChiSquared]
-    -- *Week6: * [ISYE3770/Week6/Week6.pdf Slides], [ISYE3770/Week6/Introduction_to_R.pdf Introduction_to_R]
-    -- *Midterm1: * [ISYE3770/Midterm1/Half_time_review.pdf Half_time_review], [ISYE3770/Midterm1/Midterm1_Practice.pdf Midterm1_Practice], [ISYE3770/Midterm1/Midterm1_Practice_Solution.pdf Midterm1_Practice_Solution], [ISYE3770/Midterm1/Midterm1.pdf Midterm1], [ISYE3770/Midterm1/Answer_Midterm1.pdf Midterm1_Solution]
-    -- *Week7: * [ISYE3770/Week7/Week7.pdf Slides], [ISYE3770/Week7/Week7_R_demo.Rmd Week7_R_demo]
-    -- *Week8: * [ISYE3770/Week8/Week8.pdf Slides], [ISYE3770/Week8/Assignment4.pdf Assignment4], [ISYE3770/Week8/Assignment4_Solution.pdf Assignment4_Solution]
-    -- *Week9: * [ISYE3770/Week9/Week9.pdf Slides], [ISYE3770/Week9/Assignment5.pdf Assignment5], [ISYE3770/Week9/Assignment5_Solution.pdf Assignment5_Solution]
-    -- *Midterm2: * [ISYE3770/Midterm2/Mid_Term2_Practice.pdf Midterm2_Practice], [ISYE3770/Midterm2/Mid_Term2_Question.pdf Midterm2]
-    -- *Week10: * [ISYE3770/Week10/Week10.pdf Slides], [ISYE3770/Week10/Assignment6.pdf Assignment6], [ISYE3770/Week10/Assignment6_Solution.pdf Assignment6_Solution]
-    -- *Week11: * [ISYE3770/Week11/Week11.pdf Slides], [ISYE3770/Week11/Assignment_7_ISyE_3770.pdf Assignment7], [ISYE3770/Week11/HW7_Solution.pdf Assignment7_Solution]
-    -- *Week12: * [ISYE3770/Week12/Week12.pdf Slides], [ISYE3770/Week12/house.txt house_data], [ISYE3770/Week12/Example_1.txt Example_1_data], [ISYE3770/Week12/demo.Rmd demo_code]
+    -- *Week 1: * [ISYE3770/Week1/Week1.pdf Slides], [ISYE3770/Week1/Syllabus.pdf Syllabus], [ISYE3770/Week1/Simulation.pdf Simulation]
+    -- *Week 2: * [ISYE3770/Week2/Week2.pdf Slides], [ISYE3770/Week2/Assignment1.pdf Assignment1], [ISYE3770/Week2/Assignment1_Solution.pdf Assignment1_Solution]
+    -- *Week 3: * [ISYE3770/Week3/Week3.pdf Slides], [ISYE3770/Week3/Assignment2.pdf Assignment2], [ISYE3770/Week3/Assignment2_Solution.pdf Assignment2_Solution]
+    -- *Week 4: * [ISYE3770/Week4/Week4.pdf Slides], [ISYE3770/Week4/Assignment3.pdf Assignment3], [ISYE3770/Week4/Assignment3_Solution.pdf Assignment3_Solution]
+    -- *Week 5: * [ISYE3770/Week5/Week5.pdf Slides], [ISYE3770/Week5/Table_Normal_ChiSquared.pdf Table_Normal_ChiSquared]
+    -- *Week 6: * [ISYE3770/Week6/Week6.pdf Slides], [ISYE3770/Week6/Introduction_to_R.pdf Introduction_to_R]
+    -- *Midterm 1: * [ISYE3770/Midterm1/Half_time_review.pdf Half_time_review], [ISYE3770/Midterm1/Midterm1_Practice.pdf Midterm1_Practice], [ISYE3770/Midterm1/Midterm1_Practice_Solution.pdf Midterm1_Practice_Solution], [ISYE3770/Midterm1/Midterm1.pdf Midterm1], [ISYE3770/Midterm1/Answer_Midterm1.pdf Midterm1_Solution]
+    -- *Week 7: * [ISYE3770/Week7/Week7.pdf Slides], [ISYE3770/Week7/Week7_R_demo.Rmd Week7_R_demo]
+    -- *Week 8: * [ISYE3770/Week8/Week8.pdf Slides], [ISYE3770/Week8/Assignment4.pdf Assignment4], [ISYE3770/Week8/Assignment4_Solution.pdf Assignment4_Solution]
+    -- *Week 9: * [ISYE3770/Week9/Week9.pdf Slides], [ISYE3770/Week9/Assignment5.pdf Assignment5], [ISYE3770/Week9/Assignment5_Solution.pdf Assignment5_Solution]
+    -- *Midterm 2: * [ISYE3770/Midterm2/Mid_Term2_Practice.pdf Midterm2_Practice], [ISYE3770/Midterm2/Mid_Term2_Question.pdf Midterm2]
+    -- *Week 10: * [ISYE3770/Week10/Week10.pdf Slides], [ISYE3770/Week10/Assignment6.pdf Assignment6], [ISYE3770/Week10/Assignment6_Solution.pdf Assignment6_Solution]
+    -- *Week 11: * [ISYE3770/Week11/Week11.pdf Slides], [ISYE3770/Week11/Assignment_7_ISyE_3770.pdf Assignment7], [ISYE3770/Week11/HW7_Solution.pdf Assignment7_Solution]
+    -- *Week 12: * [ISYE3770/Week12/Week12.pdf Slides], [ISYE3770/Week12/house.txt house_data], [ISYE3770/Week12/Example_1.txt Example_1_data], [ISYE3770/Week12/demo.Rmd demo_code]
     -- *Final: * [ISYE3770/Final/Final_Practice.pdf Final_Practice], [ISYE3770/Final/Final_practice_solution.pdf Final_practice_solution]\
 
 - *Instructor* for Simulation Analysis and Design (ISyE 3044, Summer 2024, around 40 students)\n
