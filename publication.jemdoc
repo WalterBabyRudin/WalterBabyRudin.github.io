@@ -14,6 +14,10 @@ Yifan Hu, *Jie Wang*, Xin Chen, Niao He. Major Revision at [https://pubsonline.i
 ({{<font color=red <b*>}}Runner-up of the INFORMS 2024 Computing Society (ICS) Student Paper Award{{</b></font>}})
 . [https://openreview.net/forum?id=tEFhwX8s1GN Training By Vanilla SGD with Larger Learning Rates]\n
 Yueyao Yu, *Jie Wang*, Wenye Li, Yin Zhang.
+. [https://arxiv.org/abs/2512.12550 Iterative Sampling Methods for Sinkhorn Distributionally Robust Optimization]\n
+*Jie Wang*.
+. [https://optimization-online.org/?p=33247 Contextual Distributionally Robust Optimization with Causal and Continuous Structure: An Interpretable and Tractable Approach]\n
+Fenglin Zhang, *Jie Wang*.
 ~~~
 
 
