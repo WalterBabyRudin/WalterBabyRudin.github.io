@@ -4,8 +4,6 @@
 
 ~~~
 {Preprints}
-. [https://arxiv.org/abs/2408.11084 Multi-level Monte-Carlo Gradient Methods for Stochastic Optimization with Biased Oracles]\n
-Yifan Hu, *Jie Wang*, Xin Chen, Niao He. Major Revision at [https://pubsonline.informs.org/journal/opre Operations Research]
 . [https://arxiv.org/abs/2408.09672 Regularization for Adversarial Robust Learning] [presentation_purdue.pdf  \[Slides\]]\n
 *Jie Wang*, Rui Gao, Yao Xie. ({{<font color=red <b>}}Winner of the 18th INFORMS DMDA Workshop Best Paper Competition Award, 2 out of 57{{</b></font>}})
 . [https://arxiv.org/abs/2302.07415 Variable Selection for Kernel Two-Sample Tests]\n
@@ -23,6 +21,8 @@ Fenglin Zhang, *Jie Wang*.
 
 ~~~
 {Journal Articles}
+. [https://arxiv.org/abs/2408.11084 Multi-level Monte-Carlo Gradient Methods for Stochastic Optimization with Biased Oracles]\n
+Yifan Hu, *Jie Wang*, Xin Chen, Niao He. Conditionally Accepted at [https://pubsonline.informs.org/journal/opre Operations Research]
 . [https://pubsonline.informs.org/doi/10.1287/opre.2022.2382 Reliable Off-policy Evaluation for Reinforcement Learning]\n
 *Jie Wang*, Rui Gao, Hongyuan Zha. [https://pubsonline.informs.org/doi/full/10.1287/opre.2022.2382 Operations Research]
 . [https://arxiv.org/abs/2109.11926 Sinkhorn Distributionally Robust Optimization] [https://github.com/WalterBabyRudin/SDRO_poster/tree/main \[Poster with LaTeX Source File\]] [presentation_NUS.pdf \[Slides\]]
