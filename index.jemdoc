@@ -7,17 +7,16 @@ Jie Wang \n
 Assistant Professor\n
 [https://sai.cuhk.edu.cn/en School of Artificial Intelligence (home department)] and [https://sds.cuhk.edu.cn/en School of Data Science]\n
 The Chinese University of Hong Kong, Shenzhen\n
+My Expertise at School of Data Science: Operations Research\n
 Contact: [jwang@cuhk.edu.cn Email], [https://github.com/WalterBabyRudin Github], [https://scholar.google.com/citations?user=PXk1frMAAAAJ&hl=en Google Scholar]\n
 [Jie_CV_0831.pdf CV (Updated on 2025-08-31)] \n
-[Jie_Research_Statement.pdf Research Statement]\n
 *I am currently seeking highly motivated research interns (RAs) and Ph.D. students to join my group*
 ~~~
 
 
 == Short Bio
 
-I got my PhD in Industrial Engineering from Georgia Institute of Technology, advised by [https://www2.isye.gatech.edu/~yxie77/ Prof. Yao Xie]. I obtained Bachelor in Pure Mathematics from The Chinese University of Hong Kong, Shenzhen.  
-My research develops statistics and optimization methodologies with applications in machine learning.
+I got my PhD in Industrial Engineering from Georgia Institute of Technology, advised by [https://www2.isye.gatech.edu/~yxie77/ Prof. Yao Xie]. I obtained Bachelor in Pure Mathematics from The Chinese University of Hong Kong, Shenzhen. My research develops statistics and optimization methodologies with applications in machine learning.
 
 == Awards
 - Winner, [https://sites.google.com/view/dmdaworkshop2024/data-challenge INFORMS 2024 Data Mining Society's Data Competition (1 out of 26)]
@@ -34,13 +33,36 @@ My research develops statistics and optimization methodologies with applications
 - Travel Award, [http://www.ieee-itw2024.org/ 2024 IEEE Information Theory Workshop]
 - Travel Award, [https://www.itsoc.org/2019-ieee-international-symposium-on-information-theory IEEE International Symposium on Information Theory 2019 and 2024]
 
+== Funded Projects
+- National Natural Science Foundation of China (NSFC). PI. Theory and Algorithms for Distributionally Robust Optimization.
+- National Natural Science Foundation of China (NSFC) Youth Science Fund (Category C), PI. Generative AI for Distributionally Robust Optimization, 2027 - 2029.
+- National Natural Science Foundation of China (NSFC) Key Project, Co-PI (1 out of 3). A Study on Economic Theory and Policy Evaluation under Multimodal Data Fusion, 2027 - 2031. PI: Bingyi Jing
+- Guangdong Provincial Key Laboratory of Big Data Computing, CUHK-Shenzhen (Major Participant)
+
+
+
+
 == Talks
-- 9 December 2024, HKUST IEDA Seminar: Regularization for Adversarial Robust Learning
-- 4 December 2024, SJTU ACEM Seminar: Regularization for Adversarial Robust Learning
-- 30 November 2024, CUHK(SZ) SDS Program Seminar: Regularization for Adversarial Robust Learning
-- 18 November 2024, Tsinghua University IE Program Seminar: Regularization for Adversarial Robust Learning
-- 12 November 2024, Singapore University of Technology and Design ESD Pillar Seminar: Regularization for Adversarial Robust Learning
-- 18 October 2024, HKUST(GZ) IoT Thrust Seminar: Regularization for Adversarial Robust Learning
+- 21 August, 2026, Invited talk at Robust Optimization Methods and Applications Workshop, Shenzhen, China
+- 25 May, 2026, Invited talk at Optimization and Optimal Transport Workshop, Les Diablerets, Switzerland
+- 21 May, 2026, Seminar talk at EPFL, College of Management of Technology
+- 7 May, 2026, Seminar talk at KTH Royal Institute of Technology, Department of Mathematics
+- 21 March, 2026, Invited talk at INFORMS Optimization Society Conference, Atlanta, USA
+- 21 January, 2026, Seminar talk at University of Science and Technology of China, School of Management
+- 16 December, 2025, Seminar talk at The Hong Kong Polytechnic University, Department of Applied Mathematics
+- 6 December, 2025, Invited talk at Shanghai University of Finance and Economics Symposium on Financial Statistics and Risk Management
+- 3 December, 2025, Seminar talk at Shanghai University of Finance and Economics, Research Institute for Interdisciplinary Sciences
+- 29 November, 2025, Invited talk at Association of Asia-Pacific Operational Research Societies Youth Form, Hong Kong, China
+- 29 October, 2025, Invited talk at INFORMS Annual Meeting, Atlanta, USA
+- 21 August 2025, Invited talk at Youth Academic Conference of the Operations Research Society of China, Taiyuan, China
+- 24 July 2025, Invited talk at International Conference on Continuous Optimization, Los Angelos, USA
+- 6 July 2025, Invited talk at Robust Optimization Methods and Applications Workshop, Shenzhen, China
+- 9 December 2024, Seminar talk at The Hong Kong University of Science and Technology, Department of Industrial Engineering and Decision Analytics
+- 4 December 2024, Seminar talk at Shanghai Jiao Tong University, Antai College of Economics and Management
+- 30 November 2024, Seminar talk at The Chinese University of Hong Kong (Shenzhen), School of Data Science
+- 18 November 2024, Seminar talk at Tsinghua University, Industrial Engineering Program
+- 12 November 2024, Seminar talk at Singapore University of Technology and Design, Engineering Systems and Design Pillar
+- 18 October 2024, Seminar talk at The Hong Kong University of Science and Technology (Guangzhou), Internet of Things Thrust
 - 2024 Asilomar Conference on Signals, Systems, and Computers
 - 2024 SIAM Conference on Mathematics of Data Science
 - 2024 INFORMS Annual Meeting, oral talk
@@ -74,7 +96,9 @@ My research develops statistics and optimization methodologies with applications
 - School Board Member, School of Artificial Intelligence, The Chinese University of Hong Kong, Shenzhen
 - The Chair of TA Committee, School of Artificial Intelligence, The Chinese University of Hong Kong, Shenzhen
 - Reviewer for [https://pubsonline.informs.org/journal/opre, OR], 
+[https://pubsonline.informs.org/journal/mnsc, MS],
 [https://pubsonline.informs.org/journal/msom, MSOM], 
+[https://pubsonline.informs.org/journal/moor, MOR],
 [https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=18, TIT], 
 [https://www.itsoc.org/jsait JSAIT], 
 [https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-processing TSP], 

@@ -3,8 +3,11 @@
 
 ~~~
 {At CUHKSZ (2025-Present)}
+- *Instructor* for Practical AI Education (AIE 8401)\n
+Fall 2026
+
 - *Instructor* for Mathematics in AI (AIE 6001)\n 
-Fall 2025
+Fall 2025, 2026
     -- *Lecture 1: * [AIE6001/Week1/Lecture1.pdf Slides], [AIE6001/Week1/Lecture0.pdf Introduction], [AIE6001/Week1/Lecture1_Demo.ipynb Code Demo]
     -- *Lecture 2: * [AIE6001/Week2/Lecture2.pdf Slides], [AIE6001/Week2/Lecture2_Demo.ipynb Code Demo], [AIE6001/Week2/Assignment_1.pdf Assignment 1]
     -- *Lecture 3: * [AIE6001/Week3/Lecture3.pdf Slides], [AIE6001/Week3/code.zip Code Demo], [AIE6001/Week3/PCA.pdf Slides on PCA]
@@ -17,8 +20,8 @@ Fall 2025
     -- *Lecture 10: * [AIE6001/Week10/Lecture10.pdf Slides], [AIE6001/Week10/Assignment_4.pdf Assignment 4]
     -- *Lecture 11: * [AIE6001/Week11/Lecture11.pdf Slides]\
 
-- *Instructor* for AI Exploration: Large Language Model for Optimization (AIE 1901)\n 
-Fall 2025
+- *Instructor* for AI Exploration: Large Language Model for Operations Research (AIE 1901)\n 
+Fall 2025, 2026
     -- *Lecture 1: * [AIE1901/Week1/Lecture1.pdf Slides], [AIE1901/Week1/Lecture0.pdf Introduction]
     -- *Tutorial 1: * [AIE1901/Week2/demo.html Desert survival problem demo], [AIE1901/Week2/Code.py Code], [AIE1901/Week2/Code.ipynb Code], [AIE1901/Week2/game_English.pdf English Description], [AIE1901/Week2/Tutorial_1_Desert_Survival_Optimization_Problem.pdf Slides]
     -- *Lecture 2: * [AIE1901/Week3/Lecture2.pdf Slides], [AIE1901/Week3/Assignment_1.pdf Assignment 1]
